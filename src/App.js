@@ -1,9 +1,10 @@
-import Header from './components/Header/index';
-
+// import Header from './components/Header/index';
+import WhatWeDo from './components/section/WhatWeDo';
 function App() {
   return (
     <div className="App">
-      <Header />
+      {/* <Header /> */}
+      <WhatWeDo/>
     </div>
   );
 }
