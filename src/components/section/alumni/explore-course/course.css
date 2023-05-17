@@ -135,7 +135,7 @@ color: rgb(209, 209, 209);
         flex-direction: column;
         margin: 30px;
     }
-    .main .image{
+    .main .table{
         order: 2;
      
     }
@@ -148,5 +148,12 @@ color: rgb(209, 209, 209);
     .paragraph2 .beginners{
         font-size: 20px;
     }
+    .table{
+        width: 602px;
+    }
+    
+}
+@media screen and(max-width:370px){
+
 }
 
