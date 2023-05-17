@@ -1,8 +1,10 @@
-import Program from "./components/section/alumni/Program/program";
+
+import Firstsection from '../src/components/section/alumni/firsthomesection/firstsection'
+
 function App() {
   return (
     <div className="App">
-      <Program />
+      <Firstsection />
     </div>
   );
 }
