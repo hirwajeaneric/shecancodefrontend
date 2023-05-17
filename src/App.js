@@ -1,10 +1,8 @@
-import Header from './components/Header/index';
-
+// import React from 'react';
+import Contact from '../src/pages/contact/index';
 function App() {
   return (
-    <div className="App">
-      <Header />
-    </div>
+    <Contact/>
   );
 }
 
