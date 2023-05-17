@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.body-foot {
+  /* justify-content: flex-end;
+  align-items: flex-end; */
+  margin-top: 65vh;
+  font-family: "Poppins", sans-serif;
+  /* background-image: url(./Images/FirstWave.svg); */
+}
+
+.footer-content {
+  position: relative;
+  display: flex;
+  gap: 170px;
+  background-color: #334a60;
+  height: 35vh;
+  min-height: 100px;
+}
+
+.footer-content .wave {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url(./Images/FirstWave.svg);
+  /* background-size: cover; */
+}
+.footer-content .wave #wave1 {
+  z-index: 1000;
+  opacity: 1;
+  bottom: 0;
+}
+.footer-content .wave #wave2 {
+  z-index: 999;
+  opacity: 0.5;
+  bottom: 10px;
+  /* background: url(./Images/SecondWave.svg); */
+}
+.color {
+  color: #33d4d6;
+}
+
+ul li {
+  list-style: none;
+  padding-top: 10px;
+}
+li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 12px;
+}
+#horizontal {
+  position: absolute;
+  margin-top: -50px;
+  color: white;
+  width: 100%;
+}
+#copyright {
+  margin-top: -30px;
+  color: white;
+  position: absolute;
+  padding-left: 20px;
+  font-size: 13px;
+}
+.square {
+  width: 30px;
+  height: 30px;
+  background-color: rgba(255, 255, 255, 0.541);
+  border-radius: 5px;
+  color: white;
+  font-size: 30px;
+}
+.follow {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+#follow h3 {
+  padding-left: 7px;
+}
