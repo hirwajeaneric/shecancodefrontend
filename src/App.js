@@ -1,4 +1,4 @@
-import Header from './components/Header/index';
+
 import Firstsection from '../src/components/section/alumni/firsthomesection/firstsection'
 
 function App() {

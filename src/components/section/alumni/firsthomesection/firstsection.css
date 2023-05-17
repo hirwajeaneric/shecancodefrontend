@@ -71,8 +71,8 @@ button{
 .rigth{
     background-image: url(../firsthomesection/image/download\ \(1\).jpeg);
     object-fit: cover;
-    width: 350px;
-    height: 300px;
+    width: 450px;
+    height: 350px;
     border-radius: 10px;
     margin-top: 70px;
     margin-right: 99px;
@@ -86,7 +86,7 @@ button{
 .container{
     display: flex;
     justify-content: space-between;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     margin-top: 20px;
 }
 .lin{
@@ -99,11 +99,30 @@ button{
         transform: translateX(-300px);
     }
     to{
+        transform: translateX(40px);
+    }
+}
+@keyframes SlideInRigth{
+    from{
         transform: translateX(300px);
+    }
+    to{
+        transform: translateX(10px);
     }
 }
 .left{
     animation-name: SlideInLeft;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    
+    transform: translateX(20px);
+}
+.rigth{
+    animation-name: SlideInRigth;
     animation-duration: 3s;
     animation-timing-function: ease;
     animation-delay: 0s;
@@ -193,11 +212,145 @@ i{
 .mini{
     display:flex;
 }
+@keyframes bounce{
+    0%,20%,50%,80%,100%{
+        transform: translateY(0);
+    }
+    40%{
+        transform: translateY(-30px);
+    }
+    60%{
+        transform: translateY(-15px);
+    }
+}
+.partners{
+    animation-name: bounce;
+}
 
+@media(max-width:800px){
+    .container{
+        display: block;
+        
+    }
+    .left{
+        /* font-size: 14px; */
+    }
+    .rigth{
+        margin-left: 35px;
+        margin-top: 15px;
+    }
+    .bigcont{
+        /* height: 100vh; */
+        padding-bottom: 100px;
+    }
+    .whole{
+        margin-bottom: 5px;
+        margin-top: 5px;
+    }
+    .mini{
+        display: block;
+        margin-left: 150px;
+    }
+    .lin{
+        font-size: 15px;
+    }
+    .partners{
+        height: 720px;
+        width: 550px;
+        margin-bottom: 100px;
+        padding-left: 5px;
+        margin-left: 50px;
+    }
+    .under{
+        /* margin-left: -10px; */
+        width: 145px;
+        margin: 0;
+    }
+    .undr{
+        width: 145px;
+        margin: 0;
+    }
+    .mastercard{
+        width:223px ;
+        height:134px ;
+    }
+    .giz{
+        width:220px ;
+        height:134px ;
+    }
+    .microsoft{
+        width:233px ;
+        height:134px ;
+    }
+    .DTC{
+        width:220px ;
+        height:134px ;
+    }
+}
+@media(max-width:680px){
+    .rigth{
+        font-size: 14px;
+        margin-left: 0px;
+    }
+    .left{
+        margin-left: -0.2px;
+        font-size: 13px;
+    }
+    .container{
+        margin-left: 0px;
+        margin-right: 0px;
+        right: 0px;
+    }
+    .partners{
+        width: 400px;
+        height: 690px;
+        margin-top: 50px;
+    }
+    .mini{
+        margin-left: 50px;
+    }
+    .bigcont{
+        overflow: hidden;
+    }
+}
+@media(max-width:414px){
+    .rigth{
+        width:380px ;
+    }
+    .partners{
+        margin-left: 10px;
+        width: 390px;
+        padding-left: 0px;
+    }
+    h3{
+        font-size: 15px;
+        margin-left: 20px;
+    }
+    .lin{
+        padding-left: 0px;
+    }
 
+}
+@media (max-width:360px){
+    h4{
+        margin-left: 2px;
+    }
+    .left{
+     margin-left: -0.3px;  
+     left: 0;    
+     margin-right: 2px; 
+    }
+    .rigth{
+        width: 325px;
+    }
+    .partners{
+        width: 340px;
+    }
+    .mini{
+        margin-left: 30px;
 
-
-
+    }
+}
 
 
 
