@@ -1,4 +1,3 @@
-// import Header from './components/Header/index';
 import Course from "./components/section/alumni/explore-course/course"
 
 function App() {

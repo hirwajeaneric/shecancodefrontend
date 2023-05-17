@@ -1,10 +1,11 @@
-import React from "react"
+import React from "react";
 import "./course.css"
 
 const Course = () =>{
 return(
 <div>
-    <p className="explore">Explore Course</p>
+    <h2 className="explore">Explore Course</h2>
+    <div className="whole">
     <div className="main"> 
     <div className="table" >
         <div className='row1'></div>
@@ -22,13 +23,16 @@ return(
     </div>
    <div className="paragraph2">
     <p className="beginners" >Beginners Welcome</p>
-    <h2>Start coding in seconds.</h2>
+    <h2 className="coding">Start coding in seconds.</h2>
     <p className="goahead">Go ahead , give it a try. our hands-on learning environment means you'll be writing real code from your very first lesson.</p>
     <button className="start">Start Now</button>
    </div>
     </div>
    
     <div className="line"></div>
+    <div className="line1"></div>
+    </div>
+
 </div>
 );
 }
