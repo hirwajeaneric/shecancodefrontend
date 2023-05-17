@@ -1,9 +1,8 @@
-import Header from './components/Header/index';
-
+import Program from "./components/section/alumni/Program/program";
 function App() {
   return (
     <div className="App">
-      <Header />
+      <Program />
     </div>
   );
 }
