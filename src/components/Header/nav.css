@@ -194,7 +194,7 @@ img:hover{
 }
 @media screen and (max-width: 520px){
     .navbar a{
-        margin-left: 50px;
+        margin-left: 65px;
     }
     img{
         width: 60px;
