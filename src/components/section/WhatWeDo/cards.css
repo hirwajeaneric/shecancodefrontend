@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:wght@100;300;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,500;0,900;1,100;1,300;1,700&display=swap');
+:root{
+    --bg-black-900:#f2f2fc;
+    --bg-black-100:#fdf9ff;
+    --bg-black-50:#e8dfec;
+    --tex-black-900:#302e4d;
+    --tex-black-700:#504e70;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.holecontent {
+margin: 40px;
+}
+.holecontent h3{
+text-align: center;
+font-family: "poppins";
+font-size: 25px;
+justify-content: center;
+}
+.holecontent h3::after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom:87%;
+    transform: translateX(-50%);
+    height: 6px;
+    width: 55Px;
+    /* border-radius: 2px; */
+    background-color:#3ECCD6;
+}
+.holecontent h3::after:hover{
+    width: 100px;
+    cursor: pointer;
+    
+}
+.row{
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+.card1{
+    background-color:var(--bg-black-100);  
+    border: 1px solid #3ECCD6 ;
+    border-radius: 10px;
+    padding: 30px 15px;
+   width: 20%;
+    transition: all 0.3s ease;
+margin-top: 40px;
+    }
+    .card1:hover{
+        box-shadow: 0 0 20px rgb(60, 77, 83); 
+    }
+    .icon{
+        height:60px;
+        width: 60px;
+        color: #3ECCD6;
+        border-radius: 50%;
+        display: block;
+        /* background-color: red; */
+        margin: 0 auto 30px;
+        text-align:center;
+    }
+ .icon .bx{
+        font-size: 40px;
+        line-height: 60px;
+        
+    }
+    .card1:hover .icon .bx{
+    font-size: 30px;
+    color:white
+    }
+    .card1:hover .icon{
+        background-color: #3ECCD6 ;
+    }
+.card1 h4{
+    color:#504e70;
+    font-weight: 900;
+    font-size: 25px;
+    text-align: center;
+}
+.card1 p{
+    font-size: 18px;
+    text-align: center;
+    padding-top: 20px;
+    /* line-height: 40px; */
+}
+button{
+   margin-left: 550px;
+   margin-top: 43px;
+   height: 40px;
+   width: 15%;
+   border:1px solid #3ECCD6;
+   background-color: white;
+   font-family: "poppins";
+   font-weight: bold;
+   cursor: pointer;
+}
+button:hover{
+    background-color: #3ECCD6;
+    border-radius: 20px;
+    color: white;
+
+}
+    
