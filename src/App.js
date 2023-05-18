@@ -1,11 +1,11 @@
-import Header from './components/Header/index';
+import Header from "./components/Header/index";
+import { BrowserRouter as Router } from "react-router-dom";
+import Routes from "./routes/index";
 function App() {
   return (
-    <div className="App">
-    <Header />
-      {/* <Footer /> */}
-
-    </div>
+    <Router>
+      <Routes></Routes>
+    </Router>
   );
 }
 export default App;
