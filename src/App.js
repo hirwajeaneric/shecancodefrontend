@@ -1,5 +1,9 @@
-// import Header from './components/Header/index';
-
+ 
+import Header from './components/Header/index';
+function App() {
+  return (
+    <div className="App">
+      <Header/>
 import WhatWeDo from './components/section/WhatWeDo';
 function App() {
   return (
@@ -12,9 +16,7 @@ function App() {
   return (
     <div className="App">
       <Footer />
-
     </div>
   );
 }
-
 export default App;
