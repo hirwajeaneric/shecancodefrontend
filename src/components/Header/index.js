@@ -1,3 +1,4 @@
+ 
 import Image from "./images/logoscc.png"
 import "./nav.css"
 let Index = () => {
@@ -21,3 +22,5 @@ let Index = () => {
     );
 }
 export default Index;
+ 
+ 
