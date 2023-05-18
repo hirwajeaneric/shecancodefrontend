@@ -1,3 +1,4 @@
+
 import Program from "./components/section/alumni/Program/program";
 import Footer from "./components/Footer";
 function App() {
@@ -5,8 +6,8 @@ function App() {
     <div className="App">
       <Program />
       {/* <Footer /> */}
+
     </div>
   );
 }
-
 export default App;
