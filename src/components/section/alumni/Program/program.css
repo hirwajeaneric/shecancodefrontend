@@ -1,0 +1,354 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.Container-content{
+    width: 100%;
+    height: 80vh;
+    padding-top: 16vh;
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url(./program/IMG-20230510-WA0053.jpg);
+}
+.Container-content::before{
+    content: "";
+    background-color:#000a00;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.8;
+    height: 80vh;
+}
+.Container-content-one {
+  width: 70vw; 
+  border-radius: 20px;
+  position: absolute;
+  padding: 0px 50px 30px 50px;
+  background-color: white;
+  opacity: .5;
+  margin-left: 15vw;
+  font-size: larger;
+}
+
+.Container-content-one li{
+    list-style: none;
+    padding-top: 20px;
+}
+.Container-content-one h1{
+    padding-top: 20px;
+    padding-bottom: 30px;
+    text-align: center;
+    color: #334a60;
+}
+.Container-content-one span{
+ font-weight: bolder;
+}
+.span{
+    width: 150px;
+    margin-left: 25vw;
+    height: 5px ;
+    background-color: #33d4d6;
+    position: absolute;
+    top: 80px;
+}
+
+.Container-content-two{
+ padding-left: 70px;
+}
+
+.Container-content-two h1{
+    padding-top: 20px;;
+    text-align: center;
+    color: #334a60;
+    font-size: 40px;
+}
+.line{
+    width: 150px;
+    margin-left: 41.5vw;
+    height: 5px ;
+    background-color: #33d4d6;
+    position: absolute;
+    bottom: 38px;
+}
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 20px;
+}
+.Card{
+    font-size: 17px;
+    text-align: center;
+    width: 400px;
+    padding: 30px 70px 30px 70px;
+}
+.Container-content-two .Image1{
+    width: 200px;
+    margin-left: 85px;
+    background-repeat: no-repeat;
+    height: 100px;
+    background-image: url(./program/Screenshot\ 2023-05-16\ 164040.png);
+}
+.Container-content-two .Image2{
+    width: 200px;
+    margin-left: 85px;
+    background-repeat: no-repeat;
+    height: 100px;
+    background-image: url(./program/Screenshot\ 2023-05-16\ 163956.png)
+}
+.Container-content-two .Image3{
+    width: 200px;
+    margin-left: 85px;
+    background-repeat: no-repeat;
+    height: 100px;
+    background-image: url(./program/Screenshot\ 2023-05-16\ 163904.png);
+}
+.Container-content-two .Image4{
+    width: 200px;
+    margin-left: 85px;
+    background-repeat: no-repeat;
+    height: 100px;
+    background-image: url(./program/Screenshot\ 2023-05-16\ 164123.png);
+}
+.Container-content-two .Image5{
+    width: 200px;
+    margin-left: 85px;
+    background-repeat: no-repeat;
+    height: 100px;
+    background-image: url(./program/Screenshot\ 2023-05-16\ 164205.png);
+}
+@media screen and (max-width:800px) {
+    .Container-content{
+        height: 50vh;
+        padding-top: 70px;
+       } 
+       .content{
+        padding-top: 30px;
+       }
+       .Container-content::before{
+        height: 50vh;
+       }
+       .Card{
+        width: 300px;
+       }
+       .line{
+        bottom: 40vh;
+        margin-left: 250px;
+       }
+       .Container-content-two h1{
+        margin-left: -30px;
+       }
+       .Container-content-one h1{
+        font-size: 30px;
+       }
+       .span{
+        margin-left: 160px;
+       }
+       .Container-content-two .Image5{
+        margin-left: 40px;
+      }
+      .Container-content-two .Image4{
+        margin-left: 40px;
+      }
+      .Container-content-two .Image3{
+        margin-left: 40px;
+      }
+      .Container-content-two .Image2{
+        margin-left: 40px;
+      }
+      .Container-content-two .Image1{
+        margin-left: 40px;
+      }
+      .Container-content-two{
+        margin-left: 30px;
+      }    
+}
+@media screen and (max-width:540px){
+  .Container-content{
+    height: 64vh;
+    padding-top: 30px;
+    padding-left: -50px;
+  }
+  .Container-content::before{
+    height: 64vh;
+  }
+  .Container-content-one{
+    width: 90vw;
+    margin-left: 5vw;
+  }
+  .Container-content-two{
+    padding-left: 0px;
+  }
+  .Container-content-one h1{
+    font-size: 22px;
+  }
+  .span{
+    margin-left: 21vw;
+    top: 70px;
+  }
+  .Card{
+    width: 250px;
+    padding: 30px 15px 30px 15px;
+  }
+  .line{
+   margin-left: 30vw;
+   bottom: 190px;
+  } 
+  .Container-content-two h1{
+    text-align: center;
+    font-size: 22px;
+  } 
+  .Container-content-two .Image5{
+    margin-left: 50px;
+  }
+  .Container-content-two .Image4{
+    margin-left: 50px;
+  }
+  .Container-content-two .Image3{
+    margin-left: 50px;
+  }
+  .Container-content-two .Image2{
+    margin-left: 50px;
+  }
+  .Container-content-two .Image1{
+    margin-left: 50px;
+  }
+  
+}
+@media screen and (max-width:395px){
+ .Container-content-one h1{
+    font-size: 19px;
+ } 
+ .Container-content-one li {
+  font-size: 17px;
+ }
+ .Container-content{
+    height: 95vh;
+ }  
+ .Container-content::before{
+    height: 95vh;
+ }
+ .span{
+    top: 60px;
+    margin-left: 40px;
+ }
+ .Container-content-two h1{
+    font-size: 19px;
+    margin-left: -20px;
+ }
+ .Container-content-two{
+    padding-left: 30px;
+ }
+ .line{
+    top: 592px;
+    margin-left: 19vw;
+ }
+ .Card{
+    width: 300px;
+ }
+ .Container-content-two .Image5{
+  margin-left: 60px;
+}
+.Container-content-two .Image4{
+  margin-left: 60px;
+}
+.Container-content-two .Image3{
+  margin-left: 60px;
+}
+.Container-content-two .Image2{
+  margin-left: 60px;
+}
+.Container-content-two .Image1{
+  margin-left: 60px;
+}
+}
+@media screen and (max-width:375px){
+ .Container-content-one h1{
+  font-size: 18px;
+ }
+ .Container-content{
+  height: 93vh;
+ }
+ .span{
+  top: 60px;
+  margin-left: 90px;
+  width: 170px;
+ }
+ .Container-content-two h1{
+  font-size: 18px;
+ }
+ .Container-content-one li{
+  font-size: 15px;
+ }
+ .Container-content-one{
+  padding: 0px 20px 20px 20px;
+ }
+ .Container-content-two p{
+  font-size: 15px;
+ }
+ .Container-content::before{
+  height: 93vh;
+ }
+ .line{
+  top: 480px;
+  width: 110px;
+ }
+ .Container-content-two{
+  padding-left: -50px;
+ }
+ .Card{
+  width: 300px;
+ }
+}
+@media screen and (max-width:450px){
+  .Container-content-one h1{
+   font-size: 18px;
+  }
+  .Container-content{
+   height: 63vh;
+  }
+  .Container-content::before{
+   height: 63vh;
+  }
+  .span{
+    margin-left: 60px;
+  }
+  .line{
+   bottom: 260px;
+   margin-left: 70px;
+  }
+  .Card{
+    width: 300px;
+  }
+  .Container-content-two{
+   padding-left: 50px;
+  }
+  .Container-content-two h1{
+    margin-left: -40px;
+  }
+  .Container-content-two .Image5{
+    margin-left: 60px;
+  }
+  .Container-content-two .Image4{
+    margin-left: 60px;
+  }
+  .Container-content-two .Image3{
+    margin-left: 60px;
+  }
+  .Container-content-two .Image2{
+    margin-left: 60px;
+  }
+  .Container-content-two .Image1{
+    margin-left: 60px;
+  }
+  @media screen and (max-width:360px) {
+    .line{
+      top: 525px;
+    }
+  }}
+ 
