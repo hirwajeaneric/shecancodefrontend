@@ -1,10 +1,8 @@
-
-import Program from "./components/section/alumni/Program/program";
-import Footer from "./components/Footer";
+import Header from './components/Header/index';
 function App() {
   return (
     <div className="App">
-      <Program />
+    <Header />
       {/* <Footer /> */}
 
     </div>
