@@ -1,4 +1,6 @@
+
 import Application from './pages/Application-page/index';
+
 
 function App() {
   return (
