@@ -1,30 +1,29 @@
 
+
 // import Header from "./components/Header/index";
 import Alumni from "./components/section/alumni";
 
+
+import Application from './pages/Application-page/index';
+
+
+
  
-import Header from './components/Header/index';
-function App() {
-  return (
-    <div className="App">
-      <Header/>
-import WhatWeDo from './components/section/WhatWeDo';
-function App() {
-  return (
-    <div className="App">
-      {/* <Header /> */}
-      <WhatWeDo/>
-import Footer from "./components/Footer";
+
 
 
 function App() {
   return (
     <div className="App">
+
 
       {/* <Header /> */}
       <Alumni />
 
       <Footer />
+
+      <Application />
+
 
     </div>
   );
