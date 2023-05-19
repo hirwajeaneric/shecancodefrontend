@@ -8,7 +8,7 @@
     color: white;
 }
 .all{
-    position: fixed;
+    position: relative;
     width: 100%;
     top: 0;
     right: 0;
@@ -16,19 +16,21 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 28px 12%;
+    padding: 18px 40px;
     transition: all .50s ease;
-    background-color: #334A60;
+    background-color: #FDF8F8;
+    box-shadow:  0px 2px 8px 0px rgba(0, 0, 0, 0.5);
 }
 img{
-    width: 90px;
+    width: 70px;
 }
 
 .navbar{
     display: flex;
+    margin-left: 400px;
 }
 .navbar a{
-    font-size: 1.1rem;
+    font-size: 17px;
     font-weight: 500;
     padding: 5px 0;
     margin: 0 30px;
@@ -54,28 +56,29 @@ img:hover{
 .navbar  a.active{
     color: #33D4D6;
 }
-.btn{
+.mybtn{
     height: 40px;
     color: white;
     border: none;
-    margin-top: 20px;
+    margin-top: 5px;
     margin-left: 30px;
     padding: 0 18px;
     border-radius: 8px;
     transition: all .50s ease;
     font-weight: 500;
     background-color: #33D4D6;
+    font-weight: bolder;
 }
-.btn:hover{
+.mybtn:hover{
     background-color: white;
     color: #33D4D6;
     cursor: pointer;
 }
-.menu{
+.mymenu{
     display: flex;
     align-items: center;
 }
-#menu-icon{
+#mymenu-icon{
     font-size: 35px;
     color: white;
     cursor: pointer;
@@ -96,8 +99,9 @@ img:hover{
     }
 }
 @media screen and (max-width: 1090px){
-    #menu-icon{
+    #mymenu-icon{
         display: block;
+        color: black;
         margin-top: 20px;
     }
     .navbar{
@@ -114,7 +118,7 @@ img:hover{
         border-radius: 0 10px;
         transition: all .50s ease;
     }
-    .menu{
+    .mymenu{
         gap: 20px;
     }
    
@@ -173,7 +177,7 @@ img:hover{
         margin-left: 60px;
         margin-top: 30px;
     }
-    .menu{
+    .mymenu{
         margin-right: 80px;
         gap: 20px;
     }
@@ -187,7 +191,7 @@ img:hover{
         margin-left: 60px;
         margin-top: 30px;
     }
-    .menu{
+    .mymenu{
         margin-right: 80px;
         gap: 20px;
     }
@@ -201,7 +205,7 @@ img:hover{
         margin-left: 60px;
         margin-top: 30px;
     }
-    .menu{
+    .mymenu{
         margin-right: 80px;
         gap: 20px;
     }

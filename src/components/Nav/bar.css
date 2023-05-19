@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: black;
+}
+.mycontainer{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.first{
+    display: flex;
+    padding: 20px 40px;
+    gap: 10px;
+    background-color: #33D4D6;
+    width: 100%;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+.first h4{
+    font-size: 18px;
+}
+.first p a i{
+    font-size: 20px;
+    padding-top: 4px;
+    margin-right: 8px;
+    transition: 0.5s ease;
+}
+.first p a i:hover{
+    cursor: pointer;
+    transform: translateY(-10px);
+}
+.second{
+    display: flex;
+    gap: 20px;
+    background-color: #334A60;
+    padding:1.2% 480px;
+    position: absolute;
+    width: 73.3%;
+    margin-left: 350px;
+    padding-right: 70px;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 5% 100%);
+}
+.second .icon {
+    font-size: 30px;
+}
+.second .icon i{
+    color: white;
+    padding-top: 16px ;
+}
+.second .text p{
+    color: white;
+    font-size: 12px;
+    padding-top: 16px ;
+}
+.line{
+    border: 1px solid white;
+    height: 4vh;
+    margin-top: 20px;
+}
