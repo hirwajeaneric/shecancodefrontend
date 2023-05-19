@@ -1,0 +1,135 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.clip{
+    width:100vw;
+    height:80vh;
+    background-image: url(./images/Capture.PNG);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    right:0;
+    top:0;
+    border-bottom-right-radius: 40%;
+    object-fit: cover;
+
+}
+.icon{
+    color: white;
+    width:40px;
+    height:40px;
+    margin-left: 300px;
+    margin-top:300px;
+    font-size:50px;
+    padding:auto;
+}
+.icon {
+    margin-top:200px;
+    margin-left:200px;
+}
+.box{
+    width:900px;
+    height:500px;
+    background:white;
+    box-shadow:10px 10px  10px #334a60;
+    margin-left: 300px;
+    border-radius: 20px;
+    margin-top: -200px;
+
+}
+.inner{
+    width:900px;
+    height:600px;
+    /* background:grey; */
+    display:flex;
+    margin-left:90px;
+}
+#get{
+    color: #34d3d3;
+    font-size:30px;
+    font-family:poppins sans-serif;
+    padding-top:20px;
+    margin-left:40px;
+}
+#question{
+    margin-left:20px;
+    font-family:poppins sans-serif;
+    font-size:18px;
+    padding-top:5px;
+}
+.inputs input{
+    border-radius: 5px;
+    width:350px;
+    padding:10px;
+    border: none;
+    margin-left:20px;
+    margin-top:15px;
+    background: rgb(241, 239, 239);
+    font-family: poppins sans-serif;
+    font-size:14px;
+}
+textarea{
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-left:20px;
+    width:350px;
+    background:rgb(241, 239, 239);
+    
+}
+#submit{
+    width:350px;
+    height:40px;
+    background:#34d3d3;
+    color:white;
+    font-size:20px;
+    font-family: poppins sans-serif;
+    border-radius: 50px;
+    border:none;
+    margin-left:20px;
+    margin-top:20px;
+}
+.icons i{
+    color:#334a60;
+    font-size:20px;
+   margin-top: 20px;
+}
+i{
+    margin-right: 10px;
+    border:2px solid #334a60;
+    border-radius: 50px;
+    padding:2px;
+}
+h3{
+    color:#334a60;
+    margin-right: 200px;
+  
+}
+.icons{
+    margin-top:240px;
+}
+.a{
+    width:300px;
+    height:40px;
+    white-space: nowrap;
+    /* display:inline-block; */
+}
+h3{
+    font-size:20px;
+}
+@media screen and (max-width:375px){
+   .box{
+    margin-left:20px;
+   }
+   .inner{
+    display: block;
+    height:100vh;
+   }
+   
+}
+
+
+
+
