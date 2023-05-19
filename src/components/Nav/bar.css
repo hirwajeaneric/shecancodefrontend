@@ -8,6 +8,7 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
+    position: static;
 }
 .first{
     display: flex;
@@ -33,10 +34,11 @@
 .second{
     display: flex;
     gap: 20px;
+    height: 10.6vh;
     background-color: #334A60;
     padding:1.2% 480px;
     position: absolute;
-    width: 73.3%;
+    width: 74.4%;
     margin-left: 350px;
     padding-right: 70px;
     clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 5% 100%);
@@ -57,4 +59,27 @@
     border: 1px solid white;
     height: 4vh;
     margin-top: 20px;
+}
+@media screen and (max-width: 1280px){
+     
+}
+@media screen and (max-width: 1090px){
+} 
+@media screen and (max-width: 680px){
+    .first{
+        display: block;
+        padding: 0 10px;
+    }
+   .second{
+    height: 11.5vh;
+    width: 70%;
+    margin-left: 200px;
+    padding: 0 20px;
+   }
+}
+@media screen and (max-width: 800px){
+  
+}
+@media screen and (max-width: 520px){
+   
 }

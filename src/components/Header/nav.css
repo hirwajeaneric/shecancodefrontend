@@ -8,8 +8,8 @@
     color: white;
 }
 .all{
-    position: relative;
-    width: 100%;
+    position: sticky;
+    width: 1365px;
     top: 0;
     right: 0;
     z-index: 1000;
@@ -94,28 +94,32 @@ img:hover{
         padding: 5px 0;
         margin: 0 20px;
     }
-    .navbar  a.active{
-        color: white;
-    }
 }
 @media screen and (max-width: 1090px){
+    .mymenu{
+        padding-right: 100px;
+        transition: .5s;
+    }
+    .all img{
+        margin-left: 100px;
+        transition: .5s;
+    }
     #mymenu-icon{
         display: block;
         color: black;
-        margin-top: 20px;
+        margin-top: 10px;
     }
     .navbar{
         position: absolute;
         top: 100%;
-        width:  1100px;
+        width:  100%;
         margin-left: -20px;
-        padding-left: 110px;
+        padding-left: 230px;
         height: 40vh;
         background:#334A60;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-        border-radius: 0 10px;
         transition: all .50s ease;
     }
     .mymenu{
@@ -132,18 +136,6 @@ img:hover{
         background-color:#334A60;
         animation: wave-animation 2s infinite;
       }
-      
-      @keyframes wave-animation {
-        0% {
-          transform: translateX(-100%);
-        }
-        50% {
-          transform: translateX(100%);
-        }
-        100% {
-          transform: translateX(-100%);
-        }
-      }
     
     .navbar a{
         display: block;
@@ -157,16 +149,9 @@ img:hover{
         color: white;
     }
     .navbar a:hover{
-        color: gray;
+        color: #FDF8F8;
         transform: translateY(5px);
     }
-    .navbar a.active{
-        color:white;
-    }
-    .navbar .open{
-        right: 2%;
-    }
-    
 } 
 @media screen and (max-width: 680px){
     .navbar a{
@@ -184,7 +169,7 @@ img:hover{
 }
 @media screen and (max-width: 800px){
     .navbar a{
-        margin-left: 200px;
+        margin-left: 350px;
     }
     img{
         width: 60px;
@@ -197,16 +182,17 @@ img:hover{
     }
 }
 @media screen and (max-width: 520px){
-    .navbar a{
-        margin-left: 65px;
-    }
     img{
         width: 60px;
         margin-left: 60px;
         margin-top: 30px;
     }
     .mymenu{
-        margin-right: 80px;
+        margin-right: 200px;
         gap: 20px;
     }
+    .navbar a{
+        margin-left: 200px;
+    }
 }
+ 
