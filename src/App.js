@@ -5,11 +5,12 @@ import Routes from "./routes/index";
 import Alumni from "./components/section/alumni/alumnisection";
 function App() {
   return (
-    <div className="App">
+    <>
       <Alumni />
-
-      <Router>{/* <Routes></Routes> */}</Router>
-    </div>
+      <Router>
+        <Routes></Routes>
+      </Router>
+    </>
   );
 }
 export default App;
