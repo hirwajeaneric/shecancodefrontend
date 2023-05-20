@@ -1,0 +1,77 @@
+.container {
+  background-color:#378b7270;
+  /* height: 100%; */
+  /* width: 100%; */
+  padding: 50px 50px;
+}
+form {
+  /* font-size: 1.5rem; */
+  background-color: white;
+  color: white;
+  margin-left: 110px; 
+  height: 250px;
+  padding: 20px 20px;
+  width: 250px;
+}
+form input {
+  width: 200px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: 1px solid #d3cccc;
+  padding: 12px 12px;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    /* margin-left: -150px; */
+}
+.contform{
+    padding: 40px 40px;
+    margin-left: -121px;
+    background-color:#334a60 ;
+    width: 400px;
+    clip-path: polygon(25% 0%,100% 0%,100% 100%,15% 100%);
+}
+h2{
+    color:#334a60;
+    font-size: 1rem;
+    padding-bottom: 10px;
+}
+h2 a{
+    padding-left: 20px;
+    text-decoration: none;
+    color: #33d4d6;
+}
+.image{
+  background-image: url(./undraw.png);
+  transform: rotate(360deg);
+  background-position: center;
+  background-size: cover;
+    clip-path: polygon(0% 2%,100% 0%,100% 100%,0% 100%);
+    width: 350px;
+    background-color: rgb(255, 166, 0);
+}
+h3 {
+  font-size: 1.2rem;
+  margin-left: 130px;
+  padding-top: 20px;
+  color: white;
+}
+h3 a {
+  color: #33d4d6;
+  padding-left: 30px;
+  text-decoration: none;
+  list-style: none;
+}
+#submit {
+    padding: 10px 110px 10px 110px;
+  background-color: #33d4d6;
+}
+.image img {
+  width: 280px;
+  height: 380px;
+  border-radius: 20px;
+  margin-left: 50px;
+  z-index: 100;
+  position: absolute;
+}
