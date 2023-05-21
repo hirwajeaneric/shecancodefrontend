@@ -34,7 +34,6 @@
 .second{
     display: flex;
     gap: 20px;
-    height: 10.6vh;
     background-color: #334A60;
     padding:1.2% 480px;
     position: absolute;
@@ -61,10 +60,11 @@
     margin-top: 20px;
 }
 @media screen and (max-width: 1280px){
-     
+    .mycontainer{
+        padding: 8px 2%;
+        transition: .5s;
+    }
 }
-@media screen and (max-width: 1090px){
-} 
 @media screen and (max-width: 680px){
     .first{
         display: block;
@@ -78,8 +78,12 @@
    }
 }
 @media screen and (max-width: 800px){
-  
+  .second{
+    padding-left: 50px;
+  }
 }
 @media screen and (max-width: 520px){
-   
+   .second{
+    width: 180%;
+   }
 }
