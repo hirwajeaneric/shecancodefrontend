@@ -79,15 +79,12 @@ button{
     /* background-repeat: no-repeat; */
     /* overflow: hidden; */
     background-size: cover;
-  
-
-    
 }
 .container{
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
-    margin-top: 20px;
+    /* margin-top: 20px; */
 }
 .lin{
     display: flex;
@@ -122,6 +119,8 @@ button{
     transform: translateX(20px);
 }
 .rigth{
+    width: 660px;
+    height: 350px;
     animation-name: SlideInRigth;
     animation-duration: 3s;
     animation-timing-function: ease;
@@ -129,7 +128,6 @@ button{
     animation-iteration-count: 1;
     animation-direction: normal;
     animation-fill-mode: none;
-    
     transform: translateX(20px);
 }
 .partners{
@@ -138,19 +136,18 @@ button{
     /* border-color: #357c7d; */
     border: 0.5px solid #33D4D6;
     margin-left: 50px;
-    height: 250px;
     padding: 20px;
     margin-right: 99px;
 
 }
 .under{
-    width: 500px;
+    width: 420px;
     height: 3px;
     /* background:linear-gradient(to rigth,#35a0c1,#656363); */
     background-color: #319091;
 }
 .undr{
-    width: 500px;
+    width: 420px;
     height: 3px;
     /* background:linear-gradient(to rigth,#35a0c1,#656363); */
     background-color: #319091;
@@ -166,8 +163,9 @@ i{
     margin-left: 10px;
 }
 .mastercard{
-    height: 180px;
-    width: 300px;
+    height: 110px;
+    width: 290px;
+    border: 2px solid grey;
     /* background-color: #800c0c; */
     margin-top: 10px;
     margin-left: 30px;
@@ -176,8 +174,9 @@ i{
     background-size: cover;
 }
 .giz{
-    height: 180px;
-    width: 300px;
+    height: 110px;
+    width: 290px;
+    border: 2px solid grey;
     /* background-color: #800c0c; */
     margin-top: 10px;
     margin-left: 30px;
@@ -188,8 +187,9 @@ i{
 }
 
 .microsoft{
-    height: 180px;
-    width: 320px;
+    height: 110px;
+    width: 290px;
+    border: 2px solid grey;
     /* background-color: #800c0c; */
     margin-top: 10px;
     margin-left: 30px;
@@ -198,8 +198,9 @@ i{
     background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREsyMkcDJE_fHTVU2-EsC4yghLwwugKds2YA&usqp=CAU);
 }
 .DTC{
-    height: 180px;
-    width: 300px;
+    height: 110px;
+    width: 290px;
+    border: 2px solid grey;
     /* background-color: #800c0c; */
     margin-top: 10px;
     margin-left: 30px;
@@ -241,7 +242,7 @@ i{
     }
     .bigcont{
         /* height: 100vh; */
-        padding-bottom: 100px;
+        /* padding-bottom: 100px; */
     }
     .whole{
         margin-bottom: 5px;

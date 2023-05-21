@@ -2,7 +2,6 @@ import Image from "./images/logoscc.png";
 import "./nav.css";
 let Index = () => {
   return (
-    <div>
       <div class="all">
         <img src={Image} alt="scc-logo" />
         <ul class="navbar">
@@ -13,7 +12,8 @@ let Index = () => {
           </li>
           <li>
             <a href="#">
-              About <i class="bx bx-chevron-down"></i>
+              About 
+              {/* <i class="bx bx-chevron-down"></i> */}
             </a>
           </li>
           <li>
@@ -31,7 +31,6 @@ let Index = () => {
           <div class="bx bx-menu" id="menu-icon"></div>
         </div>
       </div>
-    </div>
   );
 };
 export default Index;
