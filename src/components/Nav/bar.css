@@ -59,12 +59,7 @@
     height: 4vh;
     margin-top: 20px;
 }
-@media screen and (max-width: 1280px){
-    .mycontainer{
-        padding: 8px 2%;
-        transition: .5s;
-    }
-}
+
 @media screen and (max-width: 680px){
     .first{
         display: block;
