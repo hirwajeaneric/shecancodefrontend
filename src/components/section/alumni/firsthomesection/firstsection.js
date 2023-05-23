@@ -2,7 +2,11 @@ import React from 'react'
 import './firstsection.css'
 const Firstsection = () => {
     return ( 
+ 
+        <div>
+ 
         <div className='bigcont'>
+ 
             <div className='container'>
            <div className='left'>
             <h2>Build your Career in Tech</h2>

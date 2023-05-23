@@ -1,19 +1,36 @@
-import Header from "./components/Header/index";
-import Firstsection from "../src/components/section/alumni/firsthomesection/firstsection";
+ 
+import Header from './components/Header/index';
+import Nav from './components/Nav';
+function App() {
+  return (
+    <div className="App">
+  <Nav/>
+  <Header/>
+    </div>
+ 
+import Course from "./components/section/alumni/explore-course/course"
+
+function App() {
+  return (
+    <div className="App">
+      <Course/>
+    </div>
+
 import { BrowserRouter as Router } from "react-router-dom";
 import Routes from "./routes/index";
-import Alumni from "./components/section/alumni/alumnisection";
-import About from "./pages/About";
+
+// import Alumni from "./components/section/alumni/alumnisection";
 function App() {
   return (
     <>
-      {/* <Alumni /> */}
+      <Router>
 
-      {/* <Router>
         <Routes></Routes>
       </Router> */}
       <About />
     </>
+
+ 
   );
 }
 export default App;
