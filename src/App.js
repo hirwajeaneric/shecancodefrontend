@@ -3,13 +3,16 @@ import Firstsection from "../src/components/section/alumni/firsthomesection/firs
 import { BrowserRouter as Router } from "react-router-dom";
 import Routes from "./routes/index";
 import Alumni from "./components/section/alumni/alumnisection";
+import About from "./pages/About";
 function App() {
   return (
     <>
-      <Alumni />
-      <Router>
+      {/* <Alumni /> */}
+
+      {/* <Router>
         <Routes></Routes>
-      </Router>
+      </Router> */}
+      <About />
     </>
   );
 }
