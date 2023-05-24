@@ -1,20 +1,21 @@
- 
-import Header from './components/Header/index';
-import Nav from './components/Nav';
+import Header from "./components/Header/index";
+import Nav from "./components/Nav";
+import WhatWeDo from "./components/section/WhatWeDo";
+import { BrowserRouter as Router } from "react-router-dom";
+import Routes from "./routes/index";
+import Course from "./components/section/alumni/explore-course/course";
 function App() {
   return (
     <div className="App">
-  <Nav/>
-  <Header/>
+      {/* <Nav/> */}
+      {/* <Header/> */}
+      {/* <Course/> */}
+      <WhatWeDo />
     </div>
- 
-import Course from "./components/section/alumni/explore-course/course"
 
-function App() {
-  return (
-    <div className="App">
-      <Course/>
-    </div>
+    // function App() {
+    //   return (
+    //     <div className="App">
 
 import { BrowserRouter as Router } from "react-router-dom";
 import Routes from "./routes/index";
@@ -30,7 +31,14 @@ function App() {
       <About />
     </>
 
- 
+    // // import Alumni from "./components/section/alumni/alumnisection";
+    // function App() {
+    //   return (
+    //     <>
+    //       <Router>
+    //         <Routes></Routes>
+    //       </Router>
+    //     </>
   );
 }
 export default App;
