@@ -17,13 +17,19 @@ function App() {
     //   return (
     //     <div className="App">
 
-    // // import Header from './components/Header/index';
-    // function App() {
-    //   return (
-    //     <div className="App">
-    //       {/* <Header /> */}
+import { BrowserRouter as Router } from "react-router-dom";
+import Routes from "./routes/index";
 
-    //     </div>
+// import Alumni from "./components/section/alumni/alumnisection";
+function App() {
+  return (
+    <>
+      <Router>
+
+        <Routes></Routes>
+      </Router> */}
+      <About />
+    </>
 
     // // import Alumni from "./components/section/alumni/alumnisection";
     // function App() {

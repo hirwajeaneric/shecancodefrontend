@@ -23,6 +23,7 @@
 .alumni-page .alumn-header {
   text-align: center;
   font-size: 20px;
+  color: black;
 }
 .alumni-page .alumn-header::after {
   content: "";
@@ -51,12 +52,12 @@
     transform: translateX(0);
   }
   100% {
-    transform: translateX(calc(-230px * 5));
+    transform: translateX(calc(-250px * 5));
   }
 }
 .image-cards .apps-box .apps {
   overflow: hidden;
-  transform: skewY(-3deg);
+  /* transform: skewY(-3deg); */
 }
 .image-cards .apps-box .apps:hover {
   transform: scale(1.1);
@@ -69,6 +70,7 @@
   position: relative;
   object-fit: cover;
   transition: all 0.8s ease-in-out;
+  cursor: pointer;
 }
 .image-cards .apps-box .apps:hover img {
   transform: scale(1.1);
@@ -94,6 +96,7 @@
   color: white;
   padding: 60px 30px 0 30px;
   transition: 0.3s;
+  cursor: pointer;
 }
 .image-cards .apps-box .apps:hover p {
   opacity: 1;
@@ -114,20 +117,21 @@
     font-size: 25px;
   }
   .apps {
-    width: 380px;
+    width: 250px;
   }
   .image-cards .apps-box .apps img {
-    width: 380px;
-    height: 280px;
+    width: 250px;
+    height: 160px;
     margin: 0;
   }
   .image-cards .apps-box .apps h3 {
-    font-size: 30px;
+    font-size: 20px;
+    padding-left: 50px;
     padding-top: 25px;
   }
   .image-cards .apps-box .apps p {
-    font-size: 20px;
-    padding: 80px 30px 0 30px;
+    font-size: 13px;
+    padding: 50px 30px 0 30px;
   }
 }
 @media screen and (max-width: 680px) {
@@ -140,11 +144,11 @@
     font-size: 25px;
   }
   .apps {
-    width: 320px;
+    width: 250px;
   }
   .image-cards .apps-box .apps img {
-    width: 320px;
-    height: 230px;
+    width: 250px;
+    height: 160px;
     margin: 0;
   }
   .image-cards .apps-box .apps h3 {
@@ -153,8 +157,8 @@
     padding-top: 20px;
   }
   .image-cards .apps-box .apps p {
-    font-size: 16px;
-    padding: 60px 30px 0 30px;
+    font-size: 13px;
+    padding: 50px 30px 0 30px;
   }
   .image-cards .apps-box {
     width: 400%;
@@ -170,24 +174,24 @@
     font-size: 25px;
   }
   .apps {
-    width: 320px;
-  }
-  .image-cards .apps-box {
-    width: 400%;
+    width: 250px;
   }
   .image-cards .apps-box .apps img {
-    width: 320px;
-    height: 280px;
+    width: 250px;
+    height: 160px;
     margin: 0;
   }
   .image-cards .apps-box .apps h3 {
-    font-size: 30px;
-    padding-top: 25px;
-    padding-left: 70px;
+    font-size: 20px;
+    padding-left: 40px;
+    padding-top: 20px;
   }
   .image-cards .apps-box .apps p {
-    font-size: 20px;
-    padding: 80px 30px 0 30px;
+    font-size: 13px;
+    padding: 50px 30px 0 30px;
+  }
+  .image-cards .apps-box {
+    width: 400%;
   }
 }
 @media screen and (max-width: 360px) {
@@ -200,24 +204,24 @@
     font-size: 25px;
   }
   .apps {
-    width: 280px;
-  }
-  .image-cards .apps-box {
-    width: 400%;
+    width: 250px;
   }
   .image-cards .apps-box .apps img {
-    width: 280px;
-    height: 280px;
+    width: 250px;
+    height: 160px;
     margin: 0;
   }
   .image-cards .apps-box .apps h3 {
     font-size: 20px;
-    padding-top: 25px;
-    padding-left: 70px;
+    padding-left: 40px;
+    padding-top: 20px;
   }
   .image-cards .apps-box .apps p {
-    font-size: 18px;
-    padding: 80px 30px 0 30px;
+    font-size: 13px;
+    padding: 50px 30px 0 30px;
+  }
+  .image-cards .apps-box {
+    width: 400%;
   }
 }
 
