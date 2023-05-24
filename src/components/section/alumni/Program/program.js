@@ -19,7 +19,7 @@ const Program =()=>{
               </div>
               <div className="Container-content-two">
                 <h1>Program Highlights</h1>
-                <div className="line"></div>
+                {/* <div className="line"></div> */}
                 <div className="content">
                     <div className="Card">
                     <div className="Image1"></div>

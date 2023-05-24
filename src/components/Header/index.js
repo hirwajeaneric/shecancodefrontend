@@ -1,5 +1,7 @@
+import { useState } from 'react';
 import Image from "./images/logoscc.png";
 import "./nav.css";
+
 let Index = () => {
   return (
       <div class="all">
@@ -34,3 +36,5 @@ let Index = () => {
   );
 };
 export default Index;
+
+

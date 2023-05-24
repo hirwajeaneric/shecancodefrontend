@@ -39,6 +39,7 @@
 .Container-content-one li{
     list-style: none;
     padding-top: 20px;
+    color: black;
 }
 .Container-content-one h1{
     padding-top: 20px;
@@ -49,14 +50,14 @@
 .Container-content-one span{
  font-weight: bolder;
 }
-.span{
+/* .span{
     width: 150px;
     margin-left: 25vw;
     height: 5px ;
     background-color: #33d4d6;
     position: absolute;
     top: 80px;
-}
+} */
 
 .Container-content-two{
  padding-left: 70px;
@@ -68,14 +69,14 @@
     color: #334a60;
     font-size: 40px;
 }
-.line{
+/* .line{
     width: 150px;
     margin-left: 41.5vw;
     height: 5px ;
     background-color: #33d4d6;
     position: absolute;
     bottom: 20px;
-}
+} */
 .content{
     display: flex;
     flex-wrap: wrap;
@@ -121,7 +122,7 @@
     height: 100px;
     background-image: url(./program/Screenshot\ 2023-05-16\ 164205.png);
 }
-@media screen and (max-width:800px) {
+/* @media screen and (max-width:800px) {
     .Container-content-one h1{
         font-size: 30px;
     }
@@ -136,4 +137,4 @@
         bottom: 95px;
     }
     
-}
+} */
