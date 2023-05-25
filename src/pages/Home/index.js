@@ -10,9 +10,9 @@ let Home = () =>{
 return(
 <>
 <Nav /> 
- <Header />
+<Header />
 <FirstHome />
-<Explore />
+ <Explore />
 <Alumni />
 <Program />
 </>

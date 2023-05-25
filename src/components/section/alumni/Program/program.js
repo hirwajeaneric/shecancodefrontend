@@ -1,5 +1,6 @@
 import React from "react";
-import "./program.css"
+import "./program.css";
+import Footer from "../../../Footers/Footer";
 const Program =()=>{
     return(
     
@@ -17,9 +18,10 @@ const Program =()=>{
               development from another field, such as marketing, sales, operations, or any other.</li>
               </div>
               </div>
-              <div className="Container-content-two">
+               <div className="Container-content-two">
+                <Footer />
+                {/*<div>
                 <h1>Program Highlights</h1>
-                {/* <div className="line"></div> */}
                 <div className="content">
                     <div className="Card">
                     <div className="Image1"></div>
@@ -40,8 +42,9 @@ const Program =()=>{
                     <div className="Card">
                     <div className="Image5"></div>
                     <p>Daily coding help with Learning Facilitators</p>
+                </div> 
                 </div>
-                </div>
+                </div>*/}
               </div>
            </div>
     )

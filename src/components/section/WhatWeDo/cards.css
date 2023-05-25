@@ -13,6 +13,8 @@
 }
 .holecontent {
 margin: 40px;
+font-family:"poppins";
+animation:slideInUp 3s ;
 }
 .holecontent h3{
 text-align: center;
@@ -42,16 +44,20 @@ justify-content: center;
     gap: 60px;
 }
 .card1{
-    background-color:var(--bg-black-100);  
-    border: 1px solid #3ECCD6 ;
-    border-radius: 10px;
+    background-color:white;  
+    box-shadow: 0 0 3px #3ECCD6 ;
+    border-radius: 5px;
     padding: 30px 15px;
    width: 20%;
+   height: 100%;
     transition: all 0.3s ease;
 margin-top: 40px;
+font-family: 'poppins';
+font-weight: 600;
     }
     .card1:hover{
-        box-shadow: 0 0 20px rgb(60, 77, 83); 
+        box-shadow: 0 0 10px var(--tex-black-700); 
+        transform: translateY(-10px);
     }
     .icon{
         height:60px;
@@ -78,16 +84,17 @@ margin-top: 40px;
 .card1 h4{
     color:#504e70;
     font-weight: 900;
-    font-size: 25px;
+    font-size: 24px;
     text-align: center;
+    font-family: "poppins";
 }
 .card1 p{
-    font-size: 18px;
+    font-size: 16px;
     text-align: center;
     padding-top: 20px;
     /* line-height: 40px; */
 }
-button{
+.webtn{
    margin-left: 550px;
    margin-top: 43px;
    height: 40px;
@@ -97,11 +104,157 @@ button{
    font-family: "poppins";
    font-weight: bold;
    cursor: pointer;
+   border-radius: 3px;
+   transition:transform 0.3s;
+   font-family: "poppins";
 }
-button:hover{
+.webtn:hover{
     background-color: #3ECCD6;
-    border-radius: 20px;
+    border-radius: 3px;
     color: white;
-
+transform: translateY(-10px);}
+@keyframes slideInUp{
+    from{
+        transform: translateY(300px);
+    }
+    to{
+        transform: translateY(0);
+    }
 }
+@media screen and (max-width:1053px){
+.holecontent{
+    /* background-color: #302e4d; */
+    text-align: center;
+}
+.webtn{
+    margin-left:5px ;
+}
+}
+  @media screen and (max-width:1011px){
+    .holecontent{
+        width: 100%;
+     margin-left: -5px;
+         /* background-color: #1ac2b9;  */
+         text-align: center; 
+     }
     
+        .row{
+            gap: 30px;
+        }
+        .card1{
+            width: 250px;
+        }
+        .webtn{
+            margin-left: 70px;
+        }
+}
+@media screen and (max-width:925px){
+   
+    .card1{
+        width: 200px;
+    }
+}
+@media  screen and (max-width:800px) {
+    .holecontent{
+        width: 100%;
+     margin-left: -5px;
+         /* background-color: #e3250c;  */
+         text-align: center; 
+     }
+    .holecontent h3::after{
+        content: '';
+        position: absolute;
+        left: 52%;
+        bottom:87%;
+        transform: translateX(-50px);
+        height: 6px;
+        width: 55Px;
+         border-radius: 5px;
+         /* background-color:#3ECCD6; */
+        
+    }
+   
+    .row{
+        width: 100%;
+        gap: -10px;
+        padding: 20px;
+    }
+    .card1{
+        width: 30%;
+        
+    }
+    .webtn{
+        margin: 0;
+        margin-top: 40px;
+    }
+}
+@media  screen and (max-width:680px) {
+    
+  
+    .row{
+        gap: 21px;
+    }
+    .card1{
+        width: 80%;
+        height: 100%;
+margin-left: -11px;
+    }
+    .card1 p{
+font-size: 16px;
+    }
+    .card1 h4{
+        font-size: 16px;
+    }
+}
+@media  screen and (max-width:500px){
+    
+
+.row{
+    flex-direction: column-reverse;
+    margin-left: 30px;
+}
+.card1{
+    height: 350px; 
+    width:280px;
+    text-align: center;
+margin-left: 40px
+}
+.webtn{
+    width: 40%;
+}
+}
+@media  screen and (max-width:414px){
+    .holecontent{
+      
+     height: 1800px;
+    }
+    .row{
+       flex-direction: column-reverse;  
+       margin-left: 40px;
+     }
+     .card1{
+        height: 350px;
+        
+     }
+     .card1 h4{
+        font-size: 25px;
+     }
+     .wenptbtn{
+        width: 80%;
+     }
+} 
+@media screen and (max-width:360px) {
+    
+    .row{
+        margin-left: 18px;
+    }
+}
+@media screen and (max-width:240px){
+   
+    .row{
+        margin-left: -7px;
+    }
+    .card1{
+        width: 200px;
+    }
+} 
