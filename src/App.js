@@ -1,7 +1,6 @@
-import Header from "./components/Header/index";
-import Nav from "./components/Nav";
 import { BrowserRouter as Router } from "react-router-dom";
 import Routes from "./routes/index";
+
 // import Alumni from "./components/section/alumni/alumnisection";
 function App() {
   return (
@@ -9,6 +8,7 @@ function App() {
       <Router>
         <Routes></Routes>
       </Router>
+      {/* <About /> */}
     </>
   );
 }

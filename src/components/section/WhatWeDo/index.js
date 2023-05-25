@@ -45,7 +45,7 @@ Full-Stack.
         </p>
     </div>
 </div>
-<button>Learn More</button>
+<button className="webtn">Learn More</button>
 
         </div>
     )

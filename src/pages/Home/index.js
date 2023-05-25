@@ -1,10 +1,10 @@
-// import Header from "../../components/Header/index";
-// import Alumni from "../../components/Section/alumni/alumnisection/index";
+import Header from "../../components/Header/index";
+import Alumni from "../../components/section/alumni/alumnisection/index";
 let Home = () => {
   return (
     <>
-      {/* <Header /> */}
-      {/* <Alumni /> */}
+      <Header />
+      <Alumni />
     </>
   );
 };
