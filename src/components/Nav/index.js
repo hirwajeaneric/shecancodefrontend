@@ -1,4 +1,5 @@
 import "./bar.css"
+
 let Bar =()=>{
     return(
         <>
@@ -33,4 +34,5 @@ let Bar =()=>{
         </>
     )
 }
+
 export default Bar
