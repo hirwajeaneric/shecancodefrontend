@@ -11,7 +11,7 @@ return(
 <Nav /> 
 <Header />
 <FirstHome />
- <Explore />
+<Explore />
 <Alumni />
 </>
 );
