@@ -21,12 +21,25 @@
     background-color: rgb(197, 129, 45);
 }
 .f_three{
-    background-color: crimson;
+    background-color: rgb(23, 181, 14);
 }
 
 .footer_two{
+    height: 100%;
     background-color: bisque;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
+.fo_one{
+    background-color: rgb(75, 49, 11);
+}
+.fo_two{
+    background-color: rgb(180, 8, 74);
+}
+.fo_three{
+    background-color: rgb(14, 140, 168);
+}
+
 .footer_three{
     background-color: darkmagenta;
 }
