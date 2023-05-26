@@ -14,7 +14,7 @@ import './application.css'
                 <h1>Apply now</h1>
                 <p>You will learn web development and learn <br></br> a  job in the tech industry with 1-on-1 guidance<br></br> from an expert mentor and career coach</p>
                     <div className="overlay"></div>
-                    <img src={Image}></img>
+                    <img src={Image} alt="not found"></img>
                     </div>
                 
 

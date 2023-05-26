@@ -49,10 +49,10 @@ const About = () => {
       </div>
       <div className="about-thrird-section">
         <div className="about-right">
-          <img src={Image2} alt="image" />
+          <img src={Image2} alt="not found" />
           <br />
-          <img src={Image3} alt="image" />
-          <img src={Image4} alt="image" />
+          <img src={Image3} alt="image3 not found" />
+          <img src={Image4} alt="image4 not found" />
         </div>
         <div className="about-paragraph">
           <h2>
@@ -68,11 +68,11 @@ const About = () => {
           </p>
         </div>
         <div className="about-left">
-          <img src={Image6} alt="image" />
+          <img src={Image6} alt="image1" />
 
-          <img src={Image7} alt="image" />
+          <img src={Image7} alt="image2" />
           <br />
-          <img src={Image8} alt="image" className="key" />
+          <img src={Image8} alt="image3" className="key" />
         </div>
       </div>
 
@@ -142,7 +142,7 @@ const About = () => {
         <div className="leadership-form">
           <div className="lead-one">
             <div className="about-leader">
-              <img src={Image4} />
+              <img src={Image4} alt="no image12"/>
               <h3>Noella</h3>
               <p>Manager</p>
             </div>
@@ -150,7 +150,7 @@ const About = () => {
           </div>
           <div className="lead-one">
             <div className="about-leader">
-              <img src={Image4} />
+              <img src={Image4} alt="no image6"/>
               <h3>Noella</h3>
               <p>Manager</p>
             </div>
@@ -158,7 +158,7 @@ const About = () => {
           </div>
           <div className="lead-one">
             <div className="about-leader">
-              <img src={Image4} />
+              <img src={Image4} alt="no image5"/>
               <h3>Noella</h3>
               <p>Manager</p>
             </div>
@@ -166,7 +166,7 @@ const About = () => {
           </div>
           <div className="lead-one">
             <div className="about-leader">
-              <img src={Image4} />
+              <img src={Image4} alt="no image4"/>
               <h3>Noella</h3>
               <p>Manager</p>
             </div>

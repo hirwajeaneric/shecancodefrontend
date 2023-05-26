@@ -1,5 +1,4 @@
-import React from 'react'
-import Contact from '../contact/cnt.css'
+import React from 'react';
  let Contacting=()=>{
     return(
         <>

@@ -11,10 +11,10 @@ const Footer = () => {
       </div>
       <div className="images">
         <div className="image1">
-          <img src={Image1} />
+          <img src={Image1} alt="not found"/>
         </div>
         <div className="image2">
-          <img src={Image2} />
+          <img src={Image2} alt="....."/>
         </div>
       </div>
       <div className="footer-content">
@@ -22,13 +22,13 @@ const Footer = () => {
           <h3 className="color">Company</h3>
           <ul>
             <li>
-              <a href="">Igire Rwanda Organization</a>
+              <a href="/home">Igire Rwanda Organization</a>
             </li>
             <li>
-              <a href="">TekCODE</a>
+              <a href="/home">TekCODE</a>
             </li>
             <li>
-              <a href="">Partners</a>
+              <a href="/home">Partners</a>
             </li>
           </ul>
         </div>
@@ -36,13 +36,13 @@ const Footer = () => {
           <h3 className="color">Resources</h3>
           <ul>
             <li>
-              <a href="">SheCanCODE directory</a>
+              <a href="/home">SheCanCODE directory</a>
             </li>
             <li>
-              <a href="">Help Center</a>
+              <a href="/home">Help Center</a>
             </li>
             <li>
-              <a href="">Privacy & Terms</a>
+              <a href="/home">Privacy & Terms</a>
             </li>
           </ul>
         </div>
@@ -50,16 +50,16 @@ const Footer = () => {
           <h3 className="color">Program</h3>
           <ul>
             <li>
-              <a href="">UI/UX Design</a>
+              <a href="/home">UI/UX Design</a>
             </li>
             <li>
-              <a href="">HTML & CSS</a>
+              <a href="/home">HTML & CSS</a>
             </li>
             <li>
-              <a href="">React JS</a>
+              <a href="/home">React JS</a>
             </li>
             <li>
-              <a href="">Node JS</a>
+              <a href="/home">Node JS</a>
             </li>
           </ul>
         </div>
@@ -67,17 +67,17 @@ const Footer = () => {
           <h3 className="color">Follow us:</h3>
           <div className="follow">
             <div className="square">
-              <a href="">
+              <a href="/home">
                 <i class="bx bxl-linkedin-square"></i>
               </a>
             </div>
             <div className="square">
-              <a href="">
+              <a href="/home">
                 <i class="bx bxl-instagram"></i>
               </a>
             </div>
             <div className="square">
-              <a href="">
+              <a href="/home">
                 <i class="bx bxl-twitter"></i>
               </a>
             </div>
