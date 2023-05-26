@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.test_container{
+    height: 100vh;
+    background-color: brown;
+    display: grid;
+    grid-template-rows: 0.2fr 1fr 0.2fr;
+    /* grid-template-rows: repeat(3, 1fr); */
+}
+
+.test_one{
+    background-color: aquamarine;
+    display: grid;
+    grid-template-columns: 0.3fr 1fr 0.1fr;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+}
+.test_nav{
+    display: flex;
+    justify-content: center;
+}
+
+.test_login{
+background-color: blueviolet;
+}
+button{
+    padding: 5px 10px;
+}
+
+
+.test_two{
+    background-color: rgb(53, 201, 12);
+}
+.test_three{
+    background-color: rgb(95, 76, 156);
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#menu-icon, .times{
+    color: white;
+}
+
+@media screen and (max-width: 400px){
+    .test_one{
+        background-color: coral;
+    }
+    .test_nav{
+       display: none;
+    }
+
+}
+
+
+
+
+
+
