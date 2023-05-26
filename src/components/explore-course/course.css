@@ -224,6 +224,9 @@ color: rgb(209, 209, 209);
 
 } */
 @media screen and (max-width: 576px){
+    .allExplore{
+        height: 80vh;
+    }
     .theWhole{
         grid-template-columns: 1fr;
         grid-template-areas: "paragraph "

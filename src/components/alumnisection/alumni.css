@@ -8,6 +8,7 @@
   width: 100%;
   overflow: hidden;
   animation: slideInUp 3s;
+  margin-top: 10px;
   height: 40vh;
 }
 @keyframes slideInUp {

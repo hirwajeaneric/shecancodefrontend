@@ -1,0 +1,32 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.footer_container{
+    height: 30vh;
+    background-color: #334960;
+    display: grid;
+    grid-template-rows: 0.3fr 1fr 0.3fr;
+}
+.footer_one{
+    background-color: blueviolet;
+    display: flex;
+    justify-content: space-around;
+}
+.f_one{
+    background-color: aqua;
+}
+.f_two{
+    background-color: rgb(197, 129, 45);
+}
+.f_three{
+    background-color: crimson;
+}
+
+.footer_two{
+    background-color: bisque;
+}
+.footer_three{
+    background-color: darkmagenta;
+}
