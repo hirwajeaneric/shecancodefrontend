@@ -107,7 +107,7 @@
     background-repeat: no-repeat;
     height: 100px;
     background-image: url(./program/Screenshot\ 2023-05-16\ 164205.png);
-} 
+}*/ 
  @media screen and (max-width: 576px){
     .Container-content-one {
           padding: 10px;
@@ -123,7 +123,7 @@
         color: #334a60;
         font-size: 25px;
     }
-}  */
+}  
 
 /*@media screen and (min-width: 577px) and (max-width: 768px){
 
