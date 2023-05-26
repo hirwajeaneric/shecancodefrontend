@@ -6,7 +6,7 @@ import Image5 from "./alumniImg/alumn8.jpeg";
 import Image6 from "./alumniImg/alumn3.PNG";
 import Image7 from "./alumniImg/alumn5.PNG";
 import Image8 from "./alumniImg/alumn7.jpeg";
-import "./alumni.css";
+// import "./alumni.css";
 const Alumni = () => {
   return (
     <div className="alumni-page">
