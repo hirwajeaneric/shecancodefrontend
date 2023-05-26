@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { FaTimes } from 'react-icons/fa';
+import { Link } from "react-router-dom"
 import Image from "./images/logoscc.png";
 import "./nav.css";
 
@@ -11,24 +12,24 @@ let Index = () => {
         <img src={Image} alt="scc-logo" />
         <ul class="navbar">
           <li>
-            <a href="#" class="active">
+          <Link class="active" to="/">
               Home
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#">
+            <Link to="/about">
               About 
               {/* <i class="bx bx-chevron-down"></i> */}
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#">Contact</a>
+            <Link to="/contact">Contact</Link>
           </li>
           <li>
-            <a href="#">Program</a>
+            <Link to="/program">Program</Link>
           </li>
           <li>
-            <a href="#">Login</a>
+            <Link to="/login">Login</Link>
           </li>
         </ul>
         <div class="menu">
