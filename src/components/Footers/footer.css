@@ -2,44 +2,106 @@
     padding: 0;
     margin: 0;
 }
+.allFooter{
+    display: flex;
+    justify-content: center;
+    background-color: #334960;
+}
 
 .footer_container{
+    width: 90%;
     height: 30vh;
-    background-color: #334960;
     display: grid;
     grid-template-rows: 0.3fr 1fr 0.3fr;
 }
-.footer_one{
-    background-color: blueviolet;
+.unOrder{
+    display: flex;
+    font: 40px;
+    font-weight: bold;
+}
+.unOrder2{
     display: flex;
     justify-content: space-around;
+    font-weight: bold;
 }
-.f_one{
-    background-color: aqua;
+#icons_footer{
+    font-size: 30px;
+    margin: 0px 10px;
 }
-.f_two{
-    background-color: rgb(197, 129, 45);
-}
-.f_three{
-    background-color: rgb(23, 181, 14);
+
+.footer_one{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .footer_two{
     height: 100%;
-    background-color: bisque;
+    display: grid;
+    grid-template-columns: 0.7fr 1fr;
+}
+.fo_one{
+    display: flex;
+    justify-content: center;
+}
+.center_footer{
+    width: 80%;
+}
+.center_text{
+    padding-bottom: 10px;
+    font-size: 20px;
+    font-weight: 800;
+}
+.fo_two{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
-.fo_one{
-    background-color: rgb(75, 49, 11);
+
+
+.f_one, .f_two, .f_three{
+    display: grid;
+    justify-content: center;
 }
-.fo_two{
-    background-color: rgb(180, 8, 74);
+.footer_three{
+    display: grid;
+    grid-template-columns: 1fr 0.6fr 1fr;
 }
-.fo_three{
-    background-color: rgb(14, 140, 168);
+hr{
+    height: 2px;
+    background-color: white;
+    border: none;
+    margin: 7px 0px;
+}
+.three_two{
+    display: flex;
+    justify-content: center;
+}
+.three_one{
+    font-weight: bold;
 }
 
-.footer_three{
-    background-color: darkmagenta;
+.subscribe{
+    display: grid;
+    height: 35px;
+    width: 60%;
+    grid-template-columns: 1fr 0.17fr;
+}
+.footer_button{
+    background-color: darkolivegreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer_button:hover{
+    background-color: rgb(50, 75, 2);
+}
+
+#input_footer{
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    border: none;
+}
+
+input::placeholder{
+    padding-left: 10px;
 }
