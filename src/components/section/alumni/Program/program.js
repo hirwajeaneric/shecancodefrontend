@@ -1,6 +1,5 @@
 import React from "react";
 import "./program.css";
-import Footer from "../../../Footers/Footer";
 const Program =()=>{
     return(
     
@@ -19,7 +18,6 @@ const Program =()=>{
               </div>
               </div>
                <div className="Container-content-two">
-                <Footer />
                 {/*<div>
                 <h1>Program Highlights</h1>
                 <div className="content">
