@@ -7,13 +7,13 @@ import Alumni from '../../components/Section/alumni/alumnisection/index';
 
 let Home = () =>{
 return(
-<>
+<div>
 <Nav /> 
 <Header />
 {/* <FirstHome /> */}
  {/* <Explore /> */}
 <Alumni /> 
-</>
+</div>
 );
 }
 
