@@ -53,6 +53,5 @@ let Index = () => {
       </div>
   );
 };
+
 export default Index;
-
-
