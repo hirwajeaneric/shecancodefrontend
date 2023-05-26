@@ -1,4 +1,5 @@
-import "./bar.css"
+import "./bar.css";
+import { Link } from "react-router-dom";
 
 let Bar =()=>{
     return(
@@ -7,10 +8,10 @@ let Bar =()=>{
         <div className="first">
           <h4>Follow us:</h4>
           <p>
-          <a href="#"><i className='bx bxl-twitter'></i></a>
-          <a href="#"><i className='bx bxl-facebook-circle'></i></a>
-          <a href="#"><i className='bx bxl-instagram-alt'></i></a>
-          <a href="#"><i className='bx bxl-linkedin-square' ></i></a>
+          <Link to="/home"><i className='bx bxl-twitter'></i></Link>
+          <Link to="/home"><i className='bx bxl-facebook-circle'></i></Link>
+          <Link to="/home"><i className='bx bxl-instagram-alt'></i></Link>
+          <Link to="/home"><i className='bx bxl-linkedin-square' ></i></Link>
           </p>
         </div>
         <div className="seconds">
