@@ -1,6 +1,5 @@
 import './Home.css'
 import Nav from '../../components/Nav/index';
-import Program from '../../components/Section/alumni/Program/program';
 import Explore from '../../components/Section/alumni/explore-course/course';
 import Header from '../../components/Header/index';
 import Alumni from '../../components/Section/alumni/alumnisection/index';
@@ -14,7 +13,6 @@ return(
 <FirstHome />
  <Explore />
 <Alumni />
-<Program />
 </>
 );
 }
