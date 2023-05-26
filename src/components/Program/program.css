@@ -15,7 +15,7 @@
     position: relative;
     background-size: cover;
     background-attachment: fixed;
-    background-image: url(./program/IMG-20230510-WA0053.jpg);
+    /* background-image: url(./program/IMG-20230510-WA0053.jpg); */
 }
 .Container-content::before{
     content: "";
@@ -72,7 +72,7 @@
     text-align: center;
     width: 400px;
     padding: 30px 70px 30px 70px;
-}  */
+} 
  .Container-content-two .Image1{
     width: 200px;
     margin-left: 85px;
@@ -123,7 +123,7 @@
         color: #334a60;
         font-size: 25px;
     }
-} 
+}  */
 
 /*@media screen and (min-width: 577px) and (max-width: 768px){
 

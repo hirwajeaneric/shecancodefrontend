@@ -18,7 +18,7 @@ const Program =()=>{
               </div>
               </div>
                <div className="Container-content-two">
-                <div>
+                {/* <div>
                 <h1>Program Highlights</h1>
                 <div className="content">
                     <div className="Card">
@@ -40,9 +40,9 @@ const Program =()=>{
                     <div className="Card">
                     <div className="Image5"></div>
                     <p>Daily coding help with Learning Facilitators</p>
-                </div> 
+                </div>  
                 </div>
-                </div>
+                </div>*/}
               </div>
            </div>
     )
