@@ -1,10 +1,77 @@
-*{
+
+
+.mycontainer{
+    display: grid;
+    grid-template-columns: 0.3fr 1fr;
+    background-color: #33D4D6;
+}
+
+.first{
+    display: flex;
+    gap: 10px;
+    background-color: #33D4D6;
+}
+.first h4{
+    font-size: 18px;
+}
+.first p a i{
+    font-size: 20px;
+    padding-top: 4px;
+    margin-right: 8px;
+    transition: 0.5s ease;
+}
+.first p a i:hover{
+    cursor: pointer;
+    transform: translateY(-10px);
+}
+.seconds{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #334A60;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 5% 100%);
+}
+.second{
+    display: flex;
+    gap: 20px;
+}
+.second .icon {
+    font-size: 30px;
+}
+.second .icon i{
+    color: white;
+    padding-top: 16px ;
+}
+.second .text p{
+    color: white;
+    font-size: 12px;
+    padding-top: 16px ;
+}
+.line{
+    border: 1px solid white;
+    height: 4vh;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 576px){
+    .mycontainer{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px){
+    .mycontainer{
+        grid-template-columns: 0.5fr 1fr;
+    }
+}
+
+/* *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     color: black;
-}
-.mycontainer{
+} */
+/* .mycontainer{
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -38,6 +105,7 @@
     padding:1.2% 480px;
     position: absolute;
     width: 74.4%;
+    width: 100%;
     margin-left: 350px;
     padding-right: 70px;
     clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 5% 100%);
@@ -58,8 +126,13 @@
     border: 1px solid white;
     height: 4vh;
     margin-top: 20px;
-}
+} */
 
+
+
+
+
+/* 
 @media screen and (max-width: 680px){
     .first{
         display: block;
@@ -81,4 +154,4 @@
    .second{
     width: 180%;
    }
-}
+} */
