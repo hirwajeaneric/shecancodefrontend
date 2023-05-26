@@ -9,11 +9,11 @@ import Program from '../../components/Program/program';
 let Home = () =>{
 return(
 <div>
-{/* <Nav /> 
+<Nav /> 
 <Header />
 <FirstHome />
 <Explore />
-<Alumni />  */}
+<Alumni /> 
 <Program />
 </div>
 );
