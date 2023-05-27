@@ -223,7 +223,7 @@ color: rgb(209, 209, 209);
 @media screen and ((min-width: 1201)){
 
 } */
-@media screen and (max-width: 576px){
+@media screen and (max-width: 394px){
     .allExplore{
         height: 80vh;
     }
@@ -261,8 +261,41 @@ color: rgb(209, 209, 209);
 
 } 
 
-@media screen and (min-width: 577px) and (max-width: 768px){
-
+@media screen and (min-width: 395px) and (max-width: 768px){
+    .allExplore{
+        height: 94vh;
+    }
+    .theWhole{
+        grid-template-columns: 1fr;
+        grid-template-areas: "paragraph "
+                             "table";
+    }
+    .row1{
+        width: 100%;
+    }
+    .row3,.row4{
+        width: 50%;
+        }
+        .row6,  .row7{
+            width: 50%;
+            height: 200px;
+            }
+        .row8{
+            width: 100%;
+        }
+        .paragraph2Container{
+            grid-area: paragraph;
+            display: flex;
+            padding-left: 10px;
+            align-items: center;
+        }
+        .paragraph2 .beginners{
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .coding h2{
+            font-size: 35px;
+        }
 }
 
 @media screen and (min-width: 769px) and (max-width: 992px){
