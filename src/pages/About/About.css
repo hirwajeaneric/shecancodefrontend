@@ -3,7 +3,6 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "poppins", sans-serif;
-  color: black;
 }
 .about-page {
   width: 100%;
@@ -34,6 +33,7 @@
 .about-rotate {
   /* width: 25%; */
   width: 300px;
+
   padding: 10px 0px 0 40px;
 }
 .about-rotate img {
@@ -75,49 +75,61 @@
 }
 .about-thrird-section {
   display: flex;
-  background-color: #fdf8f8;
+  background-color: rgba(255, 255, 255, 0.83);
   margin-top: 80px;
+  color: black;
   /* width: 1499px; */
   width: 100%;
   padding-top: 50px;
 }
 .about-thrird-section .about-right {
   width: 18%;
-  padding-top: 100px;
-  padding-left: 0px;
+
+  padding-top: 160px;
+  padding-left: 20px;
+}
+.right-image {
+  display: flex;
 }
 .about-thrird-section .about-right img {
   width: 110px;
   height: 100px;
-  border-radius: 5px;
-  margin: 10px;
+  border-radius: 7px;
+  margin: 5px;
   object-fit: cover;
 }
 .about-thrird-section .about-left {
   width: 18%;
-  padding-right: -5px;
+  /* padding-right: 20px; */
+  margin-right: 20px;
   float: right;
+}
+.left-images {
+  display: flex;
 }
 .about-thrird-section .about-left img {
   width: 110px;
   height: 100px;
-  border-radius: 5px;
-  margin: 10px;
+  border-radius: 7px;
+  margin: 5px;
   object-fit: cover;
 }
 .about-thrird-section .about-left .key {
-  margin-left: 140px;
+  margin-left: 120px;
 }
 .about-thrird-section .about-paragraph {
   width: 64%;
   text-align: center;
-  padding: 100px;
+  padding: 20px 100px 100px 100px;
+  font-size: 20px;
 }
 .about-thrird-section .about-paragraph h2 {
   margin-bottom: 30px;
 }
 .about-founder {
   padding: 40px 100px;
+  background-color: white;
+  color: black;
 }
 .about-founder h2 {
   margin-bottom: 20px;
@@ -158,7 +170,8 @@
 }
 .why-about {
   /* background-color: rgb(221, 220, 220); */
-  background-color: #fdf8f8;
+  background-color: #fdf8f836;
+  color: black;
   margin: 30px 480px;
   padding: 80px 30px;
   border-radius: 20px;
@@ -173,12 +186,15 @@
 }
 .about-leader {
   background-color: #fdf8f8;
+  border-radius: 3px;
   padding-bottom: 50px;
   position: relative;
+  width: 250px;
+  color: black;
 }
 .about-leader img {
-  width: 280px;
-  height: 280px;
+  width: 100%;
+  /* height: 280px; */
   padding: 30px;
   object-fit: cover;
   transition: 03s;
@@ -194,22 +210,24 @@
   color: #33d4d6;
 }
 .about-leader p {
-  margin-left: 40px;
+  padding: 10px;
 }
-.lead-one:hover .about-path {
-  background-color: #33d4d6;
-}
+
 .about-path {
   height: 60px;
   width: 60px;
   clip-path: polygon(100% 0, 100% 0, 100% 100%, 0% 50%);
-  background-color: #334a60;
+  background-color: #334a6026;
   margin-top: -100px;
   margin-left: 220px;
   position: absolute;
 }
 .about-leads {
   margin-top: 50px;
+}
+.about-leads p {
+  text-align: center;
+  padding-top: 20px;
 }
 .about-leads h1 {
   text-align: center;
@@ -306,7 +324,37 @@
     margin-left: 230px;
   }
 }
-@media screen and (max-width: 680px) {
+
+@media only screen and (max-width: 575.98px) {
+  .about-two-section {
+    /* background-color: red; */
+    display: block;
+    /* width: 100%; */
+    font-size: 24px;
+    letter-spacing: 3px;
+    line-height: 50px;
+    padding: 30px 50px;
+    /* margin-top: 60px; */
+  }
+  .about-rotate {
+    margin-left: 250px;
+    margin-bottom: 50px;
+  }
+  .about-rotate .imageOne,
+  .about-rotate .imageFour {
+    width: 200px;
+    height: 100px;
+  }
+  .about-rotate .imageTwo,
+  .about-rotate .imageThree {
+    width: 200px;
+    height: 100px;
+  }
+  .about-thrird-section {
+    display: block;
+  }
+}
+/* @media screen and (max-width: 680px) {
   .about-page {
     width: 100%;
   }
@@ -394,11 +442,12 @@
   .about-path {
     margin-left: 230px;
   }
-}
+} */
 
-@media screen and (max-width: 414px) {
+/* @media screen and (max-width: 414px) {
   .about-page {
     width: 100%;
+    background-color: red;
   }
   .about-one-section {
     width: 1333px;
@@ -409,6 +458,7 @@
   .about-two-section {
     width: 1333px;
     padding: 30px 20px 0 0;
+    display: block;
   }
   .about-rotate {
     width: 320px;
@@ -598,4 +648,4 @@
   .about-path {
     margin-left: 230px;
   }
-}
+} */

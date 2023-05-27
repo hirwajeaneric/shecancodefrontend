@@ -1,0 +1,19 @@
+.btn {
+  /* height: 40px; */
+  border: none;
+  margin-top: 10px;
+  /* margin-left: 30px; */
+  padding: 10px 30px;
+  border-radius: 8px;
+  font-size: 18px;
+  transition: all 0.5s ease;
+  font-weight: 500;
+  background-color: #33d4d6;
+  font-weight: bolder;
+  color: black;
+}
+.btn:hover {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}

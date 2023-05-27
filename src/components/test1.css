@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.Test1_container{
+    height: 100vh;
+    background-color: brown;
+    display: grid;
+    grid-template-rows: 0.1fr 1fr;
+}
+.navigation{
+    background-color: blueviolet;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+ul{
+    display: flex;
+}
+li{
+    list-style: none;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.content{
+    background-color: darkgoldenrod;
+}
+#menu-icon , .times{
+    display: none;
+}
+
+@media screen and (max-width: 500px){
+    .content{
+        background-color: rgb(98, 203, 92);
+    }
+    .navDisa{
+        display: none;
+    }
+    #menu-icon, .times{
+        display: block;
+    }
+}
+
+
+
+

@@ -10,12 +10,18 @@ import Image4 from "./aboutImage/about4.PNG";
 import Image6 from "./aboutImage/about3.PNG";
 import Image7 from "./aboutImage/about5.PNG";
 import Image8 from "./aboutImage/about7.jpeg";
+import Header from "../../components/Header";
+import Nav from "../../components/Nav";
+import { leadershipTeam } from "../../constants";
 import { useState } from "react";
 import "./About.css";
+import Button from "../../components/Button";
 const About = () => {
   const [open, setOpen] = useState(false);
   return (
     <div className="about-page">
+      <Nav />
+      <Header />
       <div className="about-one-section">
         <img src={Image} alt="background" />
         <p>Who We Are</p>
@@ -49,10 +55,12 @@ const About = () => {
       </div>
       <div className="about-thrird-section">
         <div className="about-right">
-          <img src={Image2} alt="image" />
-          <br />
-          <img src={Image3} alt="image" />
-          <img src={Image4} alt="image" />
+          <img src={Image2} alt="not found" />
+
+          <div className="right-image">
+            <img src={Image3} alt="image3 not found" />
+            <img src={Image4} alt="image4 not found" />
+          </div>
         </div>
         <div className="about-paragraph">
           <h2>
@@ -66,13 +74,16 @@ const About = () => {
             including a lot of entrepreneurs who created 212 tech startups and
             raised $820M+ globally.
           </p>
+          <Button btnTitle={"Siscover more"} />
         </div>
         <div className="about-left">
-          <img src={Image6} alt="image" />
+          <div className="left-images">
+            <img src={Image6} alt="image1" />
 
-          <img src={Image7} alt="image" />
-          <br />
-          <img src={Image8} alt="image" className="key" />
+            <img src={Image7} alt="image2" />
+          </div>
+
+          <img src={Image8} alt="image3" className="key" />
         </div>
       </div>
 
@@ -139,39 +150,22 @@ const About = () => {
       </div>
       <div className="about-leads">
         <h1>SheCanCode Team</h1>
+        <p>
+          It points to this idea of a 'missing block' or 'missing wagon' in the
+          “train of higher education”. <br /> And a wagon is a vehicle that
+          takes a group of people (like a class of students)
+        </p>
         <div className="leadership-form">
-          <div className="lead-one">
-            <div className="about-leader">
-              <img src={Image4} />
-              <h3>Noella</h3>
-              <p>Manager</p>
+          {leadershipTeam.map((team) => (
+            <div className="lead-one">
+              <div className="about-leader">
+                <img src={team.image} alt="no image12" />
+                <h3>{team.name}</h3>
+                <p>{team.position}</p>
+              </div>
+              <div className="about-path"></div>
             </div>
-            <div className="about-path"></div>
-          </div>
-          <div className="lead-one">
-            <div className="about-leader">
-              <img src={Image4} />
-              <h3>Noella</h3>
-              <p>Manager</p>
-            </div>
-            <div className="about-path"></div>
-          </div>
-          <div className="lead-one">
-            <div className="about-leader">
-              <img src={Image4} />
-              <h3>Noella</h3>
-              <p>Manager</p>
-            </div>
-            <div className="about-path"></div>
-          </div>
-          <div className="lead-one">
-            <div className="about-leader">
-              <img src={Image4} />
-              <h3>Noella</h3>
-              <p>Manager</p>
-            </div>
-            <div className="about-path"></div>
-          </div>
+          ))}
         </div>
       </div>
     </div>

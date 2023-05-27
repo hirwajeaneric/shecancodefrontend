@@ -1,22 +1,15 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    color: black;
-}
+
+
 .mycontainer{
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    position: static;
+    display: grid;
+    grid-template-columns: 0.3fr 1fr;
+    background-color: #33D4D6;
 }
+
 .first{
     display: flex;
-    padding: 20px 40px;
     gap: 10px;
     background-color: #33D4D6;
-    width: 100%;
-    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
 }
 .first h4{
     font-size: 18px;
@@ -31,16 +24,16 @@
     cursor: pointer;
     transform: translateY(-10px);
 }
+.seconds{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #334A60;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 5% 100%);
+}
 .second{
     display: flex;
     gap: 20px;
-    background-color: #334A60;
-    padding:1.2% 480px;
-    position: absolute;
-    width: 74.4%;
-    margin-left: 350px;
-    padding-right: 70px;
-    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 5% 100%);
 }
 .second .icon {
     font-size: 30px;
@@ -60,25 +53,14 @@
     margin-top: 20px;
 }
 
-@media screen and (max-width: 680px){
-    .first{
-        display: block;
-        padding: 0 10px;
+@media screen and (max-width: 576px){
+    .mycontainer{
+        display: none;
     }
-   .second{
-    height: 11.5vh;
-    width: 70%;
-    margin-left: 200px;
-    padding: 0 20px;
-   }
 }
-@media screen and (max-width: 800px){
-  .second{
-    padding-left: 50px;
-  }
-}
-@media screen and (max-width: 520px){
-   .second{
-    width: 180%;
-   }
+
+@media screen and (min-width: 769px) and (max-width: 992px){
+    .mycontainer{
+        grid-template-columns: 0.5fr 1fr;
+    }
 }
