@@ -326,12 +326,19 @@
 }
 
 @media only screen and (max-width: 575.98px) {
+  .about-page {
+    width: 100%;
+    background-color: red;
+  }
+  .about-one-section {
+    width: 100%;
+  }
   .about-two-section {
     /* background-color: red; */
     display: block;
-    /* width: 100%; */
-    font-size: 24px;
-    letter-spacing: 3px;
+    width: 100%;
+    font-size: 12px;
+    /* letter-spacing: 3px; */
     line-height: 50px;
     padding: 30px 50px;
     /* margin-top: 60px; */
@@ -340,16 +347,10 @@
     margin-left: 250px;
     margin-bottom: 50px;
   }
-  .about-rotate .imageOne,
-  .about-rotate .imageFour {
-    width: 200px;
-    height: 100px;
+  .about-rotate {
+    display: none;
   }
-  .about-rotate .imageTwo,
-  .about-rotate .imageThree {
-    width: 200px;
-    height: 100px;
-  }
+
   .about-thrird-section {
     display: block;
   }

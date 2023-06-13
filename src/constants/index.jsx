@@ -28,3 +28,5 @@ export const leadershipTeam = [
     position: "Managing director in finance",
   },
 ];
+
+

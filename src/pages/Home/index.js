@@ -1,5 +1,5 @@
 import "./Home.css";
-import Nav from "../../components/Nav/index";
+import Bar from "../../components/Nav/index";
 import Explore from "../../components/explore-course/course";
 import Header from "../../components/Header/index";
 import Alumni from "../../components/alumnisection/index";
@@ -10,7 +10,7 @@ import Footer from "../../components/Footers/Footer";
 let Home = () => {
   return (
     <div>
-      <Nav />
+      <Bar />
       <Header />
       <FirstHome />
       <Explore />
