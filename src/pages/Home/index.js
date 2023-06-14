@@ -5,7 +5,7 @@ import Header from "../../components/Header/index";
 import Alumni from "../../components/alumnisection/index";
 import FirstHome from "../../components/firsthomesection/firstsection";
 import Program from "../../components/Program/program";
-import Footer from "../../components/Footers/Footer";
+import Footer from "../Footer/Footer";
 
 let Home = () => {
   return (

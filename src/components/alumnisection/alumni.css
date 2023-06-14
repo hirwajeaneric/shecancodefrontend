@@ -11,6 +11,9 @@
   margin-top: 10px;
   height: 40vh;
 }
+.text-2xl {
+  padding-top: 4px;
+}
 @keyframes slideInUp {
   from {
     transform: translateY(300px);
@@ -35,7 +38,7 @@
 }
 
 .image-cards {
-  margin-top: 40px;
+  margin-top: 3px;
   width: 400%;
 }
 .image-cards .apps-box {
@@ -107,4 +110,3 @@
   display: flex;
   justify-content: space-between;
 }
-

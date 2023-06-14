@@ -40,7 +40,7 @@ h2 {
 }
 .whole {
   display: flex;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 h4 {
   margin-top: 10px;
@@ -68,6 +68,7 @@ h4 {
 .left {
   margin-left: 60px;
   margin-top: 20px;
+  padding-bottom: 50px;
   font-size: 16px;
   width: 60%;
 }
@@ -78,13 +79,13 @@ h4 {
   height: 350px;
 
   border-radius: 10px;
-  margin-top: 20px;
+  margin-top: 60px;
   margin-right: 99px;
   background-size: cover;
 }
 .container-firstSection {
   display: flex;
-  background-image: linear-gradient(white, black);
+  background-image: linear-gradient(white, rgba(0, 0, 0, 0.536));
   color: black;
 }
 .lin {
@@ -178,6 +179,7 @@ i {
 .mini {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  padding-top: 20px;
 }
 .mastercard,
 .giz,
@@ -205,10 +207,17 @@ i {
 .holdPatners {
   display: flex;
   justify-content: center;
+  background-color: rgba(107, 107, 107, 0.856);
+  padding: 20px 0;
 }
 .partners {
   width: 96%;
+
   animation-name: bounce;
+}
+.mini-partener img {
+  width: 170px;
+  height: 150px;
 }
 
 @media screen and (max-width: 576px) {

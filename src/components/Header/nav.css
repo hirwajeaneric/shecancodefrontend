@@ -60,7 +60,16 @@ img:hover {
 .navbar a.active {
   color: #33d4d6;
 }
-
+.all img {
+  /* background-color: rgba(255, 255, 255, 0.744); */
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0.092),
+    rgba(255, 255, 255, 0.749)
+  );
+  padding: 10px;
+  border-radius: 6px;
+  width: 100px;
+}
 .mymenu {
   display: flex;
   align-items: center;
@@ -119,6 +128,9 @@ img:hover {
   .hamberger,
   .close {
     display: block;
+  }
+  .all img {
+    width: 70px;
   }
 }
 

@@ -1,8 +1,8 @@
 import React from "react";
-import master from "./image/master.png";
+import master from "./image/download (5).jpg";
 import giz from "./image/giz.png";
-import microsoft from "./image/micro.png";
-import digital from "./image/digital12.png";
+import microsoft from "./image/download.jpg";
+import digital from "./image/download (1).png";
 import "./firstsection.css";
 const Firstsection = () => {
   return (
@@ -10,8 +10,7 @@ const Firstsection = () => {
       <div className="container-firstSection">
         <div className="left">
           <h2 id="Tech">Build your Career in Tech</h2>
-          <p className="para">Join SheCanCode,Learn,Get employed.</p>
-          <br></br>
+          <p className="para">Join SheCanCode, Learn, Get employed.</p>
           <p className="par">
             Irrespective of your prior coding proficiency, whether you possess
             limited experience, are self-taught, or feel uncertain,we warmly
@@ -35,14 +34,14 @@ const Firstsection = () => {
             </div>
             <h4>Back-end</h4>
           </div>
-          <br></br>
+          <br />
           <button id="btn" className="button">
             Get started
           </button>
         </div>
         <div className="rigth"></div>
       </div>
-      <br></br>
+
       <div className="holdPatners">
         <div className="partners">
           <div className="lin">
@@ -55,17 +54,15 @@ const Firstsection = () => {
             </div>
           </div>
           <div className="mini">
-            <div>
+            <div className="mini-partener">
               <img src={master} alt="not found" className="mastercard" />
             </div>
-            <div>
-              <img src={giz} alt="not found" className="giz" />
-            </div>
-            <div>
-              <img src={microsoft} alt="not found" className="microsoft" />
-            </div>
-            <div>
+
+            <div className="mini-partener">
               <img src={digital} alt="not found" className="DTC" />
+            </div>
+            <div className="mini-partener">
+              <img src={microsoft} alt="not found" className="DTC" />
             </div>
           </div>
         </div>

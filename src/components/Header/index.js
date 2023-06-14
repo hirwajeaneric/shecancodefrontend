@@ -59,7 +59,10 @@ let Index = () => {
             <p>Contact</p>
             <p>Program</p>
             <p>Login</p>
-            <p>Apply</p>
+            <Link to="/application">
+              {" "}
+              <p>Apply</p>
+            </Link>
           </div>
         )}
       </div>

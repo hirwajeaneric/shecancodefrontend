@@ -4,7 +4,6 @@ import Home from "../pages/Home/index";
 import About from "../pages/About/index";
 import Application from "../components/Application/application";
 import ApplicationForm from "../components/Application/form/form";
-import ApplicationFormTwo from "../components/Application/form/form2";
 // import Test1 from "../components/Test1";
 const Index = () => {
   return (
@@ -14,7 +13,6 @@ const Index = () => {
       <Route path="/about" element={<About />} />
       <Route path="/application" element={<Application />} />
       <Route path="/apply" element={<ApplicationForm />} />
-      <Route path="/apply2" element={<ApplicationFormTwo />} />
     </Routes>
   );
 };

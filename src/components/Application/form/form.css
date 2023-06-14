@@ -1,9 +1,10 @@
 .form-container {
   background-color: white;
-  width: 80%;
+  width: 100%;
   /* height: 80vh; */
   margin: auto;
   display: flex;
+  padding-bottom: 40px;
 }
 .form-partOne {
   background: linear-gradient(
@@ -11,35 +12,65 @@
       rgba(250, 250, 250, 0.6)
     ),
     url("https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg?auto=compress&cs=tinysrgb&w=600");
-  width: 44%;
-  height: 600px;
+  width: 40%;
+  height: 580px;
   margin: 10px;
+
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 10px;
 }
+.form-partOne h1 {
+  padding: 110px 10px 0 20px;
+  font-size: 50px;
+}
 .form-partTwo {
-  width: 55%;
+  width: 56%;
   height: 100%;
   color: black;
   text-align: center;
+  margin-left: 35px;
+  margin-top: 10px;
 }
 .form-partOne p {
   color: black;
   text-align: center;
   padding: 20px;
   font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 2px;
 }
-.form-partTwo label {
-  padding: 20px;
+.form-partTwo h2 {
+  font-weight: 400;
+  font-style: italic;
+}
+.hello {
+  background-image: linear-gradient(white, black);
+  width: 20%;
+  padding: 15px;
+  height: 50px;
+
+  border-radius: 300px 30px;
+  margin: auto;
+}
+.label {
+  padding-right: 200px;
 }
 .form-partTwo input {
-  padding: 5px 20px;
+  padding: 10px 20px;
   width: 300px;
   border-radius: 5px;
 }
 #option {
-  padding: 5px 20px;
+  padding: 10px 20px;
   width: 300px;
   border-radius: 5px;
+}
+.form-field {
+  display: flex;
+  margin-bottom: 20px;
+}
+.partTwo-Right {
+  margin-left: 60px;
+  margin-top: -50px;
 }

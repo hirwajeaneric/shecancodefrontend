@@ -15,7 +15,7 @@ const Alumni = () => {
   // );
   return (
     <div className="alumni-page">
-      <h1 className="alumn-header">What Our Alumni Say</h1>
+      <h1 className="text-2xl ">What Our Alumni Say</h1>
       <div className="image-cards">
         <div className="apps-box">
           <div className="apps">

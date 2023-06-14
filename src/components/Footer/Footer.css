@@ -1,4 +1,4 @@
-* {
+/* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -85,7 +85,7 @@ li a {
   margin-top: 66px;
 }
 .image1 {
-  /* position: absolute; */
+  
   bottom: 0;
   top: 180px;
   height: 1px;
@@ -96,7 +96,6 @@ li a {
   margin-top: 22px;
 }
 .image2 {
-  /* position: absolute; */
   bottom: 0;
   top: 180px;
   height: 1px;
@@ -105,4 +104,4 @@ li a {
   z-index: 998;
   margin-left: 350px;
   margin-top: 15px;
-}
+} */
