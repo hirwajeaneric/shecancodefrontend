@@ -8,7 +8,8 @@
   font-size: 18px;
   transition: all 0.5s ease;
   font-weight: 500;
-  background-color: #33d4d6;
+  /* background-color: #33d4d6; */
+  border: 1px solid #33d4d6;
   font-weight: bolder;
   color: black;
 }

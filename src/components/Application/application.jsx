@@ -2,7 +2,7 @@ import React from 'react'
 import Index from "../Header/index"
 import "./application.css"
 import Button from '../Button'
-import Footer from '../Footers/Footer'
+import Footer from '../Footers/footer'
 import {Link} from "react-router-dom"
 const Application = () => {
   return (

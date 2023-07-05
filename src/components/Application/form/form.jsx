@@ -1,11 +1,51 @@
-import React from 'react'
+import React, { useState } from 'react'
 import {Link} from "react-router-dom"
 import Button from '../../Button'
 import "./form.css"
+import axios from 'axios'
+import Header from "../../../components/Header"
 const ApplicationForm = () => {
+    const [firstName,setFirstName]=useState("");
+    const [lastName, setLastName]=useState("");
+    const [email, setEmail]=useState("");
+    const [telephone, setTelephone]=useState("");
+    const [location, setLocation]=useState("");
+    const [gender, setGender]=useState("");
+    const [education, setEducation]=useState("");
+    const [language, setLanguage]=useState("");
+    const [programmingLanguage, setProgrammingLanguage]=useState("");
+    const [job, setJob]=useState("");
+    const [student, setStudent]=useState(false);
+    const handleApplication=(e)=>{
+        console.log(firstName, lastName)
+        e.preventDefault();
+        axios.post("http://localhost:4045/api/apply",{
+            firstName,
+            lastName,
+            email,
+            telephone,
+            location,
+            gender,
+           
+        }).then((res)=>{
+            setFirstName("")
+ setLastName("")
+setEmail("")
+setTelephone("")
+ setLocation("")
+setGender("")
+
+
+        }).catch((err)=>{
+            console.log(err)
+        })
+
+
+    }
   return (
     <div>
-      <h1> application Form</h1>
+        <Header/>
+     
       <div className='form-container'>
 <div className='form-partOne'>
     <h1 >Don't Dream Start Coding Today</h1>
@@ -13,22 +53,21 @@ const ApplicationForm = () => {
 <div className='hello'>Let Go</div>
 </div>
 <div className='form-partTwo'>
-    <h2>Let get started </h2>
-    <br />
+   
     <div className='form-field'>
 
   
     <div className='partTwoLeft'>
  
-<input type="text" placeholder='First name' />
+<input type="text" placeholder='First name' value={firstName} onChange={(e)=>(setFirstName(e.target.value))} />
     <br />
     <br />
  
-<input type="text"  placeholder='Last name'/>
+<input type="text"  placeholder='Last name' value={lastName} onChange={(e)=>(setLastName(e.target.value))}/>
     <br />
     <br />
    
-<input type="text" placeholder='Your highest level of Education' />
+<input type="text" placeholder='phone number' value={telephone} onChange={(e)=>(setTelephone(e.target.value))}/>
     
     <br />
       
@@ -47,13 +86,13 @@ const ApplicationForm = () => {
 <br />
 <br />
  
-<input type="text"  placeholder='Phone number'/>
+<input type="text"  placeholder='Your highest level of Education' value={education} onChange={(e)=>(setEducation(e.target.value))}/>
 <br />
     <br />
-<input type="text" placeholder='Email address' />
+<input type="text" placeholder='Email address' value={email} onChange={(e)=>(setEmail(e.target.value))} />
     <br />
     <br />
-<input type="text" placeholder='Location'/>
+<input type="text" placeholder='Location' value={location} onChange={ (e)=>(setLocation(e.target.value))}/>
     <br />
     <br />
     <select name="" id="option">
@@ -79,7 +118,7 @@ const ApplicationForm = () => {
 
 </div>
 </div>
- <Link to="/apply2"> <Button btnTitle={"Submit"}/></Link> 
+ <button onClick={handleApplication} className='submit-btn'> Submit </button>
 
 </div>
       </div>

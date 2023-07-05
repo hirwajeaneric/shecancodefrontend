@@ -1,5 +1,5 @@
 .form-container {
-  background-color: white;
+  /* background-color: gray; */
   width: 100%;
   /* height: 80vh; */
   margin: auto;
@@ -31,6 +31,7 @@
   text-align: center;
   margin-left: 35px;
   margin-top: 10px;
+  position: relative;
 }
 .form-partOne p {
   color: black;
@@ -40,6 +41,7 @@
   font-weight: bold;
   letter-spacing: 2px;
 }
+
 .form-partTwo h2 {
   font-weight: 400;
   font-style: italic;
@@ -69,8 +71,25 @@
 .form-field {
   display: flex;
   margin-bottom: 20px;
+
+  margin-top: 50px;
+}
+.form-field input {
+  border: 1px solid gray;
+}
+.form-field select {
+  border: 1px solid gray;
+}
+.form-field textarea {
+  border: 1px solid gray;
 }
 .partTwo-Right {
   margin-left: 60px;
   margin-top: -50px;
+}
+.submit-btn {
+  border: 1px solid rgb(104, 169, 231);
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-left: 500px;
 }

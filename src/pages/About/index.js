@@ -16,6 +16,7 @@ import { leadershipTeam } from "../../constants";
 import { useState } from "react";
 import "./About.css";
 import Button from "../../components/Button";
+import Footer from "../../components/Footers/footer";
 const About = () => {
   const [open, setOpen] = useState(false);
   return (
@@ -168,6 +169,7 @@ const About = () => {
           ))}
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

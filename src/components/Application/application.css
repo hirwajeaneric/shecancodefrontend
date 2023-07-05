@@ -7,7 +7,7 @@
 h1 {
   text-align: center;
   padding-top: 2rem;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 .application-upper {
   /* background-image: linear-gradient(

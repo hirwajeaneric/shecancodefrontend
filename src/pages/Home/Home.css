@@ -1,17 +1,321 @@
-body {
-  /* background-color: #061927;
-    background-color: #082940; */
+.heading-section {
+  background-image: linear-gradient(
+      rgba(0, 72, 255, 0.106),
+      rgba(255, 255, 255, 0.013)
+    ),
+    url(../../assets/DG6A5744.jpg);
+  width: 100%;
+  height: 90.6vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  font-family: "Noto Sans JP";
+  /* position: fixed; */
+}
+.heading-section::before {
+  content: "IT Innovation";
+  font-size: 15px;
+  color: white;
+  left: 95%;
+  top: 20%;
+  height: 100%;
+  transform: translate(0, -50%) rotate(180deg);
+  position: absolute;
+  -webkit-writing-mode: vertical-rl;
+}
+.heading-content {
+  width: 40%;
+  position: absolute;
+  height: 40vh;
+  top: 250px;
+  background-color: #294682;
+}
+@keyframes fade-in {
+  0% {
+    left: -300px;
+  }
+  100% {
+    left: 0;
+  }
+}
+.heading-content {
+  animation: fade-in 5s;
+}
+.heading-content h2 {
+  color: white;
+  font-size: 32px;
+  padding-top: 30px;
+  /* padding-right: 20px; */
+  text-align: center;
+  position: relative;
+}
+.heading-content h2::before {
+  content: "IT Innovation";
+  font-size: 12px;
+  left: 2%;
+  top: 120%;
+  height: 100%;
+  transform: translate(0, -50%) rotate(180deg);
+  position: absolute;
+  -webkit-writing-mode: vertical-rl;
+}
+.heading-btn {
+  padding: 15px 30px;
+
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+  margin-left: 200px;
+  margin-top: 50px;
+}
+.heading-program {
+  width: 40%;
+  position: absolute;
+  height: 11.5vh;
+  top: 550px;
+  transform: translate(-50%, 0);
+  left: 80%;
+  background-color: #294682;
+}
+
+.heading-program ul {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  padding: 30px 15px;
+}
+.offer-container {
+  width: 100%;
+  height: 80vh;
+  background-repeat: no-repeat;
+  background-image: url("https://wordpress.iqonic.design/logik/wp-content/uploads/2021/04/p3.png");
+  display: flex;
+  justify-content: space-around;
+}
+.offer-partOne {
+  width: 55%;
+  height: 100%;
+}
+.offer-partTwo {
+  position: relative;
+  width: 45%;
+  height: 100%;
+  background-color: rgba(250, 235, 215, 0.571);
+}
+.offer-cards {
+  display: flex;
+  height: 100%;
+  width: 100%;
+
+  position: relative;
+}
+.offer-cardOne {
+  position: absolute;
+  height: 100%;
+  width: 40%;
+  top: 100px;
+  left: 40px;
+}
+.offer-cardOne h2 {
+  font-size: 18px;
+}
+.offer-cardOne h1 {
+  font-size: 40px;
+  font-weight: 900;
+  letter-spacing: 5px;
+}
+.offer-cardOne p {
+  color: rgba(128, 128, 128, 0.751);
+  font-size: 18px;
+  padding-top: 20px;
+  letter-spacing: 1px;
+}
+.cardOneText {
+  color: #159ae2;
+}
+.offer-cardTwo {
+  position: absolute;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  border-radius: 5px;
+  width: 38%;
+  top: 100px;
+  left: 23rem;
+  animation-duration: 2s;
+
+  transform-origin: bottom;
+}
+.offer-cardTwo:hover {
+  animation-name: bounce;
+  animation-timing-function: ease;
+}
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  /* 50% {
+    transform: translateY(-100px);
+  } */
+  100% {
+    transform: translateY(50px);
+  }
+}
+.offer-cardTwo h1 {
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.offer-cardTwo p {
+  color: rgba(128, 128, 128, 0.751);
+  font-size: 18px;
+  padding: 20px;
+  letter-spacing: 1px;
+}
+.offer-partTwoCardOne {
+  position: absolute;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  border-radius: 5px;
+  /* height: 100%; */
+  width: 47%;
+  top: 100px;
+  left: -3rem;
+  animation-duration: 2s;
+
+  transform-origin: bottom;
+}
+.offer-partTwoCardOne:hover {
+  animation-name: bounce;
+  animation-timing-function: ease;
+}
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  /* 50% {
+    transform: translateY(-100px);
+  } */
+  100% {
+    transform: translateY(50px);
+  }
+}
+.offer-partTwoCardOne h1 {
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.offer-partTwoCardOne p {
+  color: rgba(128, 128, 128, 0.751);
+  font-size: 18px;
+  padding: 20px;
+  letter-spacing: 1px;
+}
+.offer-partTwoCardTwo {
+  position: absolute;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  border-radius: 5px;
+  /* height: 100%; */
+  width: 47%;
+  top: 100px;
+  left: 18rem;
+  animation-duration: 2s;
+
+  transform-origin: bottom;
+}
+.offer-partTwoCardTwo:hover {
+  animation-name: bounce;
+  animation-timing-function: ease;
+}
+.offer-partTwoCardTwo h1 {
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.offer-partTwoCardTwo p {
+  color: rgba(128, 128, 128, 0.751);
+  font-size: 18px;
+  padding: 20px;
+  letter-spacing: 1px;
+}
+.cardTwo-img {
+  margin: 20px 70px;
+  width: 150px;
+}
+.cardTwo-img img {
+  width: 100%;
+}
+.program-section {
+  background-color: #294682;
+  width: 100%;
+  padding: 100px 30px;
+  margin-top: 50px;
+}
+.program-section h2 {
+  font-size: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.program-section h1 {
+  font-size: 32px;
+  text-align: center;
+  color: white;
+}
+.program-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+.program-cardOne {
+  background-color: #152e67;
+  width: 30%;
+  padding: 30px;
+  border-radius: 6px;
+  text-align: center;
+  color: white;
+  border-radius: 5px;
+}
+.program-cardOne:hover div {
+  background-color: #294682;
+  transition: 1s;
+}
+.program-cardOne:hover .btn-more {
+  display: block;
+  transition: 1s;
+  color: #159ae2;
+}
+.program-cardOne:hover {
+  background-color: white;
   color: black;
-  /* background-color: #efedf4; */
-
-  /* background-color: #1D2228;
-    color: white; */
-
-  /* 9
-    background-color: #1A2238;
-    color: white; */
-
-  background-color: rgba(122, 121, 121, 0.498);
-  /* background-color: #183647; */
-  /* color: white; */
+  transition: 2s;
+}
+.program-cardOne h3 {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+.program-cardOne img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+.program-cardOne div {
+  width: 150px;
+  height: 100px;
+  border-radius: 5px;
+  background-color: white;
+  margin: 20px 0 20px 80px;
+}
+.btn-more {
+  position: relative;
+  margin-top: 50px;
+  display: none;
+}
+.btn-more .ai {
+  position: absolute;
+  top: 5px;
+  left: 100px;
 }

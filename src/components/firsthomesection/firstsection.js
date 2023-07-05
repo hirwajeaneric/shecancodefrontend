@@ -7,7 +7,7 @@ import "./firstsection.css";
 const Firstsection = () => {
   return (
     <div className="bigcont">
-      <div className="container-firstSection">
+      {/* <div className="container-firstSection">
         <div className="left">
           <h2 id="Tech">Build your Career in Tech</h2>
           <p className="para">Join SheCanCode, Learn, Get employed.</p>
@@ -40,7 +40,7 @@ const Firstsection = () => {
           </button>
         </div>
         <div className="rigth"></div>
-      </div>
+      </div> */}
 
       <div className="holdPatners">
         <div className="partners">

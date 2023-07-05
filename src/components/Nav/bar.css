@@ -1,66 +1,64 @@
-
-
-.mycontainer{
-    display: grid;
-    grid-template-columns: 0.3fr 1fr;
-    background-color: #33D4D6;
+.mycontainer {
+  display: grid;
+  grid-template-columns: 0.3fr 1fr;
+  background-color: #33d4d6;
 }
 
-.first{
-    display: flex;
-    gap: 10px;
-    background-color: #33D4D6;
+.first {
+  display: flex;
+  gap: 10px;
+  background-color: #33d4d6;
 }
-.first h4{
-    font-size: 18px;
+.first h4 {
+  font-size: 18px;
 }
-.first p a i{
-    font-size: 20px;
-    padding-top: 4px;
-    margin-right: 8px;
-    transition: 0.5s ease;
+.first p a i {
+  font-size: 20px;
+  padding-top: 4px;
+  margin-right: 8px;
+  transition: 0.5s ease;
 }
-.first p a i:hover{
-    cursor: pointer;
-    transform: translateY(-10px);
+.first p a i:hover {
+  cursor: pointer;
+  transform: translateY(-10px);
 }
-.seconds{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    background-color: #334A60;
-    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 5% 100%);
+.seconds {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: #294682;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 5% 100%);
 }
-.second{
-    display: flex;
-    gap: 20px;
+.second {
+  display: flex;
+  gap: 20px;
 }
 .second .icon {
-    font-size: 30px;
+  font-size: 30px;
 }
-.second .icon i{
-    color: white;
-    padding-top: 16px ;
+.second .icon i {
+  color: white;
+  padding-top: 16px;
 }
-.second .text p{
-    color: white;
-    font-size: 12px;
-    padding-top: 16px ;
+.second .text p {
+  color: white;
+  font-size: 12px;
+  padding-top: 16px;
 }
-.line{
-    border: 1px solid white;
-    height: 4vh;
-    margin-top: 20px;
-}
-
-@media screen and (max-width: 576px){
-    .mycontainer{
-        display: none;
-    }
+.line {
+  border: 1px solid white;
+  height: 4vh;
+  margin-top: 20px;
 }
 
-@media screen and (min-width: 769px) and (max-width: 992px){
-    .mycontainer{
-        grid-template-columns: 0.5fr 1fr;
-    }
+@media screen and (max-width: 576px) {
+  .mycontainer {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  .mycontainer {
+    grid-template-columns: 0.5fr 1fr;
+  }
 }

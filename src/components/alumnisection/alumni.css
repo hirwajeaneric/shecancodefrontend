@@ -9,14 +9,18 @@
   overflow: hidden;
   animation: slideInUp 3s;
   margin-top: 10px;
+
   height: 40vh;
 }
+
 .text-2xl {
-  padding-top: 4px;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 10px;
 }
 @keyframes slideInUp {
   from {
-    transform: translateY(300px);
+    transform: translateY(20px);
   }
   to {
     transform: translateY(0);

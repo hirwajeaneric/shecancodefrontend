@@ -6,6 +6,10 @@
   text-decoration: none;
   list-style: none;
 }
+body {
+  position: relative;
+  font-family: "Noto Sans JP";
+}
 a {
   color: white;
 }
@@ -14,16 +18,19 @@ a {
   /* z-index: 1;
   position: fixed;
   width: 100%; */
+  position: sticky;
+  top: 0;
+  z-index: 999;
 }
 .all {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 14px 10px;
+  padding: 1px 10px;
   transition: all 0.5s ease;
-  background-color: #fdf8f8;
-  background-color: #082940;
-  background-color: #343434;
+  background-color: white;
+  /* background-color: #082940;
+  background-color: #343434; */
   box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.5);
 }
 img {
@@ -52,6 +59,7 @@ img:hover {
   font-size: 20px;
   position: absolute;
 }
+
 .navbar a i:hover {
   color: #33d4d6;
   transition: 0.5s ease;
@@ -61,11 +69,6 @@ img:hover {
   color: #33d4d6;
 }
 .all img {
-  /* background-color: rgba(255, 255, 255, 0.744); */
-  background-image: linear-gradient(
-    rgba(0, 0, 0, 0.092),
-    rgba(255, 255, 255, 0.749)
-  );
   padding: 10px;
   border-radius: 6px;
   width: 100px;

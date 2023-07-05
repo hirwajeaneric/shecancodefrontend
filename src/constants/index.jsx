@@ -1,3 +1,6 @@
+import img from "../assets/ui.png"
+import frontend from "../assets/frontend.png"
+import backend from "../assets/backend.png"
 export const leadershipTeam = [
   {
     id: 1,
@@ -30,3 +33,23 @@ export const leadershipTeam = [
 ];
 
 
+export  const program=[{
+  h1:"UI/UX DESIGN",
+  image:img,
+  p:"All types of consulting service It is a long established fact that a reader will be distracted."
+
+},
+{
+  h1:"Frontend ",
+  image:frontend,
+  p:"All types of consulting service It is a long established fact that a reader will be distracted."
+
+},
+{
+  h1:"Backend",
+  image:backend,
+  p:"All types of consulting service It is a long established fact that a reader will be distracted."
+
+}
+
+]

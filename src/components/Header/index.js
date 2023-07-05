@@ -36,7 +36,7 @@ let Index = () => {
             </li>
           </ul>
           <div class="menu">
-            <Link to="/application">
+            <Link to="/apply">
               <Button btnTitle={"Apply"} />
             </Link>
             {humbState && (
