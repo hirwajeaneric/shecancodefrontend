@@ -36,19 +36,19 @@ export const leadershipTeam = [
 export  const program=[{
   h1:"UI/UX DESIGN",
   image:img,
-  p:"All types of consulting service It is a long established fact that a reader will be distracted."
+  p:"User experience (UX) and user interface (UI) design are now crucial for developing successful and interesting digital products in the current digital product."
 
 },
 {
   h1:"Frontend ",
   image:frontend,
-  p:"All types of consulting service It is a long established fact that a reader will be distracted."
+  p:"We are committed to assisting people like you in mastering frontend development because we are passionate about it. Our in-depth frontend development courses are made to provide you the abilities and information required to design outstanding user interfaces and engaging web experiences."
 
 },
 {
   h1:"Backend",
   image:backend,
-  p:"All types of consulting service It is a long established fact that a reader will be distracted."
+  p:"we are dedicated to empowering individuals like you to become skilled backend developers. Our comprehensive backend development courses are designed to equip you with the knowledge and expertise needed to create efficient and secure web applications."
 
 }
 

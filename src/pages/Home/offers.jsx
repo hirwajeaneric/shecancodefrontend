@@ -1,5 +1,7 @@
 import React from 'react'
-import image1 from "../../assets/undraw_education_f8ru.png"
+import image1 from "../../assets/learn.png"
+import employ from "../../assets/employ.png"
+import community from "../../assets/community.png"
 import {AiOutlineRight} from "react-icons/ai"
 import "./Home.css"
 import { program } from '../../constants'
@@ -10,17 +12,17 @@ const Offers = () => {
       <div className='offer-partOne'>
 <div className='offer-cards'>
   <div className='offer-cardOne'>
-<h2>Why Peaple <span className='cardOneText'> Choose Us</span></h2>
-<h1>Why Peaple Choose Our Services</h1>
+<h2>Why People <span className='cardOneText'> Choose Us</span></h2>
+<h1>Why People Choose Our Services</h1>
 <p>We do start from beginners to expert and we link graduates to employs</p>
   </div>
   <div className='offer-cardTwo'>
-    <h1>IT <br /> Solution</h1>
+    <h1>1 <br /> Train</h1>
     <div className='cardTwo-img'>
     <img src={image1} alt="no found" />
     </div>
    
-    <p> All types of consulting service It is a long established fact that a reader will be distracted. </p>
+    <p> Whether you have little coding knowledge/experience, are <span className='hide'> self-taught, or are somewhere in between, this program is designed for you. </span> </p>
 
   </div>
 
@@ -28,21 +30,21 @@ const Offers = () => {
       </div>
       <div className='offer-partTwo'>
       <div className='offer-partTwoCardOne'>
-      <h1>IT <br /> Solution</h1>
+      <h1>2 <br /> Employ</h1>
     <div className='cardTwo-img'>
-    <img src={image1} alt="no found" />
+    <img src={employ} alt="no found" />
     </div>
    
-    <p> All types of consulting service It is a long established fact that a reader will be distracted. </p>
+    <p> We strive to provide a seamless link between graduates looking for meaningful job and the <span className='hide'> best businesses looking for top-notch talent through our attentive efforts.</span>  </p>
 
 </div>
 <div className='offer-partTwoCardTwo'>
-<h1>IT <br /> Solution</h1>
+<h1>3 <br /> Community</h1>
     <div className='cardTwo-img'>
-    <img src={image1} alt="no found" />
+    <img src={community} alt="no found" />
     </div>
    
-    <p> All types of consulting service It is a long established fact that a reader will be distracted. </p>
+    <p> we are  committed to providing graduates with a comprehensive community experience. <span className='hide'> We prioritize networking opportunities, career assistance, and creating an empowering environment for graduates to successfully navigate the professional world.</span> </p>
 
 </div>
       </div>
