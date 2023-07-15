@@ -4,8 +4,14 @@
 
 .lens__on__life__container {
   padding: 1rem 0rem;
+  position: absolute;
+  top: 1300px;
 }
-
+@media screen and (max-width: 480px) {
+  .lens__on__life__container {
+    top: 1250px;
+  }
+}
 .lens__on__life__container h2 {
   text-align: center;
   font-size: 28px;
@@ -18,7 +24,7 @@
 
 .slider {
   background: white;
-  height: 400px;
+  height: 200px;
   margin: auto;
   overflow: hidden;
   position: relative;
@@ -60,8 +66,8 @@
     } */
 
 .slider .slide {
-  height: 60%;
-  width: 300px;
+  height: 100px;
+  width: 100px;
   display: flex;
   align-items: center;
   justify-content: center;

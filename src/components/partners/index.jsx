@@ -18,10 +18,25 @@ const Index = () => {
               <img src={un} alt="not there" />
             </div>
             <div class="slide">
+              <img src={un} alt="not there" />
+            </div>
+            <div class="slide">
+              <img src={un} alt="not there" />
+            </div>
+            <div class="slide">
               <img src={img} alt="image not found" />
             </div>
             <div class="slide">
               <img src={master} alt="not found" />
+            </div>
+            <div class="slide">
+              <img src={img} alt="none" />
+            </div>
+            <div class="slide">
+              <img src={img} alt="none" />
+            </div>
+            <div class="slide">
+              <img src={img} alt="none" />
             </div>
             <div class="slide">
               <img src={img} alt="none" />
@@ -37,6 +52,33 @@ const Index = () => {
             </div>
             <div class="slide">
               <img src={un} alt="not displayed" />
+            </div>
+            <div class="slide">
+              <img src={master} alt="no image" />
+            </div>
+            <div class="slide">
+              <img src={master} alt="no image" />
+            </div>
+            <div class="slide">
+              <img src={master} alt="no image" />
+            </div>
+            <div class="slide">
+              <img src={master} alt="no image" />
+            </div>
+            <div class="slide">
+              <img src={master} alt="no image" />
+            </div>
+            <div class="slide">
+              <img src={master} alt="no image" />
+            </div>
+            <div class="slide">
+              <img src={master} alt="no image" />
+            </div>
+            <div class="slide">
+              <img src={master} alt="no image" />
+            </div>
+            <div class="slide">
+              <img src={master} alt="no image" />
             </div>
             <div class="slide">
               <img src={master} alt="no image" />

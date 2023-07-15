@@ -19,6 +19,9 @@ const Footer = () => {
           <a href=""> Impact</a>   
           
     </div>
+    <div className='part-respo'>
+
+   
     <div className='footer-item'>
         <h3>Be social</h3>
         
@@ -34,6 +37,7 @@ const Footer = () => {
           <a href="#about"> About us</a>  <br />
           <a href="#program"> Program</a>   <br />
           
+    </div>
     </div>
  </div>
  <hr className='hr'/>

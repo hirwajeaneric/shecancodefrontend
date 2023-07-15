@@ -3,6 +3,7 @@ import image1 from "../../assets/learn.png"
 import employ from "../../assets/employ.png"
 import community from "../../assets/community.png"
 import {AiOutlineRight} from "react-icons/ai"
+import Footer from "../../components/Footers/footer"
 import "./Home.css"
 import { program } from '../../constants'
 const Offers = () => {
@@ -10,7 +11,7 @@ const Offers = () => {
     <div>
       <div className='offer-container' id='about'>
       <div className='offer-partOne'>
-<div className='offer-cards'>
+{/* <div className='offer-cards'> */}
   <div className='offer-cardOne'>
 <h2>Why People <span className='cardOneText'> Choose Us</span></h2>
 <h1>Why People Choose Our Services</h1>
@@ -27,7 +28,7 @@ const Offers = () => {
   </div>
 
 </div>
-      </div>
+      {/* </div> */}
       <div className='offer-partTwo'>
       <div className='offer-partTwoCardOne'>
       <h1>2 <br /> Employ</h1>
@@ -52,6 +53,7 @@ const Offers = () => {
       </div>
       
       <div className='program-section' id='program'>
+        <div className='no-content'> </div>
         <h2>What Do <span className='cardOneText'> We Provide?</span></h2>
         <h1>Our Program Provide The Best and Full Knowledge Reguired To Become a Software Engineer</h1>
 <div className='program-container'>
@@ -69,8 +71,13 @@ const Offers = () => {
     
   
 
+</div> 
+<div className='footer-home'>
+<Footer/>
 </div>
+ 
       </div>
+    
     </div>
   )
 }

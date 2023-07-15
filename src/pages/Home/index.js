@@ -18,10 +18,10 @@ let Home = () => {
       <Header />
       <Heading />
       <Offers />
-      <Index />
+      {/* <Index /> */}
       {/* <Parteners /> */}
       {/* <Alumni /> */}
-      <Footer />
+      {/* <Footer /> */}
       {/* 
      <Explore />
       <Program />

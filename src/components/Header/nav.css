@@ -138,12 +138,21 @@ img:hover {
 }
 
 @media screen and (min-width: 577px) and (max-width: 768px) {
+  .hamGrid {
+    width: 100%;
+  }
+  .all {
+    padding: 1px 0;
+  }
+  img {
+    width: 60px !important;
+  }
   .navbar {
     display: flex;
-    margin-left: 60px;
+    margin-left: 5px;
   }
   .navbar a {
-    font-size: 17px;
+    font-size: 13px;
     font-weight: 500;
     margin: 0 10px;
     transition: all 0.5s ease;

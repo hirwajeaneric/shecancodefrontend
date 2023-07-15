@@ -26,13 +26,10 @@ let Index = () => {
               </Link>
             </li>
             <li>
-              <Link to="/contact">Contact</Link>
+              <Link to="#">Services</Link>
             </li>
             <li>
               <Link to="/program">Program</Link>
-            </li>
-            <li>
-              <Link to="/login">Login</Link>
             </li>
           </ul>
           <div class="menu">
