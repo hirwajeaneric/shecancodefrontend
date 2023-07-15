@@ -8,8 +8,11 @@ const Footer = () => {
     <div>
       <div className='footerContainer' id='contact'>
  <div className='footer-content'>
+  <div className='part-respo'>
+
+  
     <div>
-        <h3>Subscribe to our weekly newsletter </h3>
+        <h3>Subscribe to our services </h3>
         <input type="text" name="" id="input" placeholder='email' /> <button className='btnfnl'>Submit</button>
     </div>
     <div  className='footer-item'>
@@ -18,6 +21,7 @@ const Footer = () => {
           <a href=""> Apprenticeship</a>  <br />
           <a href=""> Impact</a>   
           
+    </div>
     </div>
     <div className='part-respo'>
 

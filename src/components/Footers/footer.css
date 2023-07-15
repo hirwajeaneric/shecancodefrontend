@@ -7,14 +7,14 @@
 }
 .footer-content {
   display: flex;
-  gap: 100px;
+  gap: 200px;
   width: 73%;
   margin: auto;
 }
 .part-respo {
   display: flex;
   width: 40%;
-  justify-content: space-between;
+  gap: 150px;
 }
 .footer-content h3 {
   color: rgba(0, 48, 94, 1);
@@ -39,7 +39,8 @@
   padding: 10px 23px;
   background-color: rgba(0, 97, 152, 1);
   color: white;
-  margin-left: -40px;
+  margin-left: 150px;
+  margin-top: -20px;
 }
 .hr {
   width: 90%;
@@ -57,12 +58,15 @@
   padding-right: 10px;
   font-size: 32px;
 }
-@media screen and (max-width: 487px) {
+@media screen and (max-width: 575px) {
   .footerContainer {
     display: block;
   }
   .footer-content {
     display: block;
+  }
+  .part-respo {
+    display: block !important;
   }
   .footer-content .btnfnl {
     margin-left: 150px !important;
@@ -71,18 +75,30 @@
   .footer-item {
     margin-left: 20%;
   }
+  .footer-item h3 {
+    font-weight: 700 !important;
+  }
 }
 @media screen and (max-width: 320px) {
   .footer-content .btnfnl {
     margin-left: 60% !important ;
   }
+  .part-respo {
+    display: block !important;
+  }
+  .footer-item h3 {
+    font-weight: 700 !important;
+  }
 }
-@media screen and (min-width: 769px) and (max-width: 992px) {
+@media screen and (min-width: 577px) and (max-width: 992px) {
   .footer-content {
     display: block;
   }
 
   .footer-item {
     margin-left: 20%;
+  }
+  .footer-item h3 {
+    font-weight: 700 !important;
   }
 }

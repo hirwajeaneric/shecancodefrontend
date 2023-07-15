@@ -295,6 +295,25 @@
     margin-left: 0% !important;
   }
 }
+@media screen and (min-width: 769px) {
+  .heading-content {
+    width: 40%;
+  }
+  .heading-content h2 {
+    font-size: 22px;
+    padding-top: 60px;
+  }
+  .heading-btn {
+    margin-left: 30%;
+  }
+  .heading-program {
+    height: 13vh;
+    top: 540px;
+  }
+  .heading-program ul li {
+    padding: 10px;
+  }
+}
 .offer-container {
   width: 100%;
   height: 90vh;

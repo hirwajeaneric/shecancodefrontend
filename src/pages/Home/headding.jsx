@@ -13,7 +13,7 @@ const Heading = () => {
         <li>UI/UX Design</li>
         <li>Frontend</li>
         <li>Backend</li>
-        <li>Project Managment</li>
+        <li>Project Manage</li>
       </ul>
 
     </div>

@@ -51,11 +51,21 @@ let Index = () => {
         </div>
         {!humbState && (
           <div className="hamberger">
-            <p>Home</p>
-            <p>About</p>
-            <p>Contact</p>
-            <p>Program</p>
-            <p>Login</p>
+            <a href="/">
+              {" "}
+              <p> Home</p>
+            </a>
+            <a href="/about">
+              <p>About</p>
+            </a>
+            <a href="#">
+              {" "}
+              <p>Services</p>
+            </a>
+            <a href="program">
+              <p>Program</p>
+            </a>
+
             <Link to="/application">
               {" "}
               <p>Apply</p>
