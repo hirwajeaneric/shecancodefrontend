@@ -26,7 +26,7 @@ let Index = () => {
               </Link>
             </li>
             <li>
-              <Link to="#">Services</Link>
+              <Link to="/service">Services</Link>
             </li>
             <li>
               <Link to="/program">Program</Link>
@@ -58,7 +58,7 @@ let Index = () => {
             <a href="/about">
               <p>About</p>
             </a>
-            <a href="#">
+            <a href="/service">
               {" "}
               <p>Services</p>
             </a>

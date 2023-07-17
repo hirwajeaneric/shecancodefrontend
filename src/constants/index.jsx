@@ -53,3 +53,19 @@ export  const program=[{
 }
 
 ]
+
+export const jobs=[
+  {p:"  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa fuga obcaecati perferendis. Incidunt dolore, sapiente eos maxime exercitationem ipsam porro cupiditate asperiores nulla voluptatum? Exercitationem maxime est et molestiae qui?",
+
+img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuO1xwBKZ2eI-2hHC6jJhtyjdXSI7-UXUl8Q&usqp=CAU"
+},
+  {p:"  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa fuga obcaecati perferendis. Incidunt dolore, sapiente eos maxime exercitationem ipsam porro cupiditate asperiores nulla voluptatum? Exercitationem maxime est et molestiae qui?",
+
+img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuO1xwBKZ2eI-2hHC6jJhtyjdXSI7-UXUl8Q&usqp=CAU"
+},
+  {p:"  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa fuga obcaecati perferendis. Incidunt dolore, sapiente eos maxime exercitationem ipsam porro cupiditate asperiores nulla voluptatum? Exercitationem maxime est et molestiae qui?",
+
+img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuO1xwBKZ2eI-2hHC6jJhtyjdXSI7-UXUl8Q&usqp=CAU"
+}
+
+]

@@ -6,6 +6,7 @@ import {AiOutlineRight} from "react-icons/ai"
 import Footer from "../../components/Footers/footer"
 import "./Home.css"
 import { program } from '../../constants'
+import Index from '../../components/partners'
 const Offers = () => {
   return (
     <div>
@@ -51,8 +52,9 @@ const Offers = () => {
       </div>
 
       </div>
-      
+      <Index/>
       <div className='program-section' id='program'>
+       
         <div className='no-content'> </div>
         <h2>What Do <span className='cardOneText'> We Provide?</span></h2>
         <h1>Our Program Provide The Best and Full Knowledge Reguired To Become a Software Engineer</h1>

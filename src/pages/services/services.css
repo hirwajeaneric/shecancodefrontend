@@ -1,0 +1,204 @@
+.service-container {
+  background-image: linear-gradient(#33d3d61f, rgba(255, 255, 255, 0)),
+    url("../../assets/alumn8.jpeg");
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 80vh;
+}
+.service-partOne {
+  width: 60%;
+  margin: auto;
+  padding-top: 20px;
+  color: white;
+  font-size: 20px;
+}
+.service-partOne h1 {
+  text-align: start;
+  font-size: 50px;
+  font-weight: 900;
+}
+.service-partOne p {
+  text-align: center;
+  padding: 30px 160px;
+}
+.service-btn {
+  margin-left: 350px;
+}
+.custom-shape-divider-bottom-1689514587 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-bottom-1689514587 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 121px;
+}
+
+.custom-shape-divider-bottom-1689514587 .shape-fill {
+  fill: #ffff;
+}
+.next {
+  width: 100%;
+  height: 20vh;
+  position: absolute;
+  top: 700px;
+  display: flex;
+  gap: 50px;
+}
+.next-partOne {
+  padding-left: 90px;
+}
+.next-partTwo {
+  padding-right: 90px;
+  /* font-size: 20px; */
+}
+.next-partTwo p {
+  font-size: 21.5px;
+  font-family: Open Sans, sans-serif;
+  /* font-weight: 400; */
+}
+.next h2 {
+  font-size: 3.5rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 1.15;
+}
+.custom-shape-divider-bottom-1689517765 {
+  position: absolute;
+  top: 1000px;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-bottom-1689517765 svg {
+  position: relative;
+  display: block;
+  width: calc(135% + 1.3px);
+  height: 140px;
+  transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1689517765 .shape-fill {
+  fill: #294682;
+}
+.fluent-campany {
+  position: absolute;
+  top: 1139px;
+  background-color: #294682;
+  width: 100%;
+}
+.fluent-campany h1 {
+  color: white;
+  font-size: 32px;
+  padding: 30px 400px;
+  font-family: Open Sans, sans-serif;
+}
+.job {
+  position: absolute;
+  top: 1600px;
+}
+.job-search {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.job-partOne {
+  width: 45%;
+
+  font-size: 18px;
+}
+.job-partOne p {
+  padding: 40px;
+}
+.job-partTwo {
+  width: 50%;
+  border-radius: 30px 0 0 30px;
+}
+.job-partTwo img {
+  width: 749px;
+  height: auto;
+  border-radius: 30px 0 0 30px;
+}
+.job-partThree {
+  width: 45%;
+}
+.job-partThree img {
+  width: 100%;
+  height: auto;
+  border-radius: 0 30px 30px 0;
+}
+.job-partTwo p {
+  padding: 40px;
+}
+.job h1 {
+  font-size: 42px;
+  font-weight: 900;
+  padding: 40px;
+}
+.job-container {
+  position: absolute;
+  top: 3000px;
+  width: 100%;
+}
+.job-container h1 {
+  font-size: 30px;
+
+  font-weight: 900;
+  text-align: center;
+}
+.job-container h1 span {
+  text-transform: uppercase;
+}
+.job-content {
+  width: 60%;
+  margin: auto;
+}
+.job-content p {
+  padding-top: 40px;
+  font-size: 19px;
+  line-height: 40px;
+  font-family: Open Sans, sans-serif;
+}
+.job-content ul {
+  list-style: none;
+  margin-top: 30px;
+  font-size: 19px;
+  line-height: 40px;
+  font-family: Open Sans, sans-serif;
+}
+.job-content span {
+  font-weight: 700;
+  padding-right: 10px;
+}
+.job-content ul li {
+  padding-top: 20px;
+}
+.schedule {
+  position: absolute;
+  top: 3800px;
+  width: 58%;
+  height: 50vh;
+  background-color: black;
+  left: 22%;
+}
+.schedule h1 {
+  color: white;
+  font-size: 20px;
+  font-family: Open Sans, sans-serif;
+  text-align: start;
+  padding-left: 40px;
+  font-weight: 700;
+}
+.schedule img {
+  width: 100%;
+}
