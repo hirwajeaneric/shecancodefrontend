@@ -19,7 +19,7 @@ h1 {
       rgba(25, 135, 179, 0.577),
       rgba(250, 250, 250, 0.6)
     ),
-    url("https://images.pexels.com/photos/5076531/pexels-photo-5076531.jpeg?auto=compress&cs=tinysrgb&w=600");
+    url('https://images.pexels.com/photos/5076531/pexels-photo-5076531.jpeg?auto=compress&cs=tinysrgb&w=600');
   width: 100%;
   height: 70vh;
   background-repeat: no-repeat;
@@ -28,112 +28,113 @@ h1 {
   background-attachment: fixed;
 }
 .application-upper-content {
-  margin: 2rem 320px;
+  margin: 2rem auto; /* Use "auto" to horizontally center the content */
   padding-top: 100px;
   text-transform: uppercase;
   width: 50%;
+  max-width: 700px; /* Add a maximum width to limit the content on large screens */
 }
 .application-upper-content button {
-  margin-left: 250px;
-  margin-top: 60px;
+  margin-left: auto; /* Center the button horizontally on larger screens */
+  margin-right: auto; /* Center the button horizontally on larger screens */
+  margin-top: 30px; /* Adjust the top margin for smaller screens */
+  display: block; /* Ensure the button takes full width on smaller screens */
 }
-.appliction-middle {
-  display: flex;
-  /* height: 50vh; */
-  width: 90%;
-  margin: auto;
+
+.application-title {
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
 }
 h3 {
   padding-top: 30px;
 }
-.appliction-middle2 {
+
+.appliction-middle {
   display: flex;
-  /* height: 50vh; */
+  flex-wrap: wrap;
+  justify-content: space-between;
   width: 90%;
-
-  margin-top: 30px;
-  margin-left: 65px;
-
-  /* margin: auto; */
+  margin: auto;
+  margin-top: 40px;
 }
-.application-middlePart1 {
+
+.middle-1 {
+  flex-basis: calc(50% - 20px);
   display: flex;
-  width: 50%;
-  height: 20vh;
-  padding: 15px;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
 }
-.middlepart-left {
-  border: 1px solid rgb(1, 49, 76);
-  width: 150px;
-  height: 100px;
+
+.middle-1-content {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 10px;
+  flex: 1;
+}
+
+.middle-1-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 28px 13px;
+  border: 0.1875em solid #0f1c3f;
   border-radius: 50%;
-  margin-top: 25px;
+  box-shadow: 0.375em 0.375em 0 0 rgb(15 28 63 / 13%);
+  height: 5em;
+  width: 5em;
 }
 
-.middlepart-right {
-  padding-left: 25px;
-  margin-top: 20px;
-}
-.middlepart-right h2 {
-  text-align: center;
-  padding: 5px 7px 15px 5px;
-}
-.application-middlePart2 {
-  width: 50%;
-  height: 20vh;
-  display: flex;
+.middle-1-right {
+  text-align: left;
+  margin-left: 10px;
 }
 .application-lower-content {
   margin-top: 50px;
   padding-bottom: 40px;
 }
+.middle-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.middle-2 h1 {
+  width: 35%;
+  color: #000;
+  font-weight: 500;
+  border-bottom: 1px solid #294682;
+  padding-bottom: 10px;
+}
+
 .application-lower-content p {
   text-align: center;
   padding: 20px 200px;
 }
-.application-lower-content-element {
-  width: 80%;
-  margin: auto;
-  display: flex;
-  padding-top: 50px;
-}
-.application-lower-content-left {
-  width: 40%;
-  height: 40vh;
-}
-.application-lower-content-middle {
-  width: 0.2%;
-  height: 40vh;
-  background-color: black;
-}
-.application-lower-content-right {
-  width: 57%;
-  height: 40vh;
-}
-hr {
-  background-color: black;
-  height: 3px;
-}
-.application-courses {
-  display: flex;
-}
-.vl {
-  width: 1px;
-  margin-top: 10px;
-  margin-left: 10px;
-  height: 4vh;
-  background-color: black;
-}
-.application-lower-content-right button {
-  margin-left: 250px;
-  margin-top: 40px;
-}
-.application-lower-content-right h2 {
-  text-align: center;
-  padding: 5px;
-  font-weight: 300;
-}
-.flyer {
-  margin: auto;
+
+@media (max-width: 768px) {
+  .appliction-middle {
+    flex-direction: column;
+  }
+
+  .middle-1 {
+    flex-basis: 100%;
+  }
+
+  .middle-1-content {
+    justify-content: center;
+  }
+  .application-lower-content p {
+    padding: 20px 10px;
+  }
+  .middle-2 h1 {
+    width: 80%;
+  }
+  .application-upper-content button {
+    margin-top: 20px;
+  }
 }
