@@ -1,5 +1,7 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Typed from 'react-typed';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 import Index from '../Header/index';
 import './application.css';
 import Button from '../Button';
@@ -21,6 +23,10 @@ const Application = () => {
     'Explore handpicked courses that match your needs!',
   ];
 
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
+
   return (
     <>
       <Index />
@@ -40,7 +46,7 @@ const Application = () => {
         <div className="appliction-middle">
           {applicationMiddleContents.map((content, index) => (
             <div className="middle-1" key={index}>
-              <div className="middle-1-content">
+              <div data-aos="fade-right" className="middle-1-content">
                 <div className="middle-1-left">
                   <h2>{content.title}</h2>
                 </div>
