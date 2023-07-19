@@ -18,13 +18,13 @@ const Index = () => {
               <img src={un} alt="not there" />
             </div>
             <div class="slide">
-              <img src={un} alt="not there" />
+              <img src={master} alt="not there" />
             </div>
             <div class="slide">
-              <img src={un} alt="not there" />
+              <img src={img} alt="not there" />
             </div>
             <div class="slide">
-              <img src={img} alt="image not found" />
+              <img src={un} alt="image not found" />
             </div>
             <div class="slide">
               <img src={master} alt="not found" />
@@ -36,22 +36,34 @@ const Index = () => {
               <img src={img} alt="none" />
             </div>
             <div class="slide">
-              <img src={img} alt="none" />
+              <img src={un} alt="none" />
             </div>
             <div class="slide">
-              <img src={img} alt="none" />
+              <img src={master} alt="none" />
             </div>
             <div class="slide">
-              <img src={un} alt="not" />
+              <img src={img} alt="not" />
             </div>
             <div class="slide">
-              <img src={master} alt="no found" />
+              <img src={un} alt="no found" />
             </div>
             <div class="slide">
-              <img src={img} alt="unvailable" />
+              <img src={master} alt="unvailable" />
             </div>
             <div class="slide">
-              <img src={un} alt="not displayed" />
+              <img src={img} alt="not displayed" />
+            </div>
+            <div class="slide">
+              <img src={un} alt="no image" />
+            </div>
+            <div class="slide">
+              <img src={master} alt="no image" />
+            </div>
+            <div class="slide">
+              <img src={img} alt="no image" />
+            </div>
+            <div class="slide">
+              <img src={un} alt="no image" />
             </div>
             <div class="slide">
               <img src={master} alt="no image" />
@@ -63,25 +75,13 @@ const Index = () => {
               <img src={master} alt="no image" />
             </div>
             <div class="slide">
-              <img src={master} alt="no image" />
+              <img src={img} alt="no image" />
             </div>
             <div class="slide">
               <img src={master} alt="no image" />
             </div>
             <div class="slide">
-              <img src={master} alt="no image" />
-            </div>
-            <div class="slide">
-              <img src={master} alt="no image" />
-            </div>
-            <div class="slide">
-              <img src={master} alt="no image" />
-            </div>
-            <div class="slide">
-              <img src={master} alt="no image" />
-            </div>
-            <div class="slide">
-              <img src={master} alt="no image" />
+              <img src={un} alt="no image" />
             </div>
           </div>
         </div>

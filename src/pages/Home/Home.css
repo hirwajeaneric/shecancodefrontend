@@ -31,20 +31,10 @@
   top: 250px;
   background-color: #294682;
 }
-@keyframes fade-in {
-  0% {
-    left: -300px;
-  }
-  100% {
-    left: 0;
-  }
-}
-.heading-content {
-  animation: fade-in 5s;
-}
+
 .heading-content h2 {
   color: white;
-  font-size: 32px;
+
   padding-top: 30px;
   /* padding-right: 20px; */
   text-align: center;
@@ -355,6 +345,7 @@
 }
 .offer-cardOne h2 {
   font-size: 18px;
+  font-family: Open Sans, sans-serif;
 }
 .offer-cardOne h1 {
   font-size: 40px;
@@ -366,6 +357,7 @@
   font-size: 18px;
   padding-top: 20px;
   letter-spacing: 1px;
+  font-family: Open Sans, sans-serif;
 }
 .offer-partTwoCardOne:hover .hide {
   display: block;
@@ -384,21 +376,7 @@
   top: 100px;
   transform-origin: bottom;
 }
-.offer-cardTwo:hover {
-  animation-name: bounce;
-  animation-timing-function: ease;
-}
-@keyframes bounce {
-  0% {
-    transform: translateY(0);
-  }
-  /* 50% {
-    transform: translateY(-100px);
-  } */
-  100% {
-    transform: translateY(50px);
-  }
-}
+
 .hide {
   display: none;
 }
@@ -416,6 +394,7 @@
   font-size: 18px;
   padding: 20px;
   letter-spacing: 1px;
+  font-family: Open Sans, sans-serif;
 }
 .offer-partTwoCardOne {
   position: absolute;
@@ -429,21 +408,7 @@
   animation-duration: 2s;
   transform-origin: bottom;
 }
-.offer-partTwoCardOne:hover {
-  animation-name: bounce;
-  animation-timing-function: ease;
-}
-@keyframes bounce {
-  0% {
-    transform: translateY(0);
-  }
-  /* 50% {
-    transform: translateY(-100px);
-  } */
-  100% {
-    transform: translateY(50px);
-  }
-}
+
 .offer-partTwoCardOne h1 {
   font-size: 30px;
   font-weight: 700;
@@ -454,6 +419,7 @@
   font-size: 18px;
   padding: 20px;
   letter-spacing: 1px;
+  font-family: Open Sans, sans-serif;
 }
 .offer-partTwoCardTwo {
   position: absolute;
@@ -468,10 +434,7 @@
 
   transform-origin: bottom;
 }
-.offer-partTwoCardTwo:hover {
-  animation-name: bounce;
-  animation-timing-function: ease;
-}
+
 .offer-partTwoCardTwo h1 {
   font-size: 30px;
   font-weight: 700;
@@ -481,6 +444,7 @@
   color: rgba(128, 128, 128, 0.751);
   font-size: 18px;
   padding: 20px;
+  font-family: Open Sans, sans-serif;
   letter-spacing: 1px;
 }
 .cardTwo-img {
@@ -496,6 +460,7 @@
   width: 100%;
   padding: 100px 30px;
   margin-top: 50px;
+  font-family: Open Sans, sans-serif;
 }
 .no-content {
   height: 20vh;
@@ -510,6 +475,7 @@
   font-size: 32px;
   text-align: center;
   color: white;
+  font-family: Open Sans, sans-serif;
 }
 .program-container {
   display: flex;
@@ -557,6 +523,9 @@
   border-radius: 5px;
   background-color: white;
   margin: 20px 0 20px 80px;
+}
+.program-cardOne p {
+  font-family: Open Sans, sans-serif;
 }
 .btn-more {
   position: relative;

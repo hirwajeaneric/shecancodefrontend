@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import image1 from "../../assets/learn.png"
 import employ from "../../assets/employ.png"
 import community from "../../assets/community.png"
@@ -7,11 +7,18 @@ import Footer from "../../components/Footers/footer"
 import "./Home.css"
 import { program } from '../../constants'
 import Index from '../../components/partners'
+import Aos from "aos"
+import "aos/dist/aos.css";
+
+ 
 const Offers = () => {
+  useEffect(()=>{
+    Aos.init({duration:3000});
+  },[])
   return (
     <div>
-      <div className='offer-container' id='about'>
-      <div className='offer-partOne'>
+      <div data-aos="fade-up" className='offer-container' id='about'>
+      <div  className='offer-partOne'>
 {/* <div className='offer-cards'> */}
   <div className='offer-cardOne'>
 <h2>Why People <span className='cardOneText'> Choose Us</span></h2>
@@ -53,12 +60,12 @@ const Offers = () => {
 
       </div>
       <Index/>
-      <div className='program-section' id='program'>
+      <div data-aos="fade-up" className='program-section' id='program'>
        
-        <div className='no-content'> </div>
+        <div  className='no-content'> </div>
         <h2>What Do <span className='cardOneText'> We Provide?</span></h2>
         <h1>Our Program Provide The Best and Full Knowledge Reguired To Become a Software Engineer</h1>
-<div className='program-container'>
+<div data-aos="fade-up" className='program-container'>
  {program.map((e)=>(
   <div className='program-cardOne'>
   <h3>{e.h1}</h3>
