@@ -132,6 +132,9 @@ img:hover {
   .close {
     display: block;
   }
+  .hamberger {
+    color: white;
+  }
   .all img {
     width: 70px;
   }
@@ -158,7 +161,15 @@ img:hover {
     transition: all 0.5s ease;
   }
 }
-
+@media screen and (min-width: 769px) and (max-width: 1116px) {
+  .all {
+    width: 100% !important;
+    /* background-color: red; */
+  }
+  .navbar {
+    margin-left: 10px;
+  }
+}
 @media screen and (min-width: 769px) and (max-width: 992px) {
   .navbar {
     display: flex;
