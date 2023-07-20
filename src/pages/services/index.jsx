@@ -78,7 +78,7 @@ There are so many interesting problems to solve, and companies need diverse and 
 </div>
 <div  className='fluent-campany'>
 <h1>Prepare yourself to work for some of the most influential companies in the world.</h1>
-<div className='company-image' data-aos="fade-up"> 
+<div className='company-image'> 
   <img src={amali} alt="" />
   <img src={hence} alt="" />
   <img src={thegym} alt="" />

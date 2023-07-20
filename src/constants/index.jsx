@@ -69,3 +69,8 @@ img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuO1xwBKZ2eI-2hHC6jJh
 }
 
 ]
+export const alumni=[
+  {
+    
+  }
+]
