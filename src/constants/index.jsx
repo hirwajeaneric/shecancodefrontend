@@ -1,29 +1,27 @@
 import img from "../assets/ui.png"
 import frontend from "../assets/frontend.png"
 import backend from "../assets/backend.png"
-import liliane from "../pages/About/aboutImage/liliane.jpg"
-import alice from "../pages/About/aboutImage/Alilce.jpg"
-import grace from "../pages/About/aboutImage/Grace.jpg"
-
 export const leadershipTeam = [
   {
     id: 1,
-    image:liliane,
-    name: "Liliane Uwase",
-    position: "Operations and finance officer",
+    image:
+      "https://images.pexels.com/photos/35537/child-children-girl-happy.jpg?auto=compress&cs=tinysrgb&w=600",
+    name: "Noella",
+    position: "Managing director in finance",
   },
   {
     id: 2,
-    image:alice,
-      
-    name: "Alice Mutuyimana",
-    position: "Technical Facilitator",
+    image:
+      "https://images.pexels.com/photos/35537/child-children-girl-happy.jpg?auto=compress&cs=tinysrgb&w=600",
+    name: "Noella",
+    position: "Managing director in finance",
   },
   {
     id: 3,
-    image:grace,
-    name: "Grace Izabayo",
-    position: "Communication manager",
+    image:
+      "https://images.pexels.com/photos/35537/child-children-girl-happy.jpg?auto=compress&cs=tinysrgb&w=600",
+    name: "Noella",
+    position: "Managing director in finance",
   },
   {
     id: 4,

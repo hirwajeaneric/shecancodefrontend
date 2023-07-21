@@ -14,7 +14,7 @@
 .part-respo {
   display: flex;
   width: 40%;
-  gap: 100px;
+  gap: 150px;
 }
 .footer-content h3 {
   color: rgba(0, 48, 94, 1);
@@ -94,9 +94,7 @@
   .footer-content {
     display: block;
   }
-  .footerContainer {
-    padding: 30px;
-  }
+
   .footer-item {
     margin-left: 20%;
   }
