@@ -1,13 +1,14 @@
-import { useState } from "react";
-import { FaTimes } from "react-icons/fa";
-import { Link } from "react-router-dom";
-import Image from "./images/logoscc.png";
-import "./nav.css";
-import Button from "../Button";
-import Bar from "../Nav";
+import { useState } from 'react';
+import { FaTimes } from 'react-icons/fa';
+import { Link, useLocation } from 'react-router-dom';
+import Image from './images/logoscc.png';
+import './nav.css';
+import Button from '../Button';
+import Bar from '../Nav';
 
 let Index = () => {
   let [humbState, setHumbState] = useState(true);
+  const location = useLocation();
   return (
     <>
       <div className="hamGrid">
@@ -15,26 +16,42 @@ let Index = () => {
           <img src={Image} alt="scc-logo" />
           <ul class="navbar">
             <li>
-              <Link class="active" to="/">
+              <Link
+                className={location.pathname === '/' ? 'active' : ''}
+                to="/"
+              >
                 Home
               </Link>
             </li>
             <li>
-              <Link to="/about">
+              <Link
+                className={location.pathname === '/about' ? 'active' : ''}
+                to="/about"
+              >
                 About
                 {/* <i class="bx bx-chevron-down"></i> */}
               </Link>
             </li>
             <li>
-              <Link to="/service">Services</Link>
+              <Link
+                className={location.pathname === '/service' ? 'active' : ''}
+                to="/service"
+              >
+                Services
+              </Link>
             </li>
             <li>
-              <Link to="/program">Program</Link>
+              <Link
+                className={location.pathname === '/program' ? 'active' : ''}
+                to="/program"
+              >
+                Program
+              </Link>
             </li>
           </ul>
           <div class="menu">
             <Link to="/apply">
-              <Button btnTitle={"Apply"} />
+              <Button btnTitle={'Apply'} />
             </Link>
             {humbState && (
               <div
@@ -52,14 +69,14 @@ let Index = () => {
         {!humbState && (
           <div className="hamberger">
             <a href="/">
-              {" "}
+              {' '}
               <p> Home</p>
             </a>
             <a href="/about">
               <p>About</p>
             </a>
             <a href="/service">
-              {" "}
+              {' '}
               <p>Services</p>
             </a>
             <a href="program">
@@ -67,7 +84,7 @@ let Index = () => {
             </a>
 
             <Link to="/application">
-              {" "}
+              {' '}
               <p>Apply</p>
             </Link>
           </div>
