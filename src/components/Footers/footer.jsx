@@ -12,7 +12,7 @@ const Footer = () => {
 
   
     <div className='footer-item'>
-        <h3>Thank you using our services </h3>
+        <h3>Thank you for learning with us </h3>
         {/* <input type="text" name="" id="input" placeholder='email' /> <button className='btnfnl'>Submit</button> */}
     </div>
     <div  className='footer-item'>

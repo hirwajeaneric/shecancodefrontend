@@ -1,0 +1,39 @@
+[33m2aa853d[m[33m ([m[1;36mHEAD -> [m[1;32mfx-responsiveness[m[33m, [m[1;31morigin/develop[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mdevelop[m[33m)[m HEAD@{0}: checkout: moving from fx-responsive-2 to fx-responsiveness
+[33m4ecb2e2[m[33m ([m[1;32mfx-responsive-2[m[33m)[m HEAD@{1}: commit: fix responsive
+[33m2aa853d[m[33m ([m[1;36mHEAD -> [m[1;32mfx-responsiveness[m[33m, [m[1;31morigin/develop[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mdevelop[m[33m)[m HEAD@{2}: checkout: moving from fx-responsiveness to fx-responsive-2
+[33m2aa853d[m[33m ([m[1;36mHEAD -> [m[1;32mfx-responsiveness[m[33m, [m[1;31morigin/develop[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mdevelop[m[33m)[m HEAD@{3}: rebase finished: refs/heads/fx-responsiveness onto 2aa853df0b3d1c086d5d45e6119d6fbfa290c68a
+[33m2aa853d[m[33m ([m[1;36mHEAD -> [m[1;32mfx-responsiveness[m[33m, [m[1;31morigin/develop[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mdevelop[m[33m)[m HEAD@{4}: rebase: checkout develop
+[33m9cd5576[m[33m ([m[1;31morigin/fx-responsiveness[m[33m)[m HEAD@{5}: checkout: moving from develop to fx-responsiveness
+[33m2aa853d[m[33m ([m[1;36mHEAD -> [m[1;32mfx-responsiveness[m[33m, [m[1;31morigin/develop[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mdevelop[m[33m)[m HEAD@{6}: pull: Fast-forward
+[33m662ea2e[m HEAD@{7}: checkout: moving from fx-responsiveness to develop
+[33m9cd5576[m[33m ([m[1;31morigin/fx-responsiveness[m[33m)[m HEAD@{8}: checkout: moving from develop to fx-responsiveness
+[33m662ea2e[m HEAD@{9}: checkout: moving from fx-responsiveness to develop
+[33m9cd5576[m[33m ([m[1;31morigin/fx-responsiveness[m[33m)[m HEAD@{10}: commit (amend): Merge branch 'fx-responsiveness' of github.com:Igire-Rwanda/shecancodefrontend into fx-responsiveness
+[33mcf1894e[m HEAD@{11}: commit (merge): Merge branch 'fx-responsiveness' of github.com:Igire-Rwanda/shecancodefrontend into fx-responsiveness
+[33maaacfaa[m HEAD@{12}: commit (amend): clean the code
+[33md80ebe9[m[33m ([m[1;32mft-redisign-program-02[m[33m)[m HEAD@{13}: checkout: moving from ft-redisign-program-02 to fx-responsiveness
+[33md80ebe9[m[33m ([m[1;32mft-redisign-program-02[m[33m)[m HEAD@{14}: commit (amend): clean the code
+[33m29bc824[m[33m ([m[1;31morigin/ft-redisign-program-02[m[33m)[m HEAD@{15}: rebase finished: returning to refs/heads/ft-redisign-program-02
+[33m29bc824[m[33m ([m[1;31morigin/ft-redisign-program-02[m[33m)[m HEAD@{16}: rebase: clean the code
+[33m01a982b[m HEAD@{17}: rebase: adding program and title
+[33m342c68c[m HEAD@{18}: rebase: ft: test if i can push on repo
+[33m662ea2e[m HEAD@{19}: rebase: checkout develop
+[33m2445064[m HEAD@{20}: checkout: moving from develop to ft-redisign-program-02
+[33m662ea2e[m HEAD@{21}: checkout: moving from ft-redisign-program-02 to develop
+[33m2445064[m HEAD@{22}: checkout: moving from develop to ft-redisign-program-02
+[33m662ea2e[m HEAD@{23}: commit: responsive
+[33m874bd72[m HEAD@{24}: commit: service updated
+[33me4649d3[m HEAD@{25}: commit: services page
+[33m70a7e23[m HEAD@{26}: commit: responsive and nav
+[33ma712673[m HEAD@{27}: commit: responsiveness
+[33m36f6ef1[m HEAD@{28}: commit: update content
+[33m651e808[m HEAD@{29}: commit: change home page
+[33ma63ef6f[m HEAD@{30}: commit: fix pages
+[33m31f147e[m HEAD@{31}: commit: application form
+[33md4484ab[m HEAD@{32}: commit (merge): df
+[33mb096f80[m HEAD@{33}: commit: test2
+[33m2d0cb48[m HEAD@{34}: commit (merge): test2
+[33m5cd8093[m HEAD@{35}: commit: test
+[33m5230d59[m HEAD@{36}: pull: Fast-forward
+[33m0ddf5e5[m HEAD@{37}: commit: fix error
+[33md1ff803[m HEAD@{38}: clone: from git@github.com:Igire-Rwanda/shecancodefrontend.git

@@ -106,6 +106,7 @@
 }
 .left-images {
   display: flex;
+  justify-content: space-between;
 }
 .about-thrird-section .about-left img {
   width: 110px;
@@ -146,6 +147,7 @@
   padding: 40px;
   border: 2px solid rgb(190, 190, 190);
   border-radius: 20px;
+  margin-bottom: 10px;
 }
 .about-founder .founder-one img {
   width: 250px;
@@ -242,420 +244,101 @@
   text-align: center;
   color: #334a60;
   font-size: 23px;
+  font-weight: 700;
 }
 
-@media screen and (max-width: 800px) {
-  .about-page {
-    width: 100%;
-  }
-  .about-one-section {
-    width: 1333px;
-  }
-  .about-one-section img {
-    margin: 0;
-  }
+@media screen and (max-width: 576px) {
   .about-two-section {
-    width: 1333px;
-    padding: 30px 20px 0 0;
+    display: block;
+
+    padding: 0;
   }
   .about-rotate {
-    width: 320px;
-    padding: 70px 0px 0 30px;
-    margin-left: 0;
+    display: flex;
+
+    justify-content: space-between;
   }
-  .about-rotate img {
-    width: 80px;
-    height: 80px;
-  }
-  .about-rotate .both {
-    margin-left: 0px;
-    margin-top: 10px;
-  }
-  .about-rotate .imageOne {
-    margin-top: 60px;
-  }
-  .about-rotate .imageOne,
-  .about-rotate .imageFour {
-    width: 60px;
-    height: 60px;
-  }
-  .about-par p {
-    font-size: 25px;
+  .about-par {
+    width: 100%;
+    padding: 10px;
   }
   .about-thrird-section {
-    width: 1333px;
+    display: block;
+    padding: 0;
   }
   .about-thrird-section .about-right {
-    margin-top: 190px;
-    width: 25%;
+    width: 100%;
+    padding: 0;
   }
-  .about-thrird-section .about-left {
-    width: 25%;
+
+  .about-thrird-section .about-right img {
+    width: 50%;
   }
   .about-thrird-section .about-paragraph {
-    font-size: 25px;
+    width: 100%;
+    padding: 10px;
+  }
+  .about-thrird-section .about-paragraph p {
+    font-size: 15px;
+  }
+  .about-thrird-section .about-left {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .about-thrird-section .about-left img {
+    width: 40%;
+    padding: 0;
   }
   .about-founder {
-    width: 1333px;
-    font-size: 25px;
-  }
-  .about-icon {
-    margin-left: 990px;
-  }
-  .why-about {
+    padding: 260px 0 0 0;
     width: 100%;
-    margin: 30px 40px 0 330px;
-    padding: 80px 30px;
-    font-size: 25px;
   }
-  .about-leads {
-    width: 1333px;
+  .about-founder h2 {
+    font-weight: 700;
+    font-size: 22px;
+    letter-spacing: 5px;
+    padding: 30px;
   }
-  .lead-one {
-    width: 25%;
+  .about-founder p {
+    padding: 20px;
+  }
+  .para {
+    width: 100% !important;
+  }
+  .about-founder .founder-one {
+    display: block;
+    padding: 0;
+  }
+  .about-founder .founder-one img {
+    width: 100%;
+    border-radius: 20px;
+  }
+  .about-founder .founder-one h3 {
+    font-weight: 700;
+    font-size: 22px;
+  }
+  .about-leads p {
+    padding: 10px;
   }
   .leadership-form {
-    font-size: 25px;
+    /* padding: 30px 150px; */
+    display: block;
+    padding: 0;
     width: 100%;
-    padding: 30px 50px;
   }
   .about-leader {
-    padding: 10px 200px 20 20px;
+    width: 100%;
   }
   .about-leader img {
-    width: 270px;
-    height: 260px;
-    padding: 10px;
-    margin-left: 0;
-    object-fit: cover;
+    width: 100%;
+    padding: 0;
   }
   .about-path {
-    margin-left: 230px;
-  }
-}
-
-@media only screen and (max-width: 575.98px) {
-  .about-page {
-    width: 100%;
-    background-color: red;
-  }
-  .about-one-section {
-    width: 100%;
-  }
-  .about-two-section {
-    /* background-color: red; */
-    display: block;
-    width: 100%;
-    font-size: 12px;
-    /* letter-spacing: 3px; */
-    line-height: 50px;
-    padding: 30px 50px;
-    /* margin-top: 60px; */
-  }
-  .about-rotate {
-    margin-left: 250px;
-    margin-bottom: 50px;
-  }
-  .about-rotate {
     display: none;
   }
-
-  .about-thrird-section {
-    display: block;
+  .about-one-section p {
+    font-size: 25px;
+    margin-left: 10%;
   }
 }
-/* @media screen and (max-width: 680px) {
-  .about-page {
-    width: 100%;
-  }
-  .about-one-section {
-    width: 1333px;
-  }
-  .about-one-section img {
-    margin: 0;
-  }
-  .about-two-section {
-    width: 1333px;
-    padding: 30px 20px 0 0;
-  }
-  .about-rotate {
-    width: 320px;
-    padding: 70px 0px 0 30px;
-    margin-left: 0;
-  }
-  .about-rotate img {
-    width: 80px;
-    height: 80px;
-  }
-  .about-rotate .both {
-    margin-left: 0px;
-    margin-top: 10px;
-  }
-  .about-rotate .imageOne {
-    margin-top: 60px;
-  }
-  .about-rotate .imageOne,
-  .about-rotate .imageFour {
-    width: 60px;
-    height: 60px;
-  }
-  .about-par p {
-    font-size: 25px;
-  }
-  .about-thrird-section {
-    width: 1333px;
-  }
-  .about-thrird-section .about-right {
-    margin-top: 190px;
-    width: 25%;
-  }
-  .about-thrird-section .about-left {
-    width: 25%;
-  }
-  .about-thrird-section .about-paragraph {
-    font-size: 25px;
-  }
-  .about-founder {
-    width: 1333px;
-    font-size: 25px;
-  }
-  .about-icon {
-    margin-left: 990px;
-  }
-  .why-about {
-    width: 100%;
-    margin: 30px 40px 0 330px;
-    padding: 80px 30px;
-    font-size: 25px;
-  }
-  .about-leads {
-    width: 1333px;
-  }
-  .lead-one {
-    width: 25%;
-  }
-  .leadership-form {
-    font-size: 25px;
-    width: 100%;
-    padding: 30px 50px;
-  }
-  .about-leader {
-    padding: 10px 200px 20 20px;
-  }
-  .about-leader img {
-    width: 270px;
-    height: 260px;
-    padding: 10px;
-    margin-left: 0;
-    object-fit: cover;
-  }
-  .about-path {
-    margin-left: 230px;
-  }
-} */
-
-/* @media screen and (max-width: 414px) {
-  .about-page {
-    width: 100%;
-    background-color: red;
-  }
-  .about-one-section {
-    width: 1333px;
-  }
-  .about-one-section img {
-    margin: 0;
-  }
-  .about-two-section {
-    width: 1333px;
-    padding: 30px 20px 0 0;
-    display: block;
-  }
-  .about-rotate {
-    width: 320px;
-    padding: 70px 0px 0 30px;
-    margin-left: 0;
-  }
-  .about-rotate img {
-    width: 80px;
-    height: 80px;
-  }
-  .about-rotate .both {
-    margin-left: 0px;
-    margin-top: 10px;
-  }
-  .about-rotate .imageOne {
-    margin-top: 60px;
-  }
-  .about-rotate .imageOne,
-  .about-rotate .imageFour {
-    width: 60px;
-    height: 60px;
-  }
-  .about-par p {
-    font-size: 30px;
-  }
-  .about-thrird-section {
-    width: 1333px;
-  }
-  .about-thrird-section .about-right {
-    margin-top: 300px;
-    width: 25%;
-  }
-  .about-thrird-section .about-left {
-    width: 25%;
-  }
-  .about-thrird-section .about-paragraph {
-    font-size: 30px;
-  }
-  .about-founder {
-    width: 1333px;
-    font-size: 30px;
-  }
-  .about-icon {
-    margin-left: 450px;
-  }
-  .about-icon span i {
-    font-size: 80px;
-  }
-  .about-founder .founder-one {
-    display: block;
-    font-size: 30px;
-  }
-  .about-founder .founder-one h3 {
-    font-size: 35px;
-    margin-left: 20px;
-  }
-  .founders .founder-one img {
-    width: 80%;
-    height: 500px;
-  }
-  .about-founder .founder-one {
-    width: 80%;
-  }
-  .why-about {
-    width: 700px;
-    margin: 30px 40px 0 200px;
-    padding: 80px 30px;
-    font-size: 30px;
-  }
-  .about-leads {
-    width: 1333px;
-  }
-  .lead-one {
-    width: 25%;
-  }
-  .leadership-form {
-    font-size: 25px;
-    width: 100%;
-    padding: 30px 50px;
-  }
-  .about-leader {
-    padding: 10px 200px 20 20px;
-  }
-  .about-leader img {
-    width: 270px;
-    height: 260px;
-    padding: 10px;
-    margin-left: 0;
-    object-fit: cover;
-  }
-  .about-path {
-    margin-left: 230px;
-  }
-}
-@media screen and (max-width: 1000px) {
-  .about-page {
-    width: 1000px;
-  }
-  .about-one-section {
-    width: 1333px;
-  }
-  .about-one-section img {
-    margin: 0;
-  }
-  .about-two-section {
-    width: 1333px;
-    padding: 30px 20px 0 0;
-  }
-  .about-rotate {
-    width: 320px;
-    padding: 70px 0px 0 30px;
-    margin-left: 0;
-  }
-  .about-rotate img {
-    width: 80px;
-    height: 80px;
-  }
-  .about-rotate .both {
-    margin-left: 0px;
-    margin-top: 10px;
-  }
-  .about-rotate .imageOne {
-    margin-top: 60px;
-  }
-  .about-rotate .imageOne,
-  .about-rotate .imageFour {
-    width: 60px;
-    height: 60px;
-  }
-  .about-par p {
-    font-size: 20px;
-  }
-  .about-thrird-section {
-    width: 1333px;
-  }
-  .about-thrird-section .about-right {
-    margin-top: 200px;
-    width: 25%;
-  }
-  .about-thrird-section .about-left {
-    width: 25%;
-  }
-  .about-thrird-section .about-paragraph {
-    font-size: 20px;
-  }
-  .about-founder {
-    width: 1333px;
-    font-size: 20px;
-  }
-  .about-icon {
-    margin-left: 1000px;
-  }
-  .about-founder .founder-one {
-    font-size: 20px;
-  }
-  .about-founder .founder-one h3 {
-    font-size: 35px;
-    margin-left: 20px;
-  }
-  .why-about {
-    width: 700px;
-    margin: 30px 40px 0 270px;
-    padding: 80px 30px;
-    font-size: 18px;
-  }
-  .about-leads {
-    width: 1333px;
-  }
-  .lead-one {
-    width: 25%;
-  }
-  .leadership-form {
-    font-size: 20px;
-    width: 100%;
-    padding: 30px 50px;
-  }
-  .about-leader {
-    padding: 10px 200px 20 20px;
-  }
-  .about-leader img {
-    width: 270px;
-    height: 260px;
-    padding: 10px;
-    margin-left: 0;
-    object-fit: cover;
-  }
-  .about-path {
-    margin-left: 230px;
-  }
-} */
