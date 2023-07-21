@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import Typed from 'react-typed';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
@@ -10,8 +10,6 @@ import Course from '../courses/Course';
 import { applicationMiddleContents } from '../courses/courseData';
 
 const Application = () => {
-  const [buttonText, setButtonText] = useState('Get started');
-
   const sentences = [
     'Application is open for SheCanCode Cohort 9 Bootcamp',
     'Join us and learn valuable coding skills',
@@ -27,17 +25,7 @@ const Application = () => {
 
   useEffect(() => {
     Aos.init({ duration: 2000 });
-    updateButtonText();
-    window.addEventListener('resize', updateButtonText);
-    return () => {
-      window.removeEventListener('resize', updateButtonText);
-    };
   }, []);
-
-  const updateButtonText = () => {
-    const isSmallScreen = window.innerWidth <= 768;
-    setButtonText(isSmallScreen ? 'Apply' : 'Get started');
-  };
 
   return (
     <>
@@ -51,7 +39,7 @@ const Application = () => {
         <div className="application-upper">
           <div className="application-upper-content">
             <h1>Learning made Easy</h1>
-            <Button btnTitle={`${buttonText}`} />
+            <Button btnTitle={'Get started'} />
           </div>
         </div>
 
