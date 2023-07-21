@@ -107,13 +107,17 @@ const Services = () => {
       </div>
       <div className="fluent-campany">
         <h1>
+
           Prepare yourself to work for some of the most influential companies.
+
         </h1>
         <div className="company-image" data-aos="fade-up">
           <img src={amali} alt="" />
           <img src={hence} alt="" />
           <img src={thegym} alt="" />
+
           <img src={umurava} alt="" />
+
         </div>
       </div>
       <div className="job">
