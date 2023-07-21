@@ -161,7 +161,7 @@
   }
   .program-section {
     display: block;
-    top: 2670px;
+    top: 2970px;
   }
   .program-section h1 {
     font-size: 20px !important;
@@ -178,6 +178,37 @@
   }
   .no-content {
     height: 0vh !important;
+  }
+  .for-responsive {
+    position: relative !important;
+    top: 1000px !important;
+  }
+}
+@media screen and (min-width: 770px) and (max-width: 1116px) {
+  .heading-content {
+    width: 50% !important;
+  }
+  .offer-cardOne h1 {
+    font-size: 23px !important;
+  }
+  .offer-cardTwo {
+    left: 43% !important;
+    width: 45% !important;
+  }
+  .offer-partTwo {
+  }
+  .offer-partTwoCardOne {
+    left: -12% !important;
+    width: 55% !important;
+  }
+  .offer-partTwoCardTwo {
+    width: 55% !important;
+    left: 45% !important;
+  }
+}
+@media screen and (max-width: 415px) {
+  .program-section {
+    top: 3300px;
   }
 }
 @media screen and (min-width: 577px) and (max-width: 768px) {
@@ -221,7 +252,11 @@
     padding-left: 15px !important;
   }
   .program-section {
-    top: 1900px;
+    top: 2740px;
+  }
+  .for-responsive {
+    position: relative;
+    top: 430px;
   }
   .program-section h1 {
     font-size: 20px !important;
@@ -243,6 +278,11 @@
   }
   .no-content {
     height: 0 !important;
+  }
+}
+@media (max-width: 463px) {
+  .for-responsive {
+    top: 700px !important;
   }
 }
 @media screen and (max-width: 320px) {
@@ -304,6 +344,7 @@
     padding: 10px;
   }
 }
+
 .offer-container {
   width: 100%;
   height: 90vh;

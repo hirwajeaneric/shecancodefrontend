@@ -33,12 +33,14 @@ let Index = () => {
               </Link>
             </li>
             <li>
+
               <Link
                 className={location.pathname === '/service' ? 'active' : ''}
                 to="/service"
               >
-                Services
+                Career Services
               </Link>
+
             </li>
             <li>
               <Link
@@ -68,20 +70,27 @@ let Index = () => {
         </div>
         {!humbState && (
           <div className="hamberger">
+
             <a href="/">
               {' '}
+
+            <Link to="/">
+              {" "}
+
               <p> Home</p>
-            </a>
-            <a href="/about">
+            </Link>
+            <Link to="/about">
               <p>About</p>
-            </a>
-            <a href="/service">
-              {' '}
-              <p>Services</p>
-            </a>
-            <a href="program">
+
+            </Link>
+            <Link to="/service">
+              {" "}
+              <p> Career Services</p>
+            </Link>
+            <Link to="program">
+
               <p>Program</p>
-            </a>
+            </Link>
 
             <Link to="/application">
               {' '}

@@ -59,7 +59,10 @@ const Offers = () => {
       </div>
 
       </div>
+      <div className='for-responsive'>
       <Index/>
+      </div>
+  
       <div data-aos="fade-up" className='program-section' id='program'>
        
         <div  className='no-content'> </div>

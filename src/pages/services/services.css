@@ -1,6 +1,6 @@
 .service-container {
-  background-image: linear-gradient(#33d3d61f, rgba(255, 255, 255, 0)),
-    url("../../assets/alumn8.jpeg");
+  background-image: linear-gradient(#33d3d65a, rgba(255, 255, 255, 0.484)),
+    url("../../assets/student2.jpg");
 
   background-repeat: no-repeat;
   background-size: cover;
@@ -12,12 +12,13 @@
   width: 60%;
   margin: auto;
   padding-top: 20px;
-  color: white;
+
   font-size: 20px;
 }
 .service-partOne h1 {
   text-align: start;
   font-size: 50px;
+  color: white;
   font-weight: 900;
 }
 .service-partOne p {
@@ -462,12 +463,12 @@
     font-family: Open Sans, sans-serif;
   }
   .company-image {
-    gap: 50px;
+    gap: 20px;
     width: 100%;
     padding: 20px;
   }
   .company-image img {
-    width: 25% !important;
+    width: 20% !important;
   }
 
   .job-partOne {
@@ -522,6 +523,77 @@
   .graduate-content {
     margin-left: 30px;
     padding: 20px;
+  }
+}
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  .graduates {
+    width: 100%;
+    top: 5400px !important;
+  }
+  .schedule-footer {
+    top: 4800px !important;
+  }
+  .graduates-container {
+    margin-left: 20px;
+  }
+  .graduate-image {
+    width: 80%;
+    margin-left: 0 !important;
+    background-color: red;
+  }
+  .graduate-image img {
+    width: 100% !important;
+    margin-left: 0 !important;
+  }
+  .graduate-content {
+    margin-left: 0 !important;
+
+    width: 90%;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1116px) {
+  .service-partOne h1 {
+    font-size: 26px;
+  }
+  .service-partOne p {
+    font-size: 18px;
+    padding: 30px 0;
+  }
+  .service-btn {
+    margin-left: 200px;
+  }
+  .next h2 {
+    font-size: 2.2rem;
+  }
+  .next-partTwo p {
+    font-size: 1rem;
+  }
+  .fluent-campany h1 {
+    font-size: 25px;
+    padding: 20px;
+  }
+  .job-container {
+    top: 3570px;
+  }
+  .schedule-footer {
+    top: 4800px !important;
+  }
+  .graduates {
+    width: 100%;
+    top: 5300px !important;
+  }
+  .graduates-container {
+    margin-left: 50px;
+    margin-bottom: 30%;
+  }
+  .graduate-content {
+    padding: 20px;
+  }
+  .company-image {
+    gap: 30px;
+    width: 100%;
+    padding: 20px;
+    margin-left: 20%;
   }
 }
 @media screen and (min-width: 481px) and (max-width: 768px) {

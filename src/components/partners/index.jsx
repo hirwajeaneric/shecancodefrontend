@@ -1,8 +1,17 @@
 import React from 'react'
 import "./partners.css"
-import master from "../firsthomesection/image/download (1).png"
+import master from "../../assets/progate.png"
 import un from "../firsthomesection/image/download.png"
 import img from "../firsthomesection/image/download (5).jpg"
+import amali from "../../assets/amali.png"
+import hence from "../../assets/hence.png"
+import thegym from "../../assets/thegym.jpeg"
+import umurava from "../../assets/umurava.png"
+import klab from "../../assets/klab.jpeg"
+import usembasy from "../../assets/usembasy.jpeg"
+import islael from "../../assets/islael.jpeg"
+import muraho from "../../assets/muraho.png"
+import igire from "../../assets/igire.jpeg"
 const Index = () => {
   return (
     <div>
@@ -21,58 +30,44 @@ const Index = () => {
               <img src={master} alt="not there" />
             </div>
             <div class="slide">
-              <img src={img} alt="not there" />
+              <img src={amali} alt="not there" />
             </div>
             <div class="slide">
-              <img src={un} alt="image not found" />
+              <img src={hence} alt="image not found" />
             </div>
             <div class="slide">
-              <img src={master} alt="not found" />
+              <img src={thegym} alt="not found" />
             </div>
             <div class="slide">
-              <img src={img} alt="none" />
+              <img src={umurava} alt="none" />
             </div>
             <div class="slide">
-              <img src={img} alt="none" />
+              <img src={klab} alt="none" />
+            </div>
+           
+            <div class="slide">
+              <img src={muraho} alt="not" />
             </div>
             <div class="slide">
-              <img src={un} alt="none" />
+              <img src={igire} alt="no found" />
             </div>
             <div class="slide">
-              <img src={master} alt="none" />
+              <img src={islael} alt="unvailable" />
             </div>
             <div class="slide">
-              <img src={img} alt="not" />
-            </div>
-            <div class="slide">
-              <img src={un} alt="no found" />
-            </div>
-            <div class="slide">
-              <img src={master} alt="unvailable" />
-            </div>
-            <div class="slide">
-              <img src={img} alt="not displayed" />
+              <img src={usembasy} alt="not displayed" />
             </div>
             <div class="slide">
               <img src={un} alt="no image" />
             </div>
             <div class="slide">
-              <img src={master} alt="no image" />
+              <img src={islael} alt="no image" />
             </div>
             <div class="slide">
-              <img src={img} alt="no image" />
+              <img src={usembasy} alt="no image" />
             </div>
             <div class="slide">
               <img src={un} alt="no image" />
-            </div>
-            <div class="slide">
-              <img src={master} alt="no image" />
-            </div>
-            <div class="slide">
-              <img src={master} alt="no image" />
-            </div>
-            <div class="slide">
-              <img src={master} alt="no image" />
             </div>
             <div class="slide">
               <img src={img} alt="no image" />
@@ -81,7 +76,22 @@ const Index = () => {
               <img src={master} alt="no image" />
             </div>
             <div class="slide">
+              <img src={islael} alt="no image" />
+            </div>
+            <div class="slide">
+              <img src={usembasy} alt="no image" />
+            </div>
+            <div class="slide">
+              <img src={master} alt="no image" />
+            </div>
+            <div class="slide">
               <img src={un} alt="no image" />
+            </div>
+            <div class="slide">
+              <img src={usembasy} alt="none" />
+            </div>
+            <div class="slide">
+              <img src={islael} alt="none" />
             </div>
           </div>
         </div>
