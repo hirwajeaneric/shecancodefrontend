@@ -26,7 +26,7 @@ let Index = () => {
               </Link>
             </li>
             <li>
-              <Link to="/service"> Career Services</Link>
+              <Link to="/service">Services</Link>
             </li>
             <li>
               <Link to="/program">Program</Link>
@@ -51,20 +51,20 @@ let Index = () => {
         </div>
         {!humbState && (
           <div className="hamberger">
-            <Link to="/">
+            <a href="/">
               {" "}
               <p> Home</p>
-            </Link>
-            <Link to="/about">
+            </a>
+            <a href="/about">
               <p>About</p>
-            </Link>
-            <Link to="/service">
+            </a>
+            <a href="/service">
               {" "}
-              <p> Career Services</p>
-            </Link>
-            <Link to="program">
+              <p>Services</p>
+            </a>
+            <a href="program">
               <p>Program</p>
-            </Link>
+            </a>
 
             <Link to="/application">
               {" "}

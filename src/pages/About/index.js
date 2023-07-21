@@ -136,6 +136,19 @@ const About = () => {
           </div>
         </div>
       </div>
+      <div className="why-about">
+        <h3>Why SheCanCode?</h3>
+        <p>
+          As we say in French : L'éducation supérieure a 'un wagon de retard'.
+          <br /> <br />
+          An idiom that could be literally translated into: 'Higher education
+          has missed the train'.
+          <br /> <br /> It points to this idea of a 'missing block' or 'missing
+          wagon' in the “train of higher education”. And a wagon is a vehicle
+          that takes a group of people (like a class of students) on a journey
+          to a destination. This is exactly what our bootcamps are about!
+        </p>
+      </div>
       <div className="about-leads">
         <h1>SheCanCode Team</h1>
         <p>
@@ -147,10 +160,7 @@ const About = () => {
           {leadershipTeam.map((team) => (
             <div className="lead-one">
               <div className="about-leader">
-                <div className="img">
-                  <img src={team.image} alt="no image12" />
-                </div>
-
+                <img src={team.image} alt="no image12" />
                 <h3>{team.name}</h3>
                 <p>{team.position}</p>
               </div>

@@ -5,7 +5,7 @@
 .lens__on__life__container {
   padding: 1rem 0rem;
   /* position: absolute;
-  top: 1300px; */
+    top: 1300px; */
 }
 @media screen and (max-width: 480px) {
   .lens__on__life__container {
@@ -23,7 +23,7 @@
 }
 
 .slider {
-  background: white;
+  background: transparent;
   height: 200px;
   margin: auto;
   overflow: hidden;
@@ -62,8 +62,8 @@
 }
 
 /* .slider .slide-track:hover {
-      animation-play-state: paused;
-    } */
+        animation-play-state: paused;
+      } */
 
 .slider .slide {
   height: 100px;

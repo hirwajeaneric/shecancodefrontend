@@ -11,9 +11,9 @@ const Footer = () => {
   <div className='part-respo'>
 
   
-    <div className='footer-item'>
-        <h3>Thank you using our services </h3>
-        {/* <input type="text" name="" id="input" placeholder='email' /> <button className='btnfnl'>Submit</button> */}
+    <div>
+        <h3>Subscribe to our services </h3>
+        <input type="text" name="" id="input" placeholder='email' /> <button className='btnfnl'>Submit</button>
     </div>
     <div  className='footer-item'>
         <h3>Our Services </h3>
