@@ -129,9 +129,9 @@ const About = () => {
       <div className="about-leads">
         <h1>SheCanCode Team</h1>
         <p>
-          It points to this idea of a 'missing block' or 'missing wagon' in the
-          “train of higher education”. <br /> And a wagon is a vehicle that
-          takes a group of people (like a class of students)
+          Shecacode Teck talented team in the “train of higher education”.{" "}
+          <br /> And a wagon is a vehicle that takes a group of people (like a
+          class of students)
         </p>
         <div className="leadership-form">
           {leadershipTeam.map((team) => (
