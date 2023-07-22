@@ -245,6 +245,50 @@
     height: 0 !important;
   }
 }
+@media screen and (min-width: 769px) {
+  .heading-content {
+    width: 40%;
+  }
+  .heading-content h2 {
+    font-size: 22px;
+    padding-top: 60px;
+  }
+  .heading-btn {
+    margin-left: 30%;
+  }
+  .heading-program {
+    height: 13vh;
+    top: 540px;
+  }
+  .heading-program ul li {
+    padding: 10px;
+  }
+}
+@media screen and (min-width: 770px) and (max-width: 1116px) {
+  .heading-content {
+    width: 50% !important;
+  }
+  .cardTwo-img {
+    margin-left: 7% !important;
+  }
+  .offer-cardOne h1 {
+    font-size: 23px !important;
+  }
+  .offer-cardTwo {
+    left: 43% !important;
+    width: 45% !important;
+  }
+  .offer-partTwo {
+  }
+  .offer-partTwoCardOne {
+    left: -12% !important;
+    width: 55% !important;
+  }
+  .offer-partTwoCardTwo {
+    width: 55% !important;
+    left: 45% !important;
+  }
+}
 @media screen and (max-width: 320px) {
   .heading-btn {
     margin-left: 20%;

@@ -11,14 +11,14 @@ let Index = () => {
   const location = useLocation();
   return (
     <>
-      <div className='hamGrid'>
-        <div class='all'>
-          <img src={Image} alt='scc-logo' />
-          <ul class='navbar'>
+      <div className="hamGrid">
+        <div class="all">
+          <img src={Image} alt="scc-logo" />
+          <ul class="navbar">
             <li>
               <Link
                 className={location.pathname === "/" ? "active" : ""}
-                to='/'
+                to="/"
               >
                 Home
               </Link>
@@ -26,7 +26,7 @@ let Index = () => {
             <li>
               <Link
                 className={location.pathname === "/about" ? "active" : ""}
-                to='/about'
+                to="/about"
               >
                 About
                 {/* <i class="bx bx-chevron-down"></i> */}
@@ -35,55 +35,55 @@ let Index = () => {
             <li>
               <Link
                 className={location.pathname === "/service" ? "active" : ""}
-                to='/service'
+                to="/service"
               >
-                Services
+                Career Services
               </Link>
             </li>
             <li>
               <Link
                 className={location.pathname === "/program" ? "active" : ""}
-                to='/program'
+                to="/program"
               >
                 Program
               </Link>
             </li>
           </ul>
-          <div class='menu'>
-            <Link to='/apply'>
+          <div class="menu">
+            <Link to="/apply">
               <Button btnTitle={"Apply"} />
             </Link>
             {humbState && (
               <div
-                class='bx bx-menu'
-                id='menu-icon'
+                class="bx bx-menu"
+                id="menu-icon"
                 onClick={() => setHumbState(false)}
               ></div>
             )}
             {/* <div class="bx bx-menu bx-closing-icon" id="menu-icon"></div> */}
             {!humbState && (
-              <FaTimes class='close' onClick={() => setHumbState(true)} />
+              <FaTimes class="close" onClick={() => setHumbState(true)} />
             )}
           </div>
         </div>
         {!humbState && (
-          <div className='hamberger'>
-            <a href='/'>
+          <div className="hamberger">
+            <a href="/">
               {" "}
               <p> Home</p>
             </a>
-            <a href='/about'>
+            <a href="/about">
               <p>About</p>
             </a>
-            <a href='/service'>
+            <a href="/service">
               {" "}
               <p>Services</p>
             </a>
-            <a href='program'>
+            <a href="program">
               <p>Program</p>
             </a>
 
-            <Link to='/application'>
+            <Link to="/application">
               {" "}
               <p>Apply</p>
             </Link>
