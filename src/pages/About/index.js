@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "./aboutImage/sample.webp";
+import Image from "./aboutImage/bacgrd.jpg";
 import ImageOne from "./aboutImage/1.PNG";
 import ImageTwo from "./aboutImage/2.PNG";
 import ImageThree from "./aboutImage/3.PNG";
@@ -7,9 +7,9 @@ import ImageFour from "./aboutImage/4.PNG";
 import Image2 from "./aboutImage/about1.PNG";
 import Image3 from "./aboutImage/about2.PNG";
 import Image4 from "./aboutImage/about4.PNG";
-import Image6 from "./aboutImage/about3.PNG";
-import Image7 from "./aboutImage/about5.PNG";
-import Image8 from "./aboutImage/about7.jpeg";
+import Image6 from "./aboutImage/others.jpg";
+import Image7 from "./aboutImage/other.jpg";
+import Image8 from "./aboutImage/nexts.jpg";
 import Header from "../../components/Header";
 import Nav from "../../components/Nav";
 import { leadershipTeam } from "../../constants";
@@ -18,6 +18,7 @@ import "./About.css";
 import Button from "../../components/Button";
 import Footer from "../../components/Footers/footer";
 import mbanda from "../../assets/Mbanda.png";
+import jj from "./aboutImage/jj.jpeg";
 const About = () => {
   const [open, setOpen] = useState(false);
   return (
@@ -74,7 +75,7 @@ const About = () => {
             you to achieve your goals whatever your project. SheCanCode now
             boasts a community of 21,000 graduates from all walks of life,
             including a lot of entrepreneurs who created 212 tech startups and
-            raised $820M+ globally.
+            raised globally.
           </p>
           <Button btnTitle={"Siscover more"} />
         </div>
@@ -114,7 +115,7 @@ const About = () => {
 
         <div className="founders">
           <div className="founder-one">
-            <img src={Image2} alt="images" />
+            <img src={jj} alt="images" />
             <div className="founder-description">
               <h3>Iradukunda Jean Jack Co-founder and CEO</h3>
               <p>

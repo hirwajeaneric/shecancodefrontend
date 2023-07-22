@@ -150,7 +150,7 @@
   margin-bottom: 10px;
 }
 .about-founder .founder-one img {
-  width: 250px;
+  width: 50%;
   height: 250px;
   object-fit: cover;
   border-radius: 5px;
@@ -196,7 +196,7 @@
 }
 .about-leader img {
   width: 100%;
-  /* height: 280px; */
+  height: 280px;
   padding: 30px;
   object-fit: cover;
   transition: 03s;
@@ -207,12 +207,14 @@
 .about-leader h3 {
   margin-left: 40px;
   cursor: pointer;
+  font-size: 20px;
+  font-weight: 700;
 }
 .about-leader h3:hover {
   color: #33d4d6;
 }
 .about-leader p {
-  padding: 10px;
+  padding: 0 20px;
 }
 
 .about-path {
@@ -331,5 +333,87 @@
   .about-one-section p {
     font-size: 25px;
     margin-left: 10%;
+  }
+}
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  .about-two-section {
+    display: block;
+
+    padding: 0;
+  }
+  .about-one-section {
+    width: 100% !important;
+  }
+  .about-one-section img {
+    width: 100% !important;
+  }
+  .about-rotate {
+    display: flex;
+
+    justify-content: space-between;
+  }
+  .about-par {
+    width: 100%;
+    padding: 20px;
+  }
+  .about-thrird-section {
+    display: block;
+  }
+  .about-right {
+    width: 100% !important;
+  }
+  .about-right img {
+    width: 30% !important;
+  }
+  .about-paragraph {
+    width: 100% !important;
+    font-size: 15px !important;
+  }
+  .about-left {
+    display: none;
+  }
+  .para {
+    width: 100% !important;
+  }
+
+  .founder-one img {
+    width: 50% !important;
+  }
+  .leadership-form {
+    display: block;
+  }
+  .about-leader {
+    width: 100% !important;
+    margin-top: 14px;
+  }
+  .about-leader img {
+    width: 100% !important;
+  }
+  .about-path {
+    display: none;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1116px) {
+  .about-rotate {
+    margin-right: 30px;
+    margin-left: -30px;
+  }
+
+  .about-left {
+    margin-right: 130px !important;
+  }
+  .para {
+    width: 100% !important;
+  }
+  .leadership-form {
+    padding: 0;
+    width: 100% !important;
+  }
+  .about-leader {
+    width: 100%;
+    margin-left: 2%;
+  }
+  .about-path {
+    display: none;
   }
 }
