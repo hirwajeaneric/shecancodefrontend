@@ -91,41 +91,31 @@ const About = () => {
       <div className="about-founder">
         <h2>Co-Founding Team</h2>
         <p className="para">
-          SheCanCode was created in 2013 by MBANDA and Jean Jack with the aim to
-          build a program to teach people the skills and tools to bring their
-          ideas to life as they felt that traditional degrees' courses were
-          failing to provide students with these new tech skills.
+          SheCanCode was initiated in 2018 by MBANDA Innocent and Jean Jack
+          Iradukunda with the aim to build a program to teach people the skills
+          and tools to bring their ideas to life as they felt that traditional
+          degrees' courses were failing to provide students with these new tech
+          skills.
         </p>
-        {open && (
-          <div className="founder-one">
-            <img src={Image3} alt="images" />
-            <div className="founder-description">
-              <h3>Mbanda Co-founder</h3>
-              <p>
-                Mbanda is a software engineer with more than 10 years of
-                experience. He worked at ..., and now teaches all you need to
-                know about web programming and the technical workflow used in a
-                startup.
-              </p>
-            </div>
+
+        <div className="founder-one">
+          <img src={Image3} alt="images" />
+          <div className="founder-description">
+            <h3>Mbanda Innocent Co-founder</h3>
+            <p>
+              Mbanda is a software engineer with more than 10 years of
+              experience. He worked at ..., and now teaches all you need to know
+              about web programming and the technical workflow used in a
+              startup.
+            </p>
           </div>
-        )}
-        <div className="about-icon">
-          <span>
-            <i className="bx bx-chevron-left"></i>
-            <i
-              className="bx bx-chevron-right"
-              onClick={() => {
-                setOpen(!open);
-              }}
-            ></i>
-          </span>
         </div>
+
         <div className="founders">
           <div className="founder-one">
             <img src={Image2} alt="images" />
             <div className="founder-description">
-              <h3>Mbanda Co-founder</h3>
+              <h3>Iradukunda Jean Jack Co-founder and CEO</h3>
               <p>
                 Mbanda is a software engineer with more than 10 years of
                 experience. He worked at ..., and now teaches all you need to
@@ -152,9 +142,9 @@ const About = () => {
       <div className="about-leads">
         <h1>SheCanCode Team</h1>
         <p>
-          It points to this idea of a 'missing block' or 'missing wagon' in the
-          “train of higher education”. <br /> And a wagon is a vehicle that
-          takes a group of people (like a class of students)
+          Shecacode Teck talented team in the “train of higher education”.{" "}
+          <br /> And a wagon is a vehicle that takes a group of people (like a
+          class of students)
         </p>
         <div className="leadership-form">
           {leadershipTeam.map((team) => (
