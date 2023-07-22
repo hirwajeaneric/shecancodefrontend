@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { FaTimes } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import Image from "./images/logoscc.png";
 import "./nav.css";
 import Button from "../Button";
@@ -8,65 +8,82 @@ import Bar from "../Nav";
 
 let Index = () => {
   let [humbState, setHumbState] = useState(true);
+  const location = useLocation();
   return (
     <>
-      <div className="hamGrid">
-        <div class="all">
-          <img src={Image} alt="scc-logo" />
-          <ul class="navbar">
+      <div className='hamGrid'>
+        <div class='all'>
+          <img src={Image} alt='scc-logo' />
+          <ul class='navbar'>
             <li>
-              <Link class="active" to="/">
+              <Link
+                className={location.pathname === "/" ? "active" : ""}
+                to='/'
+              >
                 Home
               </Link>
             </li>
             <li>
-              <Link to="/about">
+              <Link
+                className={location.pathname === "/about" ? "active" : ""}
+                to='/about'
+              >
                 About
                 {/* <i class="bx bx-chevron-down"></i> */}
               </Link>
             </li>
             <li>
-              <Link to="/service"> Career Services</Link>
+              <Link
+                className={location.pathname === "/service" ? "active" : ""}
+                to='/service'
+              >
+                Services
+              </Link>
             </li>
             <li>
-              <Link to="/program">Program</Link>
+              <Link
+                className={location.pathname === "/program" ? "active" : ""}
+                to='/program'
+              >
+                Program
+              </Link>
             </li>
           </ul>
-          <div class="menu">
-            <Link to="/apply">
+          <div class='menu'>
+            <Link to='/apply'>
               <Button btnTitle={"Apply"} />
             </Link>
             {humbState && (
               <div
-                class="bx bx-menu"
-                id="menu-icon"
+                class='bx bx-menu'
+                id='menu-icon'
                 onClick={() => setHumbState(false)}
               ></div>
             )}
             {/* <div class="bx bx-menu bx-closing-icon" id="menu-icon"></div> */}
             {!humbState && (
-              <FaTimes class="close" onClick={() => setHumbState(true)} />
+              <FaTimes class='close' onClick={() => setHumbState(true)} />
             )}
           </div>
         </div>
         {!humbState && (
-          <div className="hamberger">
-            <Link to="/">
+          <div className='hamberger'>
+            <a href='/'>
               {" "}
               <p> Home</p>
-            </Link>
-            <Link to="/about">
+            </a>
+            <a href='/about'>
               <p>About</p>
-            </Link>
-            <Link to="/service">
+            </a>
+            <a href='/service'>
               {" "}
-              <p> Career Services</p>
-            </Link>
-            <Link to="program">
+              <p>Services</p>
+            </a>
+            <a href='program'>
               <p>Program</p>
-            </Link>
+            </a>
 
-            <Link to="/application">
+            <Link to='/application'>
               {" "}
               <p>Apply</p>
             </Link>

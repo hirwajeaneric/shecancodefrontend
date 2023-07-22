@@ -1,14 +1,13 @@
 import React from 'react'
-import "./partners.css"
+import "./hiring.css"
 import master from "../firsthomesection/image/download (1).png"
 import un from "../firsthomesection/image/download.png"
 import img from "../firsthomesection/image/download (5).jpg"
-const Index = () => {
+const Hiring = () => {
   return (
     <div>
          <section class="lens__on__life" id="gallery">
       <div class="lens__on__life__container">
-        <h2>Our Partners and Hiring Company</h2>
         <div class="slider">
           <div class="slide-track">
             <div class="slide">
@@ -18,13 +17,13 @@ const Index = () => {
               <img src={un} alt="not there" />
             </div>
             <div class="slide">
-              <img src={master} alt="not there" />
+              <img src={un} alt="not there" />
             </div>
             <div class="slide">
-              <img src={img} alt="not there" />
+              <img src={un} alt="not there" />
             </div>
             <div class="slide">
-              <img src={un} alt="image not found" />
+              <img src={img} alt="image not found" />
             </div>
             <div class="slide">
               <img src={master} alt="not found" />
@@ -36,34 +35,22 @@ const Index = () => {
               <img src={img} alt="none" />
             </div>
             <div class="slide">
-              <img src={un} alt="none" />
+              <img src={img} alt="none" />
             </div>
             <div class="slide">
-              <img src={master} alt="none" />
+              <img src={img} alt="none" />
             </div>
             <div class="slide">
-              <img src={img} alt="not" />
+              <img src={un} alt="not" />
             </div>
             <div class="slide">
-              <img src={un} alt="no found" />
+              <img src={master} alt="no found" />
             </div>
             <div class="slide">
-              <img src={master} alt="unvailable" />
+              <img src={img} alt="unvailable" />
             </div>
             <div class="slide">
-              <img src={img} alt="not displayed" />
-            </div>
-            <div class="slide">
-              <img src={un} alt="no image" />
-            </div>
-            <div class="slide">
-              <img src={master} alt="no image" />
-            </div>
-            <div class="slide">
-              <img src={img} alt="no image" />
-            </div>
-            <div class="slide">
-              <img src={un} alt="no image" />
+              <img src={un} alt="not displayed" />
             </div>
             <div class="slide">
               <img src={master} alt="no image" />
@@ -75,13 +62,25 @@ const Index = () => {
               <img src={master} alt="no image" />
             </div>
             <div class="slide">
-              <img src={img} alt="no image" />
+              <img src={master} alt="no image" />
             </div>
             <div class="slide">
               <img src={master} alt="no image" />
             </div>
             <div class="slide">
-              <img src={un} alt="no image" />
+              <img src={master} alt="no image" />
+            </div>
+            <div class="slide">
+              <img src={master} alt="no image" />
+            </div>
+            <div class="slide">
+              <img src={master} alt="no image" />
+            </div>
+            <div class="slide">
+              <img src={master} alt="no image" />
+            </div>
+            <div class="slide">
+              <img src={master} alt="no image" />
             </div>
           </div>
         </div>
@@ -92,4 +91,4 @@ const Index = () => {
   )
 }
 
-export default Index
+export default Hiring

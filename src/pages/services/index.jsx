@@ -12,8 +12,6 @@ import Button from '../../components/Button';
 import Footer from '../../components/Footers/footer';
 import Header from '../../components/Header';
 import graduatesData from './graduateData';
-import umurava from "../../assets/umurava.png";
-
 import './services.css';
 const Services = () => {
   const [show, setShow] = useState(false);
@@ -107,17 +105,13 @@ const Services = () => {
       </div>
       <div className="fluent-campany">
         <h1>
-
-          Prepare yourself to work for some of the most influential companies.
-
+          Prepare yourself to work for some of the most influential companies in
+          the world.
         </h1>
         <div className="company-image" data-aos="fade-up">
           <img src={amali} alt="" />
           <img src={hence} alt="" />
           <img src={thegym} alt="" />
-
-          <img src={umurava} alt="" />
-
         </div>
       </div>
       <div className="job">

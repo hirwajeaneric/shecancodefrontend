@@ -10,7 +10,7 @@ import Footer from "../../components/Footers/footer";
 import Heading from "./headding";
 import Offers from "./offers";
 import Parteners from "../../components/parteners";
-
+import Index from "../../components/partners";
 let Home = () => {
   return (
     <div>
@@ -18,9 +18,8 @@ let Home = () => {
       <Header />
       <Heading />
       <Offers />
-      {/* <Parteners /> */}
       {/* <Index /> */}
-      {/* */}
+      {/* <Parteners /> */}
       {/* <Alumni /> */}
       {/* <Footer /> */}
       {/* 
