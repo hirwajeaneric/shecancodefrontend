@@ -5,7 +5,7 @@ import Angelique from "../../assets/alumin/Angelique.jpg";
 
 const graduatesData = [
   {
-    name: "Doreen Umutoniwase",
+    name: "Doreen Uwase",
     imageSrc: alumin3,
     content:
       "I joined the bootcamp to unlock my true potential and turn my project ideas into reality. with a burning passion for making a difference. My jouney at shecancode  is paying the way for a future where innovation meets social impact. I am insipired towards determination and commitment to creating positive change. ",
@@ -13,7 +13,8 @@ const graduatesData = [
   {
     name: "Grolia Umutoni",
     imageSrc: benigne,
-    content: "",
+    content:
+      "I enrolled in Shecancode Bootcamp with the intention of becoming a software developer and helping to close the gender gap in tech industry. the bootcamp provided me with the tools, resources and support I needed to navigate the male-dominated sector. Now that I have the skills of a software engineer. I am dedicated to breaking down barriers and empowering the next generation of female technologists.",
   },
   {
     name: "Ange M. Happy Gikundiro",
@@ -25,7 +26,7 @@ const graduatesData = [
     name: "Angeligue Uwimbabazi",
     imageSrc: Angelique,
     content:
-      " Now I am full stack developer, I joined shecancode with zero skills about coding and software development but now I am extited to be a full stack developer. I enspire others to embark on their Shecancode journey.",
+      " The SheCanCode Bootcamp was a life-changing experience for me. As a complete beginner, I was amazed by the comprehensive curriculum, supportive instructors, and hands-on learning approach. Building real-world projects and collaborating with like-minded individuals boosted my confidence. After completing the bootcamp, I transformed into a confident full-stack developer, ready to pursue my dream job in tech. Thank you, SheCanCode, for this incredible journey!",
   },
 ];
 
