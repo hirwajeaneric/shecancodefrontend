@@ -253,6 +253,11 @@
   /* left: 250px; */
   top: 4700px;
 }
+.graduate-said {
+  width: 100%;
+  margin-bottom: 200px;
+  height: 100%;
+}
 .graduates-container {
   display: flex;
   margin-left: 300px;
@@ -260,7 +265,7 @@
 }
 .graduate-image {
   width: 50%;
-  height: 70%;
+  height: 20%;
   border-radius: 10px;
 }
 .graduate-image img {
@@ -273,7 +278,7 @@
   /* width: 55%; */
   position: absolute;
   margin-left: 100px;
-  top: 130px;
+  top: 200px;
   padding: 80px;
   border-radius: 10px;
 }

@@ -17,8 +17,8 @@ import { useState } from "react";
 import "./About.css";
 import Button from "../../components/Button";
 import Footer from "../../components/Footers/footer";
-import mbanda from "../../assets/Mbanda.png";
-import jj from "./aboutImage/jj.jpeg";
+import vision from "../../assets/vission.png";
+import mission from "../../assets/mission.png";
 const About = () => {
   const [open, setOpen] = useState(false);
   return (
@@ -73,9 +73,8 @@ const About = () => {
           <p>
             We are strongly convinced that tech is for everyone and we support
             you to achieve your goals whatever your project. SheCanCode now
-            boasts a community of 21,000 graduates from all walks of life,
-            including a lot of entrepreneurs who created 212 tech startups and
-            raised globally.
+            boasts a learning community for young Ladies aged between 18-30
+            years old
           </p>
           <Button btnTitle={"Siscover more"} />
         </div>
@@ -91,38 +90,36 @@ const About = () => {
       </div>
 
       <div className="about-founder">
-        <h2>Co-Founding Team</h2>
-        <p className="para">
-          SheCanCode was initiated in 2018 by MBANDA Innocent and Jean Jack
-          Iradukunda with the aim to build a program to teach people the skills
-          and tools to bring their ideas to life as they felt that traditional
-          degrees' courses were failing to provide students with these new tech
-          skills.
-        </p>
+        <h2>
+          {" "}
+          <b>Mission And Vission</b>{" "}
+        </h2>
 
         <div className="founder-one">
-          <img src={mbanda} alt="images" />
+          <img src={mission} alt="images" />
           <div className="founder-description">
-            <h3>Mbanda Innocent Co-founder</h3>
+            <h3>Mission </h3>
             <p>
-              Mbanda is a software engineer with more than 10 years of
-              experience. He worked at ..., and now teaches all you need to know
-              about web programming and the technical workflow used in a
-              startup.
+              We empower young women to pursue and excel in their careers within
+              the tech industry, which has historically been male-dominated. The
+              bootcamp aims to provide an inclusive and supportive learning
+              environment that equips participants with the necessary technical
+              skills, knowledge, and confidence to thrive in this field.
             </p>
           </div>
         </div>
 
         <div className="founders">
           <div className="founder-one">
-            <img src={jj} alt="images" />
+            <img src={vision} alt="images" />
             <div className="founder-description">
-              <h3>Iradukunda Jean Jack Co-founder and CEO</h3>
+              <h3>Vission</h3>
               <p>
-                Mbanda is a software engineer with more than 10 years of
-                experience. He worked at ..., and now teaches all you need to
-                know about web programming and the technical workflow used in a
-                startup.
+                The vision calls for more women to be at the forefront of
+                technological advancements, research, and innovation. The
+                bootcamp seeks to advance young women into positions where they
+                can influence the direction of technology by equipping them with
+                the most up-to-date technical knowledge and abilities.
               </p>
             </div>
           </div>
@@ -130,12 +127,8 @@ const About = () => {
       </div>
 
       <div className="about-leads">
-        <h1>SheCanCode Team</h1>
-        <p>
-          Shecacode Teck talented team in the “train of higher education”.{" "}
-          <br /> And a wagon is a vehicle that takes a group of people (like a
-          class of students)
-        </p>
+        <h1>Our Team</h1>
+
         <div className="leadership-form">
           {leadershipTeam.map((team) => (
             <div className="lead-one">

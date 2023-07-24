@@ -1,10 +1,10 @@
 import img from "../assets/ui.png"
 import frontend from "../assets/frontend.png"
 import backend from "../assets/backend.png"
-import liliane from "../pages/About/aboutImage/liliane.jpg"
+import liliane from "../assets/liliane.jpg"
 import alice from "../pages/About/aboutImage/Alilce.jpg"
 import grace from "../pages/About/aboutImage/Grace.jpg"
-import richard from "../pages/About/aboutImage/richard.jpg"
+import richard from "../assets/richard.jpeg"
 export const leadershipTeam = [
   {
     id: 1,
