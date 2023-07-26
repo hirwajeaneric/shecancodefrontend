@@ -6,11 +6,12 @@ import Index from "../Header/index";
 import "./application.css";
 import Button from "../Button";
 import Footer from "../Footers/footer";
+import { Link } from "react-router-dom";
 import Course from "../courses/Course";
 import { applicationMiddleContents } from "../courses/courseData";
 
 const Application = () => {
-  const [buttonText, setButtonText] = useState("Get started");
+  const [buttonText, setButtonText] = useState("Apply Now");
 
   const sentences = [
     "Application is open for SheCanCode Cohort 9 Bootcamp",
@@ -36,7 +37,7 @@ const Application = () => {
 
   const updateButtonText = () => {
     const isSmallScreen = window.innerWidth <= 768;
-    setButtonText(isSmallScreen ? "Apply" : "Get started");
+    setButtonText(isSmallScreen ? "Apply" : "Apply Now");
   };
 
   return (
@@ -51,7 +52,7 @@ const Application = () => {
         <div className='application-upper'>
           <div className='application-upper-content'>
             <h1>Learning made Easy</h1>
-            <Button btnTitle={`${buttonText}`} />
+          <Link target="_blank" to="http://surl.li/jlauq"><Button btnTitle={`${buttonText}`} /></Link>  
           </div>
         </div>
 

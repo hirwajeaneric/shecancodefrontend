@@ -50,7 +50,7 @@ let Index = () => {
             </li>
           </ul>
           <div class="menu">
-            <Link to="/apply">
+            <Link target="_blank" to="http://surl.li/jlauq">
               <Button btnTitle={"Apply"} />
             </Link>
             {humbState && (
@@ -68,22 +68,22 @@ let Index = () => {
         </div>
         {!humbState && (
           <div className="hamberger">
-            <a href="/">
+            <Link to="/">
               {" "}
               <p> Home</p>
-            </a>
-            <a href="/about">
+            </Link>
+            <Link to="/about">
               <p>About</p>
-            </a>
-            <a href="/service">
+            </Link>
+            <Link to="/service">
               {" "}
               <p>Services</p>
-            </a>
-            <a href="program">
+            </Link>
+            <Link to="/program">
               <p>Program</p>
-            </a>
+            </Link>
 
-            <Link to="/application">
+            <Link target="_blank" to="http://surl.li/jlauq">
               {" "}
               <p>Apply</p>
             </Link>

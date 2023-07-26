@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import { Link } from "react-router-dom";
 
 const Heading = () => {
   const [buttonText, setButtonText] = useState("Get started");
@@ -26,7 +27,7 @@ const Heading = () => {
           <h2 className='heading-tittle'>
             Train the Next Generation in Software Development
           </h2>
-          <button className='heading-btn'>{buttonText}</button>
+        <Link target="blank" to="http://surl.li/jlauq" > <button className='heading-btn'> {buttonText}</button></Link> 
         </div>
         <div className='heading-program'>
           <ul>

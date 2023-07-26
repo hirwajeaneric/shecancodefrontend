@@ -132,6 +132,9 @@ img:hover {
   .close {
     display: block;
   }
+  .hamberger {
+    color: white;
+  }
   .all img {
     width: 70px;
   }
@@ -149,6 +152,7 @@ img:hover {
   .hamGrid {
     width: 100%;
   }
+
   .all {
     padding: 1px 0;
   }

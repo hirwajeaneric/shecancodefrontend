@@ -101,10 +101,11 @@ const About = () => {
             <h3>Mission </h3>
             <p>
               We empower young women to pursue and excel in their careers within
-              the tech industry, which has historically been male-dominated. The
-              bootcamp aims to provide an inclusive and supportive learning
-              environment that equips participants with the necessary technical
-              skills, knowledge, and confidence to thrive in this field.
+              the tech industry so that to bridge gender gap in technology,
+              which has historically been male-dominated. The bootcamp aims to
+              provide an inclusive and supportive learning environment that
+              equips participants with the necessary technical skills,
+              knowledge, and confidence to thrive in this field.
             </p>
           </div>
         </div>
@@ -116,10 +117,12 @@ const About = () => {
               <h3>Vission</h3>
               <p>
                 The vision calls for more women to be at the forefront of
-                technological advancements, research, and innovation. The
-                bootcamp seeks to advance young women into positions where they
-                can influence the direction of technology by equipping them with
-                the most up-to-date technical knowledge and abilities.
+                technological advancements, research, and innovation, The
+                graduates from this program will be supported with job placement
+                and apprenticeships. The bootcamp seeks to advance young women
+                into positions where they can influence the direction of
+                technology by equipping them with the most up-to-date technical
+                knowledge and abilities.
               </p>
             </div>
           </div>

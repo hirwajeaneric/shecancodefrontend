@@ -13,6 +13,7 @@ import Footer from '../../components/Footers/footer';
 import Header from '../../components/Header';
 import graduatesData from './graduateData';
 import './services.css';
+import { Link } from 'react-router-dom';
 const Services = () => {
   const [show, setShow] = useState(false);
   const [hide, setHide] = useState(false);
@@ -21,7 +22,7 @@ const Services = () => {
   const [item, setItem] = useState(false);
   const [selectedGraduate, setSelectedGraduate] = useState(graduatesData[0]);
   const [clickedIndex, setClickedIndex] = useState(null);
-
+const [buttonText,setButtonText]=useState("Get started")
   const handleGraduateClick = (graduate, index) => {
     setSelectedGraduate(graduate);
     setClickedIndex(index);
@@ -47,12 +48,12 @@ const Services = () => {
             experienced Career Coaches after graduation.
           </p>
           <div className="service-btn">
-            <Button btnTitle={'Apply Now'} />
+          <a target="_blank" href="http://surl.li/jlauq"><Button btnTitle={`${buttonText}`} /></a>
           </div>
         </div>
 
         <div className="service-clipath"></div>
-        <div class="custom-shape-divider-bottom-1689514587">
+        <div className="custom-shape-divider-bottom-1689514587">
           <svg
             data-name="Layer 1"
             xmlns="http://www.w3.org/2000/svg"
@@ -61,7 +62,7 @@ const Services = () => {
           >
             <path
               d="M741,116.23C291,117.43,0,27.57,0,6V120H1200V6C1200,27.93,1186.4,119.83,741,116.23Z"
-              class="shape-fill"
+              className="shape-fill"
             ></path>
           </svg>
         </div>
@@ -89,7 +90,7 @@ const Services = () => {
         </div>
       </div>
       <div>
-        <div class="custom-shape-divider-bottom-1689517765">
+        <div className="custom-shape-divider-bottom-1689517765">
           <svg
             data-name="Layer 1"
             xmlns="http://www.w3.org/2000/svg"
@@ -98,7 +99,7 @@ const Services = () => {
           >
             <path
               d="M741,116.23C291,117.43,0,27.57,0,6V120H1200V6C1200,27.93,1186.4,119.83,741,116.23Z"
-              class="shape-fill"
+              className="shape-fill"
             ></path>
           </svg>
         </div>
