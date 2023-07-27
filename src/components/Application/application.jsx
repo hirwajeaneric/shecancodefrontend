@@ -39,7 +39,9 @@ const Application = () => {
     const isSmallScreen = window.innerWidth <= 768;
     setButtonText(isSmallScreen ? "Apply" : "Apply Now");
   };
-
+const updateInfo=()=>{
+  alert("Application is not yet open, it will be opening soon")
+}
   return (
     <>
       <Index />
@@ -52,7 +54,8 @@ const Application = () => {
         <div className='application-upper'>
           <div className='application-upper-content'>
             <h1>Learning made Easy</h1>
-          <Link target="_blank" to="http://surl.li/jlauq"><Button btnTitle={`${buttonText}`} /></Link>  
+          {/* <Link target="_blank" to="http://surl.li/jlauq"><Button btnTitle={`${buttonText}`} /></Link>   */}
+         <button className="btn" onClick={updateInfo}>Apply</button>
           </div>
         </div>
 

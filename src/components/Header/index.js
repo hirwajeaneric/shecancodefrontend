@@ -5,7 +5,9 @@ import Image from "./images/logoscc.png";
 import "./nav.css";
 import Button from "../Button";
 import Bar from "../Nav";
-
+const updateInfo = () => {
+  alert("application is not yet open, it will be opening soon");
+};
 let Index = () => {
   let [humbState, setHumbState] = useState(true);
   const location = useLocation();
@@ -50,9 +52,11 @@ let Index = () => {
             </li>
           </ul>
           <div class="menu">
-            <Link target="_blank" to="http://surl.li/jlauq">
-              <Button btnTitle={"Apply"} />
-            </Link>
+            {/* <Link target="_blank" to="#"> */}
+            <button className="btn" onClick={updateInfo}>
+              Apply{" "}
+            </button>
+            {/* </Link> */}
             {humbState && (
               <div
                 class="bx bx-menu"

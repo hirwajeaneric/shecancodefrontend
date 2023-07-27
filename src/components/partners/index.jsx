@@ -20,9 +20,9 @@ const Index = () => {
         <h2>Our Partners and Hiring Company</h2>
         <div class="slider">
           <div class="slide-track">
-            <div class="slide">
+            {/* <div class="slide">
               <img src={img} alt="not avoilable" />
-            </div>
+            </div> */}
             <div class="slide">
               <img src={un} alt="not there" />
             </div>
@@ -69,9 +69,9 @@ const Index = () => {
             <div class="slide">
               <img src={un} alt="no image" />
             </div>
-            <div class="slide">
+            {/* <div class="slide">
               <img src={img} alt="no image" />
-            </div>
+            </div> */}
             <div class="slide">
               <img src={master} alt="no image" />
             </div>

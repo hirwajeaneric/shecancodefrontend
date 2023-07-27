@@ -19,7 +19,9 @@ const Heading = () => {
     const isSmallScreen = window.innerWidth <= 768;
     setButtonText(isSmallScreen ? "Apply" : "Get started");
   };
-
+const updateApplyButton=()=>{
+  alert("Application is not yet open, it will be opening soon")
+}
   return (
     <div>
       <div className='heading-section' id='home'>
@@ -27,7 +29,7 @@ const Heading = () => {
           <h2 className='heading-tittle'>
             Train the Next Generation in Software Development
           </h2>
-        <Link target="blank" to="http://surl.li/jlauq" > <button className='heading-btn'> {buttonText}</button></Link> 
+        <Link target="blank"  ></Link>  <button className='heading-btn' onClick={updateApplyButton} > {buttonText}</button>
         </div>
         <div className='heading-program'>
           <ul>
