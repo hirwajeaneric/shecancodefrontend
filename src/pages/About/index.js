@@ -76,7 +76,7 @@ const About = () => {
             boasts a learning community for young Ladies aged between 18-30
             years old
           </p>
-          <Button btnTitle={"Siscover more"} />
+          <Button btnTitle={"Discover more"} />
         </div>
         <div className="about-left">
           <div className="left-images">

@@ -1,19 +1,20 @@
-import Aos from 'aos';
-import 'aos/dist/aos.css';
-import React, { useEffect, useState } from 'react';
-import amali from '../../assets/amali.png';
-import img from '../../assets/Desktop - 1.png';
-import hence from '../../assets/hence.png';
-import thegym from '../../assets/thegym.jpeg';
-import study from '../../assets/undraw_education_f8ru.png';
-import job from '../../assets/undraw_Hire_re_gn5j.png';
-import career from '../../assets/undraw_server_cluster_jwwq.png';
-import Button from '../../components/Button';
-import Footer from '../../components/Footers/footer';
-import Header from '../../components/Header';
-import graduatesData from './graduateData';
-import './services.css';
-import { Link } from 'react-router-dom';
+import Aos from "aos";
+import "aos/dist/aos.css";
+import React, { useEffect, useState } from "react";
+import amali from "../../assets/amali.png";
+import img from "../../assets/Desktop - 1.png";
+import hence from "../../assets/hence.png";
+import thegym from "../../assets/thegym.jpeg";
+import study from "../../assets/undraw_education_f8ru.png";
+import job from "../../assets/undraw_Hire_re_gn5j.png";
+import career from "../../assets/undraw_server_cluster_jwwq.png";
+import Button from "../../components/Button";
+import Footer from "../../components/Footers/footer";
+import Header from "../../components/Header";
+import graduatesData from "./graduateData";
+import "./services.css";
+import { Link } from "react-router-dom";
+import { applyLink } from "../../utils/form";
 const Services = () => {
   const [show, setShow] = useState(false);
   const [hide, setHide] = useState(false);
@@ -22,7 +23,7 @@ const Services = () => {
   const [item, setItem] = useState(false);
   const [selectedGraduate, setSelectedGraduate] = useState(graduatesData[0]);
   const [clickedIndex, setClickedIndex] = useState(null);
-const [buttonText,setButtonText]=useState("Get started")
+  const [buttonText, setButtonText] = useState("Get started");
   const handleGraduateClick = (graduate, index) => {
     setSelectedGraduate(graduate);
     setClickedIndex(index);
@@ -48,7 +49,9 @@ const [buttonText,setButtonText]=useState("Get started")
             experienced Career Coaches after graduation.
           </p>
           <div className="service-btn">
-          <a target="_blank" href="http://surl.li/jlauq"><Button btnTitle={`${buttonText}`} /></a>
+            <Link target="_blank" to={applyLink}>
+              <Button btnTitle={`${buttonText}`} />
+            </Link>
           </div>
         </div>
 
@@ -70,8 +73,8 @@ const [buttonText,setButtonText]=useState("Get started")
       <div className="next">
         <div data-aos="fade-right" className="next-partOne">
           <h2>
-            Our Tachnical facilitators driven to your{' '}
-            <span className="success">Success</span>{' '}
+            Our Tachnical facilitators driven to your{" "}
+            <span className="success">Success</span>{" "}
           </h2>
         </div>
         <div data-aos="fade-left" className="next-partTwo">
@@ -85,7 +88,7 @@ const [buttonText,setButtonText]=useState("Get started")
             <br /> <br />
             There are so many interesting problems to solve, and companies need
             diverse and ambitious graduates like you to get to work on these
-            challenges. <br /> <br />{' '}
+            challenges. <br /> <br />{" "}
           </p>
         </div>
       </div>
@@ -121,7 +124,7 @@ const [buttonText,setButtonText]=useState("Get started")
           <div data-aos="fade-right" className="job-partOne">
             <h1>16 weeks of career coaching</h1>
             <p>
-              {' '}
+              {" "}
               Join the bootcamp to get job-ready with practical, hands-on
               learning. You will learn the skills and gain experience the market
               demands. Learn from industry experts, and join the community of
@@ -141,13 +144,13 @@ const [buttonText,setButtonText]=useState("Get started")
           <div data-aos="fade-left" className="job-partTwo">
             <h1>Career guidance and Technical Mentorship. </h1>
             <p>
-              {' '}
+              {" "}
               Work with our career support team to help you determine your next
               chapter after graduation. Our career team supports SheCanCODE
               students to write their technical resumes and conduct interview
               practices to prepare for job interviews. Have 1:1 mentors who are
               working industry to learn what it takes to be a successful
-              software developer.{' '}
+              software developer.{" "}
             </p>
           </div>
         </div>
@@ -158,11 +161,11 @@ const [buttonText,setButtonText]=useState("Get started")
               SheCanCODE has more than 400 alumni who have graduated from the
               program and currently working in the tech industry. By joining the
               program you build connection and sisterhood to support one another
-              to secure the career of your dream.{' '}
+              to secure the career of your dream.{" "}
             </p>
           </div>
           <div data-aos="fade-left" className="job-partTwo">
-            <img src={career} alt="" style={{ height: '350px' }} />
+            <img src={career} alt="" style={{ height: "350px" }} />
           </div>
         </div>
       </div>
@@ -180,13 +183,13 @@ const [buttonText,setButtonText]=useState("Get started")
           <ul>
             <li>
               <span>Phase 1:</span>Set your goals and abtain a relevant
-              education{' '}
-              <button onClick={() => setShow(!show)}>{show ? '-' : '+'}</button>
+              education{" "}
+              <button onClick={() => setShow(!show)}>{show ? "-" : "+"}</button>
             </li>
             {show ? (
               <div className="hidden-content">
                 <p>
-                  {' '}
+                  {" "}
                   Determine why you want to become a software developer and
                   define your career goals. attend online courses, coding
                   bootcamps, or self-study to gain the necessary knowledge.
@@ -196,22 +199,22 @@ const [buttonText,setButtonText]=useState("Get started")
             <li>
               <span>Phase 2:</span>Learn programming languages and Build your
               portifolio
-              <button onClick={() => setHide(!hide)}>{hide ? '-' : '+'}</button>
+              <button onClick={() => setHide(!hide)}>{hide ? "-" : "+"}</button>
             </li>
             {hide ? (
               <div className="hidden-content">
                 <p>
-                  {' '}
+                  {" "}
                   Gain proficiency in programming languages commonly used in
                   software development. Develop projects that showcase your
-                  skills and understanding of programming concepts.{' '}
+                  skills and understanding of programming concepts.{" "}
                 </p>
               </div>
             ) : null}
             <li>
-              <span>Phase 3:</span>Gain practical experience{' '}
+              <span>Phase 3:</span>Gain practical experience{" "}
               <button onClick={() => setVisible(!visible)}>
-                {visible ? '-' : '+'}
+                {visible ? "-" : "+"}
               </button>
             </li>
             {visible ? (
@@ -222,19 +225,19 @@ const [buttonText,setButtonText]=useState("Get started")
                   development works in professional settings. Software
                   developers need strong problem-solving skills. Practice by
                   participating in coding challenges, solving algorithmic
-                  problems, or working on coding exercises.{' '}
+                  problems, or working on coding exercises.{" "}
                 </p>
               </div>
             ) : null}
             <li>
               <span>Phase 4:</span>Stay updated with industry trends, Network
               and collaborate
-              <button onClick={() => setView(!view)}>{view ? '-' : '+'}</button>
+              <button onClick={() => setView(!view)}>{view ? "-" : "+"}</button>
             </li>
             {view ? (
               <div className="hidden-content">
                 <p>
-                  {' '}
+                  {" "}
                   The field of software development is constantly evolving. Stay
                   abreast of new technologies, frameworks, Connect with other
                   developers, join professional communities, and attend meetups
@@ -245,12 +248,12 @@ const [buttonText,setButtonText]=useState("Get started")
             <li>
               <span>Phase 5:</span>Create strong resume and Apply for software
               development opt
-              <button onClick={() => setItem(!item)}>{item ? '-' : '+'}</button>
+              <button onClick={() => setItem(!item)}>{item ? "-" : "+"}</button>
             </li>
             {item ? (
               <div className="hidden-content">
                 <p>
-                  {' '}
+                  {" "}
                   Craft a well-designed resume that highlights your relevant
                   skills, projects, and experience.Start applying for
                   entry-level or junior software developer positions.

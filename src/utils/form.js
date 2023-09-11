@@ -1,0 +1,1 @@
+export const applyLink = 'https://docs.google.com/forms/d/e/1FAIpQLSeuG1pfdOCCWIKa2KQdZjJwvKaJuEjCfNYgOVtzbJwF0dWbTg/viewform'

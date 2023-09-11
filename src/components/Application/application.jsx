@@ -9,6 +9,7 @@ import Footer from "../Footers/footer";
 import { Link } from "react-router-dom";
 import Course from "../courses/Course";
 import { applicationMiddleContents } from "../courses/courseData";
+import { applyLink } from "../../utils/form";
 
 const Application = () => {
   const [buttonText, setButtonText] = useState("Apply Now");
@@ -39,34 +40,36 @@ const Application = () => {
     const isSmallScreen = window.innerWidth <= 768;
     setButtonText(isSmallScreen ? "Apply" : "Apply Now");
   };
-const updateInfo=()=>{
-  alert("Application is not yet open, it will be opening soon")
-}
+  const updateInfo = () => {
+    alert("Application is not yet open, it will be opening soon");
+  };
   return (
     <>
       <Index />
-      <div className='application-container'>
+      <div className="application-container">
         <div>
-          <h1 className='application-title'>
+          <h1 className="application-title">
             <Typed strings={sentences} typeSpeed={50} backSpeed={40} loop />
           </h1>
         </div>
-        <div className='application-upper'>
-          <div className='application-upper-content'>
+        <div className="application-upper">
+          <div className="application-upper-content">
             <h1>Learning made Easy</h1>
-          {/* <Link target="_blank" to="http://surl.li/jlauq"><Button btnTitle={`${buttonText}`} /></Link>   */}
-         <button className="btn" onClick={updateInfo}>Apply</button>
+            {/* <Link target="_blank" to="http://surl.li/jlauq"><Button btnTitle={`${buttonText}`} /></Link>   */}
+            <Link target="_blank" to={applyLink}>
+              <button className="btn">Apply</button>
+            </Link>
           </div>
         </div>
 
-        <div className='appliction-middle'>
+        <div className="appliction-middle">
           {applicationMiddleContents.map((content, index) => (
-            <div className='middle-1' key={index}>
-              <div data-aos='fade-right' className='middle-1-content'>
-                <div className='middle-1-left'>
+            <div className="middle-1" key={index}>
+              <div data-aos="fade-right" className="middle-1-content">
+                <div className="middle-1-left">
                   <h2>{content.title}</h2>
                 </div>
-                <div className='middle-1-right'>
+                <div className="middle-1-right">
                   <h3>{content.subtitle}</h3>
                   <p>{content.description}</p>
                 </div>
@@ -75,8 +78,8 @@ const updateInfo=()=>{
           ))}
         </div>
 
-        <div className='application-lower-content'>
-          <div className='middle-2'>
+        <div className="application-lower-content">
+          <div className="middle-2">
             <h1>
               <Typed
                 strings={sentences1}
