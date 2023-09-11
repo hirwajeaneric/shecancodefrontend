@@ -5,6 +5,7 @@ import Image from "./images/logoscc.png";
 import "./nav.css";
 import Button from "../Button";
 import Bar from "../Nav";
+import { applyLink } from "../../utils/form";
 const updateInfo = () => {
   alert("application is not yet open, it will be opening soon");
 };
@@ -52,11 +53,11 @@ let Index = () => {
             </li>
           </ul>
           <div class="menu">
-            {/* <Link target="_blank" to="#"> */}
-            <button className="btn" onClick={updateInfo}>
+            <Link target="_blank" to={applyLink}>
+            <button className="btn">
               Apply{" "}
             </button>
-            {/* </Link> */}
+            </Link>
             {humbState && (
               <div
                 class="bx bx-menu"
@@ -87,7 +88,7 @@ let Index = () => {
               <p>Program</p>
             </Link>
 
-            <Link target="_blank" to="http://surl.li/jlauq">
+            <Link target="_blank" to={applyLink}>
               {" "}
               <p>Apply</p>
             </Link>
