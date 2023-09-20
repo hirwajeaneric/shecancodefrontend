@@ -6,14 +6,28 @@ import "./nav.css";
 import Button from "../Button";
 import Bar from "../Nav";
 import { applyLink } from "../../utils/form";
+import CloseApplication from "../CloseApplication/CloseApplication";
 const updateInfo = () => {
   alert("application is not yet open, it will be opening soon");
 };
 let Index = () => {
   let [humbState, setHumbState] = useState(true);
   const location = useLocation();
+
+  const [showPopup, setShowPopup] = useState(false);
+
+  const openPopup = () => {
+    setShowPopup(true);
+  };
+
+  const closePopup = () => {
+    setShowPopup(false);
+  };
   return (
     <>
+      <CloseApplication isOpen={showPopup} onClose={closePopup}>
+        <p>Application is closed. We will notify you once it reopens.</p>
+      </CloseApplication>
       <div className="hamGrid">
         <div class="all">
           <img src={Image} alt="scc-logo" />
@@ -53,11 +67,11 @@ let Index = () => {
             </li>
           </ul>
           <div class="menu">
-            <Link target="_blank" to={applyLink}>
-            <button className="btn">
+            {/* <Link target="_blank" to={applyLink}> */}
+            <button className="btn" onClick={openPopup}>
               Apply{" "}
             </button>
-            </Link>
+            {/* </Link> */}
             {humbState && (
               <div
                 class="bx bx-menu"
@@ -88,10 +102,11 @@ let Index = () => {
               <p>Program</p>
             </Link>
 
-            <Link target="_blank" to={applyLink}>
-              {" "}
+            {/* <Link target="_blank" to={applyLink}> */}
+            <button className="btn" onClick={openPopup}>
               <p>Apply</p>
-            </Link>
+            </button>
+            {/* </Link> */}
           </div>
         )}
       </div>

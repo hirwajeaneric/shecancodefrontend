@@ -15,6 +15,7 @@ import graduatesData from "./graduateData";
 import "./services.css";
 import { Link } from "react-router-dom";
 import { applyLink } from "../../utils/form";
+import CloseApplication from "../../components/CloseApplication/CloseApplication";
 const Services = () => {
   const [show, setShow] = useState(false);
   const [hide, setHide] = useState(false);
@@ -24,6 +25,15 @@ const Services = () => {
   const [selectedGraduate, setSelectedGraduate] = useState(graduatesData[0]);
   const [clickedIndex, setClickedIndex] = useState(null);
   const [buttonText, setButtonText] = useState("Get started");
+  const [showPopup, setShowPopup] = useState(false);
+
+  const openPopup = () => {
+    setShowPopup(true);
+  };
+
+  const closePopup = () => {
+    setShowPopup(false);
+  };
   const handleGraduateClick = (graduate, index) => {
     setSelectedGraduate(graduate);
     setClickedIndex(index);
@@ -38,7 +48,9 @@ const Services = () => {
   return (
     <div className="all-services">
       <Header />
-
+      <CloseApplication isOpen={showPopup} onClose={closePopup}>
+        <p>Application is closed. We will notify you once it reopens.</p>
+      </CloseApplication>
       <div className="service-container">
         <div className="service-partOne">
           <h1 data-aos="fade-in">16 Weeks of coding career Training</h1>
@@ -49,9 +61,9 @@ const Services = () => {
             experienced Career Coaches after graduation.
           </p>
           <div className="service-btn">
-            <Link target="_blank" to={applyLink}>
-              <Button btnTitle={`${buttonText}`} />
-            </Link>
+            {/* <Link target="_blank" to={applyLink}> */}
+            <Button btnTitle={`${buttonText}`} onClick={openPopup} />
+            {/* </Link> */}
           </div>
         </div>
 

@@ -10,9 +10,19 @@ import { Link } from "react-router-dom";
 import Course from "../courses/Course";
 import { applicationMiddleContents } from "../courses/courseData";
 import { applyLink } from "../../utils/form";
+import CloseApplication from "../CloseApplication/CloseApplication";
 
 const Application = () => {
   const [buttonText, setButtonText] = useState("Apply Now");
+  const [showPopup, setShowPopup] = useState(false);
+
+  const openPopup = () => {
+    setShowPopup(true);
+  };
+
+  const closePopup = () => {
+    setShowPopup(false);
+  };
 
   const sentences = [
     "Application is open for SheCanCode Cohort 9 Bootcamp",
@@ -46,6 +56,9 @@ const Application = () => {
   return (
     <>
       <Index />
+      <CloseApplication isOpen={showPopup} onClose={closePopup}>
+        <p>Application is closed. We will notify you once it reopens.</p>
+      </CloseApplication>
       <div className="application-container">
         <div>
           <h1 className="application-title">
@@ -56,9 +69,11 @@ const Application = () => {
           <div className="application-upper-content">
             <h1>Learning made Easy</h1>
             {/* <Link target="_blank" to="http://surl.li/jlauq"><Button btnTitle={`${buttonText}`} /></Link>   */}
-            <Link target="_blank" to={applyLink}>
-              <button className="btn">Apply</button>
-            </Link>
+            {/* <Link target="_blank" to={applyLink}> */}
+            <button className="btn" onClick={openPopup}>
+              Apply
+            </button>
+            {/* </Link> */}
           </div>
         </div>
 
