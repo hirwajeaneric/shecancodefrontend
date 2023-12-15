@@ -19,13 +19,13 @@ a {
   position: fixed;
   width: 100%; */
   position: sticky;
-  top: 0;
+  /* top: 0; */
   z-index: 999;
 }
 .all {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   padding: 1px 10px;
   transition: all 0.5s ease;
   background-color: white;
@@ -208,9 +208,28 @@ img:hover {
     font-size: 17px;
     font-weight: 500;
     margin: 0 10px;
-    transition: all 0.5s ease;
+    /* transition: all 0.5s ease; */
   }
 }
 
 @media screen and ((min-width: 1201)) {
+}
+.subMenu{
+  position: absolute;
+  width: 400px;
+  height: 255px;
+  background-color: #ffffff;
+  /* margin-top: -50px; */
+  opacity: 0;
+  border-radius: 10px;
+  line-height: 2.5em;
+ 
+
+}
+ul li:hover .subMenu{
+  /* z-index: 1; */
+  opacity: 1;
+  
+
+  /* margin-top: 0; */
 }

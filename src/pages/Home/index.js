@@ -9,6 +9,7 @@ import Program from "../../components/Program/program";
 import Footer from "../../components/Footers/footer";
 import Heading from "./headding";
 import Offers from "./offers";
+import PopupMessage from ".././Courses page/Popup";
 import Parteners from "../../components/parteners";
 import Index from "../../components/partners";
 let Home = () => {
@@ -16,6 +17,7 @@ let Home = () => {
     <div>
       <Bar />
       <Header />
+     
       <Heading />
       <Offers />
       {/* <Index /> */}

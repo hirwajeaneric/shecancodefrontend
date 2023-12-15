@@ -584,3 +584,18 @@
   margin-top: 100px;
   margin-left: -30px;
 }
+.application-section-paragraph{
+  font-weight: bolder;
+  margin-top: 2em;
+  margin-bottom: 30px;
+  /* animation: par 2s infinite; */
+  font-size: 20px;
+  margin-left: 2em;
+  color: black;
+  text-align: start;
+  animation-duration: 2s infinite;
+  
+}
+.application-section span{
+  color: #159ae2;
+}

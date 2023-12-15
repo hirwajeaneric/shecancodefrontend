@@ -1,0 +1,168 @@
+.mobileApp-parts-container {
+    background-image: linear-gradient(#33d3d65a, rgba(255, 255, 255, 0.484)),
+        url("../Courses page/Pictures/holidaysBootcamp.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 60vh;
+}
+
+.mobileApp-part1 {
+    width: 60%;
+    margin: auto;
+    padding-top: 20px;
+
+    font-size: 20px
+}
+
+.mobileApp-part1 h1 {
+    text-align: start;
+    font-size: 50px;
+    color: white;
+    font-weight: 900;
+}
+
+.mobileApp-part1 p {
+    /* text-align: center; */
+    font-size: 22px;
+    padding: 30px 0px 0px;
+    font-family: Open Sans, sans-serif;
+    color: whitesmoke;
+    /* margin-left: 10em; */
+}
+
+.mob-btn {
+    border: none;
+    margin-top: 20px;
+    padding: 10px 30px;
+    border-radius: 8px;
+    font-size: 18px;
+    transition: all 0.5s ease;
+    font-weight: 500;
+    background-color: #33d4d6;
+    border: 1px solid #33d4d6;
+    font-weight: bolder;
+    color: black;
+    margin-left: px;
+
+}
+
+.mob-btn:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+
+.mobileApp-part2 h1 {
+    text-align: start;
+    font-size: 20px;
+    color: black;
+    font-weight: 900;
+    margin-left: 9em;
+    margin-top: 4em;
+}
+
+.mobileApp-part2 p {
+    font-size: 18px;
+    margin-left: 10em;
+    color: black
+}
+
+.mobileApp-part3-sections ul {
+    list-style: none;
+    margin-top: 20px;
+    font-size: 18px;
+  
+}
+
+.mobileApp-part3-sections {
+    margin-top: 10px;
+    width: 60%;
+   margin: auto;
+
+}
+
+.mobileApp-part3-sections ul li {
+    padding: 30px;
+    background-color: white;
+    margin-top: 3px;
+    /* font-family: Open Sans, sans-serif; */
+}
+
+.mobileApp-part3-sections ul li:hover {
+    background-color: #29478295;
+    border-radius: 10px;
+    transition: 2s;
+    color: white;
+}
+
+.hidden-content {
+    background-color: rgb(213, 213, 213);
+    padding-left: 30px;
+    border-radius: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  
+}
+
+.mobileApp-part3-sections ul li button {
+    font-size: 20px;
+    margin-left: 35em;
+    background-color: #294682;
+    border-radius: 50%;
+    color: white;
+    padding: 0 10px;
+
+}
+
+.mobileApp-part3-container {
+    width: 100%;
+}
+.program-highlights-part{
+    width: 100%;
+    /* height: 20vh; */
+    display: flex;
+    gap: 50px;
+    margin-bottom: 4em;
+}
+.program-highlights-part-one{
+    padding-left: 20em;
+}
+
+.program-highlights-part-one h1 {
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    /* line-height: 1.15; */
+  }
+  .program-highlights-part-two {
+    padding-right: 9em;
+
+  }
+  .program-highlights-part-two p{
+    font-size: 19px;
+    margin-top: 2.3em;
+    
+   
+  }
+  .program-btn{
+    border: none;
+    margin-top: 10px;
+    padding: 10px 30px;
+    border-radius: 8px;
+    font-size: 18px;
+    transition: all 0.5s ease;
+    font-weight: 500;
+    background-color: #33d4d6;
+    border: 1px solid #33d4d6;
+    font-weight: bolder;
+    color: black;
+    /* margin-left: 100px; */
+  }
+  .program-btn:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
