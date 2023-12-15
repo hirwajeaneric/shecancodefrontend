@@ -1,13 +1,14 @@
 import React, { useEffect, useState } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { applyLink } from "../../utils/form";
 import CloseApplication from "../../components/CloseApplication/CloseApplication";
 
 const Heading = () => {
   const [buttonText, setButtonText] = useState("Get started");
   const [showPopup, setShowPopup] = useState(false);
+  const navigate = useNavigate();
 
   const openPopup = () => {
     setShowPopup(true);
@@ -44,8 +45,8 @@ const Heading = () => {
             Train the Next Generation in Software Development
           </h2>
           {/* <Link target="_blank" to={applyLink}> */}
-          <button className="heading-btn" onClick={openPopup}>
-            {buttonText}
+          <button className="heading-btn" onClick={() => navigate('/courses')}>
+            View courses
           </button>
           {/* </Link> */}
         </div>

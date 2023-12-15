@@ -12,6 +12,7 @@ import Button from "../../components/Button";
 import Footer from "../../components/Footers/footer";
 import Header from "../../components/Header";
 import graduatesData from "./graduateData";
+import Nav from '../../components/Nav';
 import "./services.css";
 import { Link } from "react-router-dom";
 import { applyLink } from "../../utils/form";
@@ -39,14 +40,12 @@ const Services = () => {
     setClickedIndex(index);
   };
 
-  //   useEffect(()=>(
-  // document.title="shecancode|service"
-  //   ),[])
   useEffect(() => {
     Aos.init({ duration: 2000 });
   }, []);
   return (
     <div className="all-services">
+      <Nav />
       <Header />
       <CloseApplication isOpen={showPopup} onClose={closePopup}>
         <p>Application is closed. We will notify you once it reopens.</p>
