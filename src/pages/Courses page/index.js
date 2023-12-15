@@ -5,23 +5,23 @@ import { useNavigate } from "react-router-dom";
 
 const COURSES = [
   {
-    image: "/images/holidaysBootcamp.jpg",
-    title: "High School holidays tech bootcamp",
-    description: "Unlock the world of technology for your child this holiday season with our dynamic High School Holidays Tech Bootcamp! Youngsters aged 13-18, are welcome to join our boot camp if they have a curious mindset, a passion for technology, a community-oriented attitude, and excitement about the evolving tech landscape!",
-    destination: ""
+    image: "/images/webdevelopment.jpg",
+    title: "Mobile Application Development",
+    description: "Unlock the world of possibilities with our SheCanCode Bootcamp's Mobile Application Development program, designed to empower young girls and women in the exciting realm of technology. In this transformative journey, participants will delve into the art of crafting mobile applications, gaining hands-on experience in coding, design, and problem-solving. Our supportive and inclusive learning environment fosters creativity and collaboration, ensuring that every aspiring tech enthusiast can thrive.",
+    destination: "/mobiledevelopment"
   },
   {
     image: "/images/softwareEng.jpeg",
     title: "Software Engineering Program",
     description: "Calling all aspiring tech trailblazers! Embark on a transformative journey with our Software Engineering Program, crafted especially for young girls and women eager to dive into the dynamic world of technology.",
-    destination: ""
+    destination: "/softwareengineering"
   },
   {
-    image: "/images/webdevelopment.jpg",
-    title: "Mobile Application Development",
-    description: "Unlock the world of possibilities with our SheCanCode Bootcamp's Mobile Application Development program, designed to empower young girls and women in the exciting realm of technology. In this transformative journey, participants will delve into the art of crafting mobile applications, gaining hands-on experience in coding, design, and problem-solving. Our supportive and inclusive learning environment fosters creativity and collaboration, ensuring that every aspiring tech enthusiast can thrive.",
+    image: "/images/holidaysBootcamp.jpg",
+    title: "High School holidays tech bootcamp",
+    description: "Unlock the world of technology for your child this holiday season with our dynamic High School Holidays Tech Bootcamp! Youngsters aged 13-18, are welcome to join our boot camp if they have a curious mindset, a passion for technology, a community-oriented attitude, and excitement about the evolving tech landscape!",
     destination: ""
-  },
+  },  
   {
     image: "/images/partTimeImg.jpeg",
     title: "Part Time Software Engineering",
@@ -45,7 +45,7 @@ const Courses = () => {
               <div className="flex flex-col px-6 pb-6 gap-4">
                 <h1 className="text-xl" style={{ color: "#33d4d6" }}>{course.title}</h1>
                 <p>{course.description}</p>
-                <button onClick={() => navigate(course.description)} style={{ backgroundColor: "#33d4d6", color: "white" }} className="py-3 px-2 mt-8 rounded-lg hover:bg-cyan-200">Explore Course</button>
+                <button onClick={() => navigate(course.destination)} style={{ backgroundColor: "#33d4d6", color: "white" }} className="py-3 px-2 mt-8 rounded-lg hover:bg-cyan-200">Explore Course</button>
               </div>
             </div>
           ))}
