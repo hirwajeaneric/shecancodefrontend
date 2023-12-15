@@ -1,94 +1,58 @@
-import React, { useState } from 'react';
-import Index from '../../components/Header/index';
 import Header from "../../components/Header/index";
 import Nav from "../../components/Nav/index";
 import Footer from "../../components/Footers/footer";
-import "./AllCourses.css";
-import holidayPic from "../Courses page/Pictures/softwareEng.jpeg";
-import SoftwareEngineeringPic from "../Courses page/Pictures/shecancode.jpeg";
-import WebDevPic from "../Courses page/Pictures/holidaysBootcamp.jpg";
-import PartTimePic from "../Courses page/Pictures/partTimeImg.jpeg";
+import { useNavigate } from "react-router-dom";
 
-
+const COURSES = [
+  {
+    image: "/images/holidaysBootcamp.jpg",
+    title: "High School holidays tech bootcamp",
+    description: "Unlock the world of technology for your child this holiday season with our dynamic High School Holidays Tech Bootcamp! Youngsters aged 13-18, are welcome to join our boot camp if they have a curious mindset, a passion for technology, a community-oriented attitude, and excitement about the evolving tech landscape!",
+    destination: ""
+  },
+  {
+    image: "/images/softwareEng.jpeg",
+    title: "Software Engineering Program",
+    description: "Calling all aspiring tech trailblazers! Embark on a transformative journey with our Software Engineering Program, crafted especially for young girls and women eager to dive into the dynamic world of technology.",
+    destination: ""
+  },
+  {
+    image: "/images/webdevelopment.jpg",
+    title: "Mobile Application Development",
+    description: "Unlock the world of possibilities with our SheCanCode Bootcamp's Mobile Application Development program, designed to empower young girls and women in the exciting realm of technology. In this transformative journey, participants will delve into the art of crafting mobile applications, gaining hands-on experience in coding, design, and problem-solving. Our supportive and inclusive learning environment fosters creativity and collaboration, ensuring that every aspiring tech enthusiast can thrive.",
+    destination: ""
+  },
+  {
+    image: "/images/partTimeImg.jpeg",
+    title: "Part Time Software Engineering",
+    description: "Seize the opportunity to transform your passion for technology into a rewarding career through our evening software development program. Whether you're a working professional looking to upskill or someone navigating a career change, our doors are open to all determined individuals ready to embark on a journey of learning and growth.",
+    destination: ""
+  },
+];
 
 const Courses = () => {
+  const navigate = useNavigate();
 
-  const [pop, setPop] = useState(false);
-  const togglePop = () => {
-    setPop(!pop)
-
-  }
   return (
-    <>
-      <div>
-        <Nav />
-        <Header />
-        <div className='allCourses-div'>
-          <div className="card-container">
-            <img src={holidayPic} alt="" className='card-img' />
-            <h1 className='card-title'>High School holidays tech bootcamp</h1>
-            <p className='card-description'>Unlock the world of technology for your child this holiday season with our dynamic High School Holidays Tech Bootcamp!
-              Youngsters aged 13-18, are welcome to join our boot camp if they have a curious mindset, a passion for technology, a community-oriented attitude, and excitement about the evolving tech landscape!</p>
-            <button className='mb-9'>
-              <a className='card-btn' onClick={togglePop}>Explore Course</a>
-            </button>
-
-            {pop &&
-              (<div className='open-pop' >
-                <div className='overlay' onClick={togglePop}>
-                  <p> This program will start soon.Stay tuned for updates-we'll notify you as soon as it begins!!</p>
-                  <span className="pop-close" onClick={togglePop}>
-                    &times;
-                  </span>
-                </div>
+    <div className="w-full flex flex-col justify-start">
+      <Nav />
+      <Header />
+      <div className="w-full flex flex-col mt-8 justify-center items-center">
+        <section className="flex w-full md:w-10/12 justify-between flex-wrap">
+          {COURSES.map((course, id) => (
+            <div className="flex flex-col rounded-lg shadow-lg mb-8 w-full md:w-2/5 ">
+              <img src={`${course.image}`} alt="" style={{ borderRadius: "1px 1px 0 0" }} className="w-full"/>
+              <div className="flex flex-col px-6 pb-6 gap-4">
+                <h1 className="text-xl" style={{ color: "#33d4d6" }}>{course.title}</h1>
+                <p>{course.description}</p>
+                <button onClick={() => navigate(course.description)} style={{ backgroundColor: "#33d4d6", color: "white" }} className="py-3 px-2 mt-8 rounded-lg hover:bg-cyan-200">Explore Course</button>
               </div>
-              )}
-          </div>
-
-          <div className="card-container">
-            <img src={SoftwareEngineeringPic} alt="" className='card-img' />
-            <h1 className='card-title'>Software Engineering Program</h1>
-            <p className='card-description'>Calling all aspiring tech trailblazers! Embark on a transformative journey with our Software Engineering Program, crafted especially for young girls and women eager to dive into the dynamic world of technology.</p>
-            <button className='mb-9'>
-              <a href="/softwareengineering" className='card-btn'>Explore Course</a>
-            </button>
-          </div>
-
-          <div className="card-container">
-            <img src={WebDevPic} alt="" className='card-img' />
-            <h1 className='card-title'>Mobile Application Development</h1>
-            <p className='card-description' >
-              Unlock the world of possibilities with our SheCanCode Bootcamp's Mobile Application Development program, designed to empower young girls and women in the exciting realm of technology. In this transformative journey, participants will delve into the art of crafting mobile applications, gaining hands-on experience in coding, design, and problem-solving. Our supportive and inclusive learning environment fosters creativity and collaboration, ensuring that every aspiring tech enthusiast can thrive.
-            </p>
-            <button className='mb-9'>
-              <a href="/mobiledevelopment" className='card-btn'>Explore Course</a>
-            </button>
-          </div>
-
-          <div className="card-container">
-            <img src={PartTimePic} alt="" className='card-img' />
-            <h1 className='card-title'>Part Time Software Engineering</h1>
-            <p className='card-description'>Seize the opportunity to transform your passion for technology into a rewarding career through our evening software development program. Whether you're a working professional looking to upskill or someone navigating a career change, our doors are open to all determined individuals ready to embark on a journey of learning and growth.</p>
-            <button className='mb-9'>
-              <a className='card-btn' onClick={togglePop} >Explore Course</a>
-            </button>
-
-            {pop &&
-              (<div className='open-pop' >
-                <div className='overlay' onClick={togglePop}>
-                  <p> This program will start soon.Stay tuned for updates-we'll notify you as soon as it begins!!</p>
-                  <span className="pop-close" onClick={togglePop}>
-                    &times;
-                  </span>
-                </div>
-              </div>
-              )
-            }
-          </div>
-        </div>
-        <Footer />
+            </div>
+          ))}
+        </section>
       </div>
-    </>
+      <Footer />
+    </div>
   )
 }
 
