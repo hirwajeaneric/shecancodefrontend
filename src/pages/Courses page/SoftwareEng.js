@@ -1,15 +1,33 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import Header from "../../components/Header/index";
 import Nav from "../../components/Nav/index";
 import Footer from "../../components/Footers/footer";
 import "./mobileApp.css"
 import Aos from "aos";
 import "aos/dist/aos.css";
-import { useNavigate } from 'react-router-dom';
 import AccordionContainer from './AccordionContainer';
 
 const SoftwareEng = () => {
-  const navigate = useNavigate();
+  const [accordions, setAccordions] = useState([ 
+    { 
+      key: 1, 
+      title: 'What is the content of the software engineering program?', 
+      data: `Our software Engineering program constitutes of mainly 2 parts (Front-end and Back-end) where students with the support of our team of facilitators get to choose a suitable stack that they want.`, 
+      isOpen: false
+    }, 
+    // { 
+    //   key: 2, 
+    //   title: 'Why Mobile Application Development Matters', 
+    //   data: `Mobile applications are the heartbeat of innovation in today's digital landscape. From enhancing user experiences to shaping industries, mobile app development is a dynamic field with boundless possibilities. Embrace the future by acquiring the skills needed to create cutting-edge mobile solutions that address the demands of our fast-paced world.`, 
+    //   isOpen: false
+    // }, 
+    { 
+      key: 2, 
+      title: 'Who Should join?', 
+      data: `We are looking for self-motivated learners eager to uplevel their programming skills and diving deeper into specific tech stacks. We welcome university graduates, secondary school Advanced Level graduates and other young women who are willing to join the software development career path.`, 
+      isOpen: false
+    }, 
+  ]);
 
   useEffect(() => {
     Aos.init({ duration: 2000 });
@@ -25,7 +43,7 @@ const SoftwareEng = () => {
           <div className='mobileApp-part1 flex flex-col w-11/12 md:w-10/12 m-auto justify-around'>
             <h1 className='para1'>Software Engineering Program</h1>
             <p className='w-full sm:w-2/3 md:w-1/2'>Embark on a transformative journey with our 16-week program, designed to equip you with essential skills in <strong className='text-cyan-400'>Software Development</strong> in one of the most popular tech stacks with JavaScript.</p>
-            <button onClick={() => navigate('/februaryintake')} className='mob-btn mb-12 w-full md:w-1/5'>Apply now</button>
+            <button onClick={() => window.location.replace('/februaryintake')} className='mob-btn mb-12 w-full md:w-1/5'>Apply now</button>
           </div>
         </div>
 
@@ -53,10 +71,10 @@ const SoftwareEng = () => {
           </div>
         </div>
 
-        {/* Drop downs  */}
+        {/* Accordion  */}
         <div className='flex flex-col w-11/12 md:w-10/12 m-auto justify-around mt-7 bg-white pb-6 md:pb-12'>
           <h1 className='text-xl md:text-3xl text-left p-0 mb-7'>FAQs</h1>
-          <AccordionContainer />
+          <AccordionContainer accordions={accordions} setAccordions={setAccordions} />
         </div>
       </div>
       <Footer />
