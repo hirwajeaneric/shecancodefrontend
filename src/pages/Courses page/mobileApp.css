@@ -1,11 +1,17 @@
 .mobileApp-parts-container {
-    background-image: linear-gradient(#33d3d65a, rgba(255, 255, 255, 0.484)),
+    background-image: linear-gradient(#0b43445a, rgba(4, 66, 108, 0.484)),
         url("../Courses page/Pictures/holidaysBootcamp.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    /* width: 100%; */
-    /* height: 60vh; */
+}
+
+.softwareeng-parts-container {
+    background-image: linear-gradient(#0b43445a, rgba(0, 0, 0, 0.484)),
+        url("../Courses page/Pictures/softEngineer.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
 }
 
 .mobileApp-part1 {

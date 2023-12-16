@@ -1,53 +1,62 @@
-import React, {useEffect}  from 'react';
+import React, { useEffect } from 'react';
 import Header from "../../components/Header/index";
 import Nav from "../../components/Nav/index";
 import Footer from "../../components/Footers/footer";
-import "./AllCourses.css";
+import "./mobileApp.css"
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { useNavigate } from 'react-router-dom';
+import AccordionContainer from './AccordionContainer';
 
-// import holidayPic from "../Courses page/Pictures/holidaysBootcamp.jpg";
-// import SoftwareEngineeringPic from "../Courses page/Pictures/softPic.jpg";
-// import WebDevPic from "../Courses page/Pictures/webdevelopment.jpg";
-// import PartTimePic from "../Courses page/Pictures/soft.jpg";
-
-
-const FullStack = () => {
+const SoftwareEng = () => {
   const navigate = useNavigate();
 
-  useEffect(()=>{
-    Aos.init({duration:3000});
-  },[])
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
 
   return (
-    <div>
+    <div className='w-full flex flex-col justify-start'>
       <Nav />
       <Header />
-
-      <div className='mobileApp-parts-container'>
-        <div className='mobileApp-part1'>
-          <h1 className='para1'>Sofware Engineering Program</h1>
-          <p> Embark on a transformative journey with 16-week <br></br> program, designed to equip you with essential skills in software engineering.</p>
-          <button onClick={() => navigate('/mobilejanuaryapplication')} className='mob-btn'>Get Started</button>
+      <div className="w-full flex flex-col justify-center items-center">
+        {/* Banner  */}
+        <div className='softwareeng-parts-container flex w-full justify-between items-center'>
+          <div className='mobileApp-part1 flex flex-col w-11/12 md:w-10/12 m-auto justify-around'>
+            <h1 className='para1'>Software Engineering Program</h1>
+            <p className='w-full sm:w-2/3 md:w-1/2'>Embark on a transformative journey with our 16-week program, designed to equip you with essential skills in <strong className='text-cyan-400'>Software Development</strong> in one of the most popular tech stacks with JavaScript.</p>
+            <button onClick={() => navigate('/februaryintake')} className='mob-btn mb-12 w-full md:w-1/5'>Apply now</button>
+          </div>
         </div>
-      </div>
 
-      <div className='mobileApp-part2' >
-        <h1 >Dual Specialization</h1>
-        <p >Our curriculum is uniquely structured, allowing you to tailor your journey by selecting one of two specialized tracks: Frontend Development or Backend Development.</p>
-      </div>
-
-      <div className='specialization-section'>
-        <div className='frontend-specialization'>
-          <h4>Frontend Development</h4>
-          <p>Welcome to our Frontend Development hub! Here, we craft seamless user experiences by bringing web interfaces to life. Using the powerful combination of JavaScript, HTML, and CSS, we transform ideas into interactive and visually appealing websites. Our expertise extends to harnessing the capabilities of ReactJS, ensuring dynamic and efficient web solutions.<span className='hide'> Dive into the world of responsive design and cutting-edge web skills with us – where simplicity meets innovation, and user interfaces come to vibrant life. Elevate your digital presence with our frontend development prowess!</span></p>
-          <button onClick={() => navigate('/februaryintake')} className='speci-card-btn  mb-5'>Apply Now!</button>
+        {/* Call to action  */}
+        <div className='flex flex-col w-11/12 md:w-10/12 m-auto justify-around bg-white pt-10 md:pt-24 pb-5 md:pb-12'>
+          <h1 className='text-xl md:text-3xl text-left p-0 mb-9'>Elevate Your Career in Software Engineering with SheCanCode</h1>
+          <p className='text-base'>Join us on the fast track to success! At SheCanCode, we empower aspiring individuals <br></br>to become leaders in Software Engineering. Our programs are designed to work with world-class engineering teams, <br></br>helping you master both professional and technical skills essential for a thriving career.</p>
         </div>
-        <div className='backend-specialization'>
-          <h4>Backend Development</h4>
-          <p>Backend development is the behind-the-scenes magic that powers websites, making them functional and dynamic. In this process, we leverage a powerful trio of technologies: JavaScript for scripting, Express JS for building robust web applications, and Node JS for executing server-side code efficiently. MongoDB, a flexible and scalable database, helps store and manage data seamlessly.<span className='hide'>Together, these tools enable us to create interactive and responsive web applications, ensuring a smooth and efficient user experience.</span> </p>
-          <button onClick={() => navigate('/februaryintake')} className='speci-card-btn mb-5'>Apply Now!</button>
+
+        {/* Drop downs  */}
+        <div className='flex flex-col w-11/12 md:w-10/12 m-auto justify-around bg-white mt-7 pb-6 md:pb-12'>
+          <h1 className='text-xl md:text-3xl text-left p-0 mb-7'>Dual Specialization</h1>
+          <p className='text-base'>We help you choose and join an appropriate tech stack according to your prior experience and preferences and raise you to become a professional in it with our beginer friendly approach of teaching.</p>
+          <div className='flex flex-wrap mt-6 justify-center gap-4'>
+            <div className='bg-blue-950 text-white justify-between flex flex-col w-full md:w-5/12 p-8'>
+              <h1 className='text-3xl pt-0 mb-4 text-left'>Front-end</h1>
+              <p>Welcome to our Frontend Development hub! Here, we craft seamless user experiences by bringing web interfaces to life. Using the powerful combination of JavaScript, HTML, and CSS, we train you to transform ideas into interactive and visually appealing websites by the help of <strong>React JS</strong> Library.</p>
+              <a href='/februaryintake' className='py-2 px-3 mt-4 text-left rounded border-cyan-50 border-2 w-full md:w-1/2 hover:w-full'>Apply now</a>
+            </div>
+            <div className='bg-blue-950 text-white justify-between flex flex-col w-full md:w-5/12 p-8'>
+              <h1 className='text-3xl pt-0 mb-4 text-left'>Back-end</h1>
+              <p>Backend development is the behind-the-scenes magic that powers websites, making them functional and dynamic. In this process, we leverage a powerful trio of technologies: JavaScript for scripting, Express JS for building robust web applications, and Node JS for executing server-side code efficiently. MongoDB, a flexible and scalable database, helps store and manage data seamlessly.</p>
+              <a href='/februaryintake' className='py-2 px-3 mt-4 text-left rounded border-cyan-50 border-2 w-full md:w-1/2 hover:w-full'>Apply now</a>
+            </div>
+          </div>
+        </div>
+
+        {/* Drop downs  */}
+        <div className='flex flex-col w-11/12 md:w-10/12 m-auto justify-around mt-7 bg-white pb-6 md:pb-12'>
+          <h1 className='text-xl md:text-3xl text-left p-0 mb-7'>FAQs</h1>
+          <AccordionContainer />
         </div>
       </div>
       <Footer />
@@ -55,4 +64,4 @@ const FullStack = () => {
   )
 }
 
-export default FullStack
+export default SoftwareEng

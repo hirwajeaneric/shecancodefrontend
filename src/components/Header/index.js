@@ -7,9 +7,9 @@ const Header = () => {
 
   const [openMenu, setOpenMenu] = useState(false);
 
-  const handleMenuClick = () => {
-    setOpenMenu((prev) => !prev);
-  }
+  // const handleMenuClick = () => {
+  //   setOpenMenu((prev) => !prev);
+  // }
   
   return (
     <nav className='w-full flex justify-between items-center shadow-lg'>
