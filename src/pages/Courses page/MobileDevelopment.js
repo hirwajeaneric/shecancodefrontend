@@ -41,7 +41,11 @@ const WebDev = () => {
           <AccordionContainer />
         </div>
 
-
+        <div className='flex w-11/12 md:w-10/12 gap-8 mt-5 md:mt-0 m-auto justify-around flex-wrap bg-white pb-10 md:pb-24 pt-5 md:pt-12'>
+          <h1 className='text-xl md:text-3xl text-left p-0 mb-0 md:mb-9 w-full md:w-1/5'>Program highlights</h1>
+          <p className='text-base w-full md:w-3/5'>Ready to delve into the world of mobile applications? Join our comprehensive training program where you'll master the art of creating stunning mobile apps using React Native!
+          In this course, you'll not only learn React Native but also gain a solid foundation in programming essentials with HTML, CSS, and JavaScript. No prior experience needed, just enthusiasm and a desire to build amazing apps!.</p>
+        </div>
       </div>
       <Footer />
     </div>
