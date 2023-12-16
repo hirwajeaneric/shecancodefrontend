@@ -1,7 +1,6 @@
 import Header from "../../components/Header/index";
 import Nav from "../../components/Nav/index";
 import Footer from "../../components/Footers/footer";
-import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 
 const COURSES = [
@@ -34,7 +33,6 @@ const COURSES = [
 // Button component
 const Button = (props) => {
   const { course, togglePop } = props;
-  const navigate = useNavigate();
 
   if (!course.destination) {
     return (
@@ -49,7 +47,7 @@ const Button = (props) => {
 
   return (
     <button
-      onClick={() => navigate(course.destination)}
+      onClick={() => window.location.replace(course.destination)}
       style={{ backgroundColor: "#33d4d6", color: "white" }}
       className="py-3 px-2 mt-8 rounded-lg hover:bg-cyan-200">
       Explore Course

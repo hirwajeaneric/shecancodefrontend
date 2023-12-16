@@ -74,7 +74,7 @@ const Application = () => {
             {/* <button className="btn" onClick={openPopup}>
               Apply
             </button> */}
-            <button className="btn" onClick={() => navigate('/mobilejanuaryapplication')}>
+            <button className="btn" onClick={() => window.location.replace('/mobilejanuaryapplication')}>
               Apply
             </button>
             {/* </Link> */}

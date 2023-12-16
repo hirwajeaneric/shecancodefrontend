@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import Header from "../../components/Header/index";
 import Nav from "../../components/Nav/index";
 import Footer from "../../components/Footers/footer";
@@ -10,6 +10,26 @@ import AccordionContainer from './AccordionContainer';
 
 const MobileDevelopment = () => {
   const navigate = useNavigate();
+  const [accordions, setAccordions] = useState([ 
+    { 
+      key: 1, 
+      title: 'What is Mobile Application Development?', 
+      data: `Mobile application development is the art of creating software applications that run on mobile devices. In today's digital age, mobile apps play a crucial role in various aspects of our lives, from communication to entertainment, education, and business. Learning mobile app development equips you with the skills to shape the future and make a meaningful impact.`, 
+      isOpen: false
+    }, 
+    { 
+      key: 2, 
+      title: 'Why Mobile Application Development Matters', 
+      data: `Mobile applications are the heartbeat of innovation in today's digital landscape. From enhancing user experiences to shaping industries, mobile app development is a dynamic field with boundless possibilities. Embrace the future by acquiring the skills needed to create cutting-edge mobile solutions that address the demands of our fast-paced world.`, 
+      isOpen: false
+    }, 
+    { 
+      key: 3, 
+      title: 'Who Should join?', 
+      data: `This program is specifically designed for young girls and women who are passionate, determined, and creative individuals seeking empowerment in the tech industry. If you have a strong desire to excel in technology, innovate, and make a meaningful impact, this program is tailored to support and nurture your skills and ambitions.`, 
+      isOpen: false
+    }, 
+  ]);
 
   useEffect(() => {
     Aos.init({ duration: 2000 });
@@ -38,7 +58,7 @@ const MobileDevelopment = () => {
         {/* Drop downs  */}
         <div className='flex flex-col w-11/12 md:w-10/12 m-auto justify-around bg-white pb-6 md:pb-12'>
           <h1 className='text-xl md:text-3xl text-left p-0 mb-7'>FAQs</h1>
-          <AccordionContainer />
+          <AccordionContainer accordions={accordions} setAccordions={setAccordions}/>
         </div>
 
         <div className='flex w-11/12 md:w-10/12 gap-8 mt-5 md:mt-0 m-auto justify-around flex-wrap bg-white pb-10 md:pb-24 pt-5 md:pt-12'>
