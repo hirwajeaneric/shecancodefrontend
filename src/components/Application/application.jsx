@@ -6,7 +6,7 @@ import Index from "../Header/index";
 import "./application.css";
 import Button from "../Button";
 import Footer from "../Footers/footer";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Course from "../courses/Course";
 import { applicationMiddleContents } from "../courses/courseData";
 import { applyLink } from "../../utils/form";
@@ -15,6 +15,7 @@ import CloseApplication from "../CloseApplication/CloseApplication";
 const Application = () => {
   const [buttonText, setButtonText] = useState("Apply Now");
   const [showPopup, setShowPopup] = useState(false);
+  const navigate = useNavigate();
 
   const openPopup = () => {
     setShowPopup(true);
@@ -25,10 +26,10 @@ const Application = () => {
   };
 
   const sentences = [
-    "Application is open for SheCanCode Cohort 9 Bootcamp",
-    "Join us and learn valuable coding skills",
-    "Become a part of an inclusive and supportive community",
-    "Unlock your potential with SheCanCode",
+    "Application is open for SheCanCode Bootcamp Cohort 10",
+    "Starting in January 2024",
+    "We are looking for self-motivated learners in Mobile Application Development",
+    // "Unlock your potential with SheCanCode",
   ];
 
   const sentences1 = [
@@ -67,10 +68,13 @@ const Application = () => {
         </div>
         <div className="application-upper">
           <div className="application-upper-content">
-            <h1>Learning made Easy</h1>
+            <h1 className="text-2xl text-white">Apply for January intake in <span className="text-blue-950">Mobile Application Development</span></h1>
             {/* <Link target="_blank" to="http://surl.li/jlauq"><Button btnTitle={`${buttonText}`} /></Link>   */}
             {/* <Link target="_blank" to={applyLink}> */}
-            <button className="btn" onClick={openPopup}>
+            {/* <button className="btn" onClick={openPopup}>
+              Apply
+            </button> */}
+            <button className="btn" onClick={() => navigate('/mobilejanuaryapplication')}>
               Apply
             </button>
             {/* </Link> */}
