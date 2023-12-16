@@ -2,6 +2,7 @@ import Header from "../../components/Header/index";
 import Nav from "../../components/Nav/index";
 import Footer from "../../components/Footers/footer";
 import { useNavigate } from "react-router-dom";
+import { useState } from "react";
 
 const COURSES = [
   {
@@ -21,7 +22,7 @@ const COURSES = [
     title: "High School holidays tech bootcamp",
     description: "Unlock the world of technology for your child this holiday season with our dynamic High School Holidays Tech Bootcamp! Youngsters aged 13-18, are welcome to join our boot camp if they have a curious mindset, a passion for technology, a community-oriented attitude, and excitement about the evolving tech landscape!",
     destination: ""
-  },  
+  },
   {
     image: "/images/partTimeImg.jpeg",
     title: "Part Time Software Engineering",
@@ -30,8 +31,36 @@ const COURSES = [
   },
 ];
 
-const Courses = () => {
+// Button component
+const Button = (props) => {
+  const { course, togglePop } = props;
   const navigate = useNavigate();
+
+  if (!course.destination) {
+    return (
+      <button
+        onClick={() => togglePop()}
+        style={{ backgroundColor: "#33d4d6", color: "white" }}
+        className="py-3 px-2 mt-8 rounded-lg hover:bg-cyan-200">
+        Explore Course
+      </button>
+    )
+  }
+
+  return (
+    <button
+      onClick={() => navigate(course.destination)}
+      style={{ backgroundColor: "#33d4d6", color: "white" }}
+      className="py-3 px-2 mt-8 rounded-lg hover:bg-cyan-200">
+      Explore Course
+    </button>
+  )
+}
+
+
+const Courses = () => {
+  const [pop, setPop] = useState(false);
+  const togglePop = () => setPop(!pop);
 
   return (
     <div className="w-full flex flex-col justify-start">
@@ -39,18 +68,33 @@ const Courses = () => {
       <Header />
       <div className="w-full flex flex-col mt-8 justify-center items-center">
         <section className="flex w-full md:w-10/12 justify-between flex-wrap">
-          {COURSES.map((course, id) => (
-            <div className="flex flex-col rounded-lg shadow-lg mb-8 w-full md:w-2/5 ">
-              <img src={`${course.image}`} alt="" style={{ borderRadius: "1px 1px 0 0" }} className="w-full"/>
-              <div className="flex flex-col px-6 pb-6 gap-4">
-                <h1 className="text-xl" style={{ color: "#33d4d6" }}>{course.title}</h1>
-                <p>{course.description}</p>
-                <button onClick={() => navigate(course.destination)} style={{ backgroundColor: "#33d4d6", color: "white" }} className="py-3 px-2 mt-8 rounded-lg hover:bg-cyan-200">Explore Course</button>
+          {COURSES.map((course, id) => {
+            return (
+              <div key={id} className="flex flex-col rounded-lg shadow-lg mb-8 w-full md:w-2/5 ">
+                <img src={`${course.image}`} alt="" style={{ borderRadius: "1px 1px 0 0" }} className="w-full" />
+                <div className="flex flex-col px-6 pb-6 gap-4">
+                  <h1 className="text-xl" style={{ color: "#33d4d6" }}>{course.title}</h1>
+                  <p>{course.description}</p>
+                  <Button course={course} togglePop={togglePop} />
+                </div>
               </div>
-            </div>
-          ))}
+            )
+          })}
         </section>
       </div>
+
+      {/* Pop up  */}
+      {pop &&
+        (<div className='open-pop' >
+          <div className='overlay' onClick={togglePop}>
+            <p> This program will start soon. Stay tuned for updates-we'll notify you as soon as it begins!!</p>
+            <span className="pop-close" onClick={togglePop}>
+              &times;
+            </span>
+          </div>
+        </div>
+        )
+      }
       <Footer />
     </div>
   )
