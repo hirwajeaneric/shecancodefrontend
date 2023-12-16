@@ -6,11 +6,9 @@ import "./mobileApp.css"
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { useNavigate } from 'react-router-dom';
+import AccordionContainer from './AccordionContainer';
 
 const WebDev = () => {
-  const [show, setShow] = useState(false);
-  const [hide, setHide] = useState(false);
-  const [visible, setVisible] = useState(false);
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -31,7 +29,19 @@ const WebDev = () => {
           </div>
         </div>
 
-        
+        {/* Call to action  */}
+        <div className='flex flex-col w-11/12 md:w-10/12 m-auto justify-around bg-white pt-10 md:pt-24 pb-5 md:pb-12'>
+          <h1 className='text-xl md:text-3xl text-left p-0 mb-9'>Elevate Your Career in Mobile Application Development with SheCanCode</h1>
+          <p className='text-base'>Join us on the fast track to success! At SheCanCode, we empower aspiring individuals <br></br>to become leaders in mobile application development. Our programs are designed to work with world-class engineering teams, <br></br>helping you master both professional and technical skills essential for a thriving career.</p>
+        </div>
+
+        {/* Drop downs  */}
+        <div className='flex flex-col w-11/12 md:w-10/12 m-auto justify-around bg-white pb-6 md:pb-12'>
+          <h1 className='text-xl md:text-3xl text-left p-0 mb-7'>FAQs</h1>
+          <AccordionContainer />
+        </div>
+
+
       </div>
       <Footer />
     </div>
