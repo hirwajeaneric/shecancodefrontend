@@ -6,10 +6,6 @@ import { AiOutlineMenu } from "react-icons/ai";
 const Header = () => {
 
   const [openMenu, setOpenMenu] = useState(false);
-
-  // const handleMenuClick = () => {
-  //   setOpenMenu((prev) => !prev);
-  // }
   
   return (
     <nav className='w-full flex justify-between items-center shadow-lg'>
@@ -20,7 +16,8 @@ const Header = () => {
           <NavLink className="text-black active:text-blue-800 hover:text-cyan-500" to="/">Home</NavLink>
           <NavLink className="text-black active:text-blue-800 hover:text-cyan-500" to="/courses">Courses</NavLink>
           <NavLink className="text-black active:text-blue-800 hover:text-cyan-500" to="/about">About</NavLink>
-          <NavLink className="text-black active:text-blue-800 hover:text-cyan-500" to="/service">Career Services</NavLink>
+          <NavLink className="text-black active:text-blue-800 hover:text-cyan-500" to="/careers">Careers</NavLink>
+          <NavLink className="text-black active:text-blue-800 hover:text-cyan-500" to="/service">Services</NavLink>
           <NavLink className="text-black active:text-blue-800 hover:text-cyan-500" to="/program">Program</NavLink>
         </div>
 
@@ -33,7 +30,8 @@ const Header = () => {
           <NavLink className="active:text-blue-800 hover:text-cyan-500 text-white" to="/">Home</NavLink>
           <NavLink className="active:text-blue-800 hover:text-cyan-500 text-white" to="/courses">Courses</NavLink>
           <NavLink className="active:text-blue-800 hover:text-cyan-500 text-white" to="/about">About</NavLink>
-          <NavLink className="active:text-blue-800 hover:text-cyan-500 text-white" to="/service">Career Services</NavLink>
+          <NavLink className="active:text-blue-800 hover:text-cyan-500 text-white" to="/careers">Careers</NavLink>
+          <NavLink className="active:text-blue-800 hover:text-cyan-500 text-white" to="/service">Services</NavLink>
           <NavLink className="active:text-blue-800 hover:text-cyan-500 text-white" to="/program">Program</NavLink>
         </div>
       }

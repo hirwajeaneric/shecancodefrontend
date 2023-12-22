@@ -14,6 +14,9 @@ import HighschoolBootcamp from "../pages/Courses page/HighSchool";
 import AllCourses from "../pages/Courses page/index";
 import JanApplication from "../pages/JanApplication";
 import FebApplicationPage from "../pages/FebApplicationPage";
+import Careers from "../pages/Careers/Careers";
+import CareersDetails from "../pages/Careers/CareersDetails";
+import ApplicationForm from "../pages/Careers/ApplicationPage";
 
 
 const Index = () => {
@@ -27,7 +30,9 @@ const Index = () => {
       <Route path="/highschoolbootcamp" element={<HighschoolBootcamp />} />
       <Route path="/mobilejanuaryapplication" element={<JanApplication />} />
       <Route path="/februaryintake" element={<FebApplicationPage />} />
-      
+      <Route path="/careers" element={<Careers />} />
+      <Route path="/job/:id" element={<CareersDetails />} />
+      <Route path="/job/:id/apply" element={<ApplicationForm />} />
       <Route path="/about" element={<About />} />
       <Route path="/program" element={<Application />} />
       <Route path="/service" element={<Services />} />
