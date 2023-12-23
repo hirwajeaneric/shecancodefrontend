@@ -97,7 +97,7 @@ const CareersDetails = () => {
           <p className='text-gray-400 my-4 '>Application ends on {job.deadline}</p>
 
           <div className='flex w-full justify-center items-center'>
-            <Link to={`/job/${params.code}/apply`} className='mob-btn'>Apply now</Link>
+            <a href={`/job/${params.code}/apply`} className='mob-btn'>Apply now</a>
           </div>
         </div>
       </div>
