@@ -31,9 +31,9 @@ const CareersDetails = () => {
       <div className='w-full flex flex-col justify-center items-center pt-6 md:pt-12 mb-10'>
         <div className='w-11/12 md:w-10/12 mb-6 md:mb-12 leading-relaxed'>
           <Link to='/careers' className='text-blue-600'>Back to All Jobs</Link>
-          
+          <p className='text-gray-400 my-4'>Posted on {new Date(job.postTime).toDateString()}</p>
           <h1 className='text-4xl text-left p-0 font-bold my-3'>{job.title}</h1>
-          <h2 className='mb-7'>{job.location}</h2>
+          <h2 className='mb-4'>{job.location}</h2>
           <hr />
           <p className='my-7'>{job.organizationSummary}</p>
           
@@ -92,8 +92,13 @@ const CareersDetails = () => {
             </ul>
           }
 
+          <hr />
+          <p className='text-gray-400 my-4'>Posted since {job.postedSince}</p>
+          <p className='text-gray-400 my-4 '>Application ends on {job.deadline}</p>
 
-          
+          <div className='flex w-full justify-center items-center'>
+            <Link to={`/job/${params.code}/apply`} className='mob-btn'>Apply now</Link>
+          </div>
         </div>
       </div>
       <Footer />
