@@ -18,8 +18,8 @@ const Careers = () => {
             <Nav />
             <Header />
             <div className='w-full flex flex-col justify-center items-center mb-10'>
-                <h1 className='text-2xl text-left w-11/12 md:w-10/12 mt-12 border-b-gray border-b-2 pl-0'>Available Jobs</h1>
-                <div className='w-11/12 md:w-10/12 mt-12 mb-12'>
+                <h1 className='text-2xl text-left w-11/12 md:w-10/12 mt-6 md:mt-12 border-b-gray border-b-2 pl-0'>Available Jobs</h1>
+                <div className='w-11/12 md:w-10/12 mt-6 md:mt-12 mb-6 md:mb-12'>
                     <h2 className='text-lg border-b-gray'>Technical Facilitator</h2>
                     <div className='w-full justify-start'>
                         {jobs.map((job, index) => {
