@@ -26,11 +26,14 @@
                 "Support the learning and professional development of students attending SheCanCODE."    
             ]
         },
-        "otherResponsibilities":[
-            "Taking ownership of the organization's vision and helping to innovate and grow",
-            "Collaboratively and passionately deliver excellent work with integrity every day",
-            "Continuously level up your skills and grow with the organization"
-        ],
+        "otherResponsibilities":{
+            "introduction":"",
+            "list": [
+                "Taking ownership of the organization's vision and helping to innovate and grow",
+                "Collaboratively and passionately deliver excellent work with integrity every day",
+                "Continuously level up your skills and grow with the organization"
+            ]
+        },
         "experience": {
             "introduction":"The ideal candidate for the role MUST have experience with the following:",
             "list":[
