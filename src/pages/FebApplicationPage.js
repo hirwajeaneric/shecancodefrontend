@@ -3,6 +3,7 @@ import Nav from "../components/Nav/index";
 import Header from "../components/Header/index";
 import Footer from '../components/Footers/footer';
 import './Courses page/formInputs.css';
+import axios from 'axios';
 
 const SECONDARY_COMBINATIONS = [
     "Computer Science (MEC)",
@@ -34,6 +35,7 @@ const FebApplicationPage = () => {
         "Current level of education": '',
         "What did you study": '',
         "Tech stack": '',
+        "specialization":"",
         "GitHub account": '',
         "Interview location": '',
         "Why do you wish to join this program": '',
@@ -50,6 +52,7 @@ const FebApplicationPage = () => {
         currentLevelOfEducation: '',
         whatDidYouStudy: '',
         techstack: '',
+        specialization: '',
         gitHubAccount: '',
         whyDoYouWishToJoinThisProgram: '',
         howWillThisProgramHelpYou: '',
@@ -69,6 +72,7 @@ const FebApplicationPage = () => {
             "Current level of education": '',
             "What did you study": '',
             "Tech stack": '',
+            "specialization":"",
             "GitHub account": '',
             "Interview location": '',
             "Why do you wish to join this program": '',
@@ -93,27 +97,24 @@ const FebApplicationPage = () => {
 
     const formSubmission = (e) => {
         e.preventDefault();
-
-        const formEle = document.querySelector("form");
-        const formDatab = new FormData(formEle);
-
-        formInputs.techStack = techStack.join(', ');
-        console.log(formInputs);
-
-        const URL = 'https://script.google.com/macros/s/AKfycbxHh5ymQUdYQsj3S66Sb_dVp0YhtMzNu_Vynp5YBsf-_rl5b0aCG080qsFVHn5CEG9U/exec';
+        
+        const URL = 'https://software-engineering-february-default-rtdb.firebaseio.com/applicants.json';
 
         setProcessing("Processing...");
 
-        fetch(URL, { method: 'POST', body: formDatab})
+        formInputs["Tech stack"] = techStack.join(',');        
+
+        axios.post(URL, formInputs)
         .then(
             response => {
-                console.log(response);
-                setProcessing("");
-                setResponseMessage("Successfully submitted");
-                resetFormInputs();
-                setTimeout(() => {
-                    window.location.reload();
-                }, 3000)
+                if (response.status === 201 || response.status === 200) {
+                    setProcessing("");
+                    setResponseMessage("Successfully submitted");
+                    resetFormInputs();
+                    setTimeout(() => {
+                        window.location.reload();
+                    }, 3000)
+                }
             }
         )
         .catch(error => {
@@ -251,6 +252,15 @@ const FebApplicationPage = () => {
                         </div>
                     </div>
                     <div className='flex w-full gap-3 flex-col sm:flex-row'>
+                        <div className='form-input'>
+                            <label className='text-left'>Which specialization do you want to join?*</label>
+                            <select name='specialization' onChange={handleInput}>
+                                <option value={""}>Choose specialization</option>
+                                <option value={"Front-end"}>Front-end</option>
+                                <option value={"Back-end"}>Back-end</option>
+                            </select>
+                            {errors.specialization && <span className='error-message'>{errors.specialization}</span>}
+                        </div>
                         <div className='form-input'>
                             <label className='text-left'>Interview location*</label>
                             <select name='Interview location' onChange={handleInput}>
