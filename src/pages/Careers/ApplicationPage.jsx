@@ -105,7 +105,7 @@ const ApplcationPage = () => {
     const formSubmission = (e) => {
         e.preventDefault();
         
-        const URL = 'https://she-can-code-job-application-default-rtdb.firebaseio.com/';
+        const URL = 'https://she-can-code-job-application-default-rtdb.firebaseio.com/applicants.json';
 
         setProcessing("Processing...");
 
