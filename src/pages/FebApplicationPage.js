@@ -278,7 +278,7 @@ const FebApplicationPage = () => {
                     <div className='flex w-full gap-3 flex-col sm:flex-row'>
                         <div className='form-input'>
                             {processing ? 
-                                <input type='submit' value={'Processing...'} className='bg-gray-400 mt-4 py-2 px-3 text-white rounded hover:bg-black cursor-pointer'/> 
+                                <input type='submit' disabled value={'Processing...'} className='bg-gray-400 mt-4 py-2 px-3 text-white rounded hover:bg-black cursor-pointer'/> 
                                 : 
                                 <input type='submit' value={'Submit Application'} className='bg-cyan-400 mt-4 py-2 px-3 text-white rounded hover:bg-black cursor-pointer'/>
                             }

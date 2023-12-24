@@ -5,22 +5,10 @@ import Footer from '../../components/Footers/footer';
 import '../Courses page/formInputs.css';
 import { generateJobs } from '../../utils/JobsList';
 import { useParams } from 'react-router-dom';
-
-const SECONDARY_COMBINATIONS = [
-    "Computer Science (MEC)",
-    "Software Development (SOD)",
-    "Mathematics Physics and Computer Science (MPC)",
-    "Others"
-];
-
-const UNIVERSITY_COMBINATIONS = [
-    "Computer Science",
-    "Software Engineering",
-    "Information Management",
-    "Networking",
-    "Networks and Communication Systems",
-    "Big Data Analysis"
-];
+import { storage } from "../../configs/firebase";
+import { ref, uploadBytes } from "firebase/storage";
+import { v4 } from "uuid";
+import axios from 'axios';
 
 const ApplcationPage = () => {
 
@@ -34,14 +22,9 @@ const ApplcationPage = () => {
         "Phone": '',
         "Age": 0,
         "Residence": '',
-        "Current level of education": '',
-        "What did you study": '',
         "Tech stack": '',
         "GitHub account": '',
-        "Do you have a computer": '',
-        "Interview location": '',
-        "Why do you wish to join this program": '',
-        "How will this program impact you": '',
+        "Years of experience": ''
     });
 
     const [errors, setErrors] = useState({
@@ -51,7 +34,7 @@ const ApplcationPage = () => {
         phone: '',
         age: '',
         residence: '',
-        currentLevelOfEducation: '',
+        yearsOfExperience: '',
         whatDidYouStudy: '',
         techstack: '',
         gitHubAccount: '',
@@ -71,16 +54,30 @@ const ApplcationPage = () => {
             "Phone": '',
             "Age": 0,
             "Residence": '',
-            "Current level of education": '',
-            "What did you study": '',
             "Tech stack": '',
             "GitHub account": '',
-            "Do you have a computer":'',
-            "Interview location": '',
-            "Why do you wish to join this program": '',
-            "How will this program impact you": '',
+            "Years of experience": '',
         });
     }
+
+    const [cv, setCv] = useState("");
+
+    const handleFile = (e) => {
+        setCv(e.target.files[0]);
+    };
+
+    const uploadCv =async () => {
+        if (cv === null) return;
+        const fileRef = ref(storage, `cvs/${v4()+" - "+cv.name}`);
+
+        await uploadBytes(fileRef, cv)
+        .then(() => {
+            console.log("File uploaded!!!");
+        })
+        .catch(() => {
+            alert("Error uploading file!")
+        })
+    };
 
     const params = useParams();
 
@@ -111,17 +108,19 @@ const ApplcationPage = () => {
         const formEle = document.querySelector("form");
         const formDatab = new FormData(formEle);
 
-        formInputs.techStack = techStack.join(', ');
-        console.log(formInputs);
-
-        const URL = 'https://script.google.com/macros/s/AKfycbyRYJ3eab-cthia01m-arjx7Fd-NJMzA95e4wPScmH4lg8Ka-JBb9mAXn7rdabyOK6W1A/exec';
+        const URL = 'https://script.google.com/macros/s/AKfycbySF-WSrZcfguy2ZGtHTwsWVDwpHTLwArYqR2i39bzBaMiVrh_Tev9gBJKGhtgzYuuM/exec';
 
         setProcessing("Processing...");
 
-        fetch(URL, { method: 'POST', body: formDatab})
+        if (cv) {
+            uploadCv();
+        }
+
+        // fetch(URL, { method: 'POST', body: formDatab})
+        axios.post(URL, formDatab)
         .then(
             response => {
-                console.log(response);
+                console.log(response.data);
                 setProcessing("");
                 setResponseMessage("Successfully submitted");
                 resetFormInputs();
@@ -182,55 +181,21 @@ const ApplcationPage = () => {
                     <div className='form-input'>
                         <label className='text-left'>Current Residence*</label>
                         <small>Provide district and sector. Example: Gasabo, Kacyiru</small>
-                        <input type='text' min={5} name='Residence' onChange={handleInput} value={formInputs["Residence"] || ''} placeholder='Where do you live now?' />
+                        <input type='text' min={5} name='Residence' onChange={handleInput} value={formInputs["Residence"] || ''} placeholder='Your current residence    ' />
                         {errors.residence && <span className='error-message'>{errors.residence}</span>}
                     </div>
-                    <p className='font-bold mt-6'>2. Enter Your Coding Experience</p>
+                    <p className='font-bold mt-6'>2. Work Experience</p>
                     <div className='flex w-full gap-3 flex-col sm:flex-row'>
                         <div className='form-input'>
-                            <label className='text-left'>Current level of education*</label>
-                            <select required name='Current level of education' onChange={handleInput}>
-                                <option value={""}>Select level of education</option>
-                                <option value={"University graduate"}>University graduate</option>
-                                <option value={"Attending university"}>Attending university</option>
-                                <option value={"A' Level graduate"}>A' Level graduate</option>
-                            </select>
-                            {errors.currentLevelOfEducation && <span className='error-message'>{errors.currentLevelOfEducation}</span>}
-                        </div>
-                        <div className='form-input'>
-                            <label className='text-left'>What did/do you learn?*</label>
-                            <select required name='What did you study' onChange={handleInput}>
-                                <option value={""}>Choose option</option>
-                                {formInputs["Current level of education"] === "University graduate" && 
-                                    UNIVERSITY_COMBINATIONS.map((combination, index) => (
-                                        <option value={combination} key={index}>{combination}</option>
-                                    ))
-                                }
-                                {formInputs["Current level of education"] === "Attending university" && 
-                                    UNIVERSITY_COMBINATIONS.map((combination, index) => (
-                                        <option value={combination} key={index}>{combination}</option>
-                                    ))
-                                }
-                                {formInputs["Current level of education"] === "A' Level graduate" && 
-                                    SECONDARY_COMBINATIONS.map((combination, index) => (
-                                        <option value={combination} key={index}>{combination}</option>
-                                    ))
-                                }
-                            </select>
-                            {errors.currentLevelOfEducation && <span className='error-message'>{errors.currentLevelOfEducation}</span>}
-                        </div>
-                    </div>
-                    <div className='flex w-full gap-3 flex-col sm:flex-row'>
-                        <div className='form-input'>
-                            <label className='text-left'>Prior experience in programming*</label>
+                            <label className='text-left'>Tech stack*</label>
                             <small>Choose all that apply</small>
                             <div>
-                                <input type='checkbox' name='Tech stack' onChange={handleTechStack} value={"HTML"} />
-                                &nbsp;HTML
+                                <input type='checkbox' name='Tech stack' onChange={handleTechStack} value={"HTML and CSS"} />
+                                &nbsp;HTML and CSS
                             </div>
                             <div>
-                                <input type='checkbox' name='Tech stack' onChange={handleTechStack} value={"CSS"} />
-                                &nbsp;CSS
+                                <input type='checkbox' name='Tech stack' onChange={handleTechStack} value={"PHP"} />
+                                &nbsp;PHP
                             </div>
                             <div>
                                 <input type='checkbox' name='Tech stack' onChange={handleTechStack} value={"JavaScript"} />
@@ -245,26 +210,43 @@ const ApplcationPage = () => {
                                 &nbsp;Java
                             </div>
                             <div>
-                                <input type='checkbox' name='Tech stack' onChange={handleTechStack} value={"PHP"} />
-                                &nbsp;PHP
+                                <input type='checkbox' name='Tech stack' onChange={handleTechStack} value={"Laravel"} />
+                                &nbsp;Laravel
                             </div>
                             <div>
                                 <input type='checkbox' name='Tech stack' onChange={handleTechStack} value={"React Native"} />
                                 &nbsp;React Native
                             </div>
                             <div>
-                                <input type='checkbox' name='Tech stack' onChange={handleTechStack} value={"No prior experience"} />
-                                &nbsp;No prior experience
+                                <input type='checkbox' name='Tech stack' onChange={handleTechStack} value={"None of the above"} />
+                                &nbsp;None of the above
                             </div>
                             {errors.techstack && <span className='error-message'>{errors.techstack}</span>}
                         </div>
+                        <div className='form-input'>
+                            <label className='text-left'>How many years of experience do you have?*</label>
+                            <select required name='Years of experience' onChange={handleInput}>
+                                <option value={""}>Choose experience period</option>
+                                <option value={"0 to 1 year"}>0 to 1 year</option>
+                                <option value={"1 to 2 years"}>1 to 2 years</option>
+                                <option value={"2 to 3 years"}>2 to 3 years</option>
+                                <option value={"Above 3 years"}>Above 3 years</option>
+                            </select>
+                            {errors.yearsOfExperience && <span className='error-message'>{errors.yearsOfExperience}</span>}
+                        </div>
+                    </div>
+                    <div className='flex w-full gap-3 flex-col sm:flex-row'>
                         <div className='form-input'>
                             <label className='text-left'>GitHub Account</label>
                             <input type='text' min={4} name='GitHub account' onChange={handleInput} value={formInputs["GitHub account"] || ''} placeholder='GitHub Account' />
                             {errors.gitHubAccount && <span className='error-message'>{errors.gitHubAccount}</span>}
                         </div>
+                        <div className='form-input'>
+                            <label className='text-left'>Resume</label>
+                            <input type='file' min={4} onChange={handleFile} />
+                        </div>
                     </div>
-                    <div className='flex w-full gap-3 flex-col sm:flex-row'>
+                    {/* <div className='flex w-full gap-3 flex-col sm:flex-row'>
                         <div className='form-input'>
                             <label className='text-left'>Do you have a computer?*</label>
                             <select name='Do you have a computer' onChange={handleInput}>
@@ -283,8 +265,8 @@ const ApplcationPage = () => {
                             </select>
                             {errors.interviewLocation && <span className='error-message'>{errors.interviewLocation}</span>}
                         </div>
-                    </div>
-                    <p className='font-bold mt-6'>3. Your Motivation</p>
+                    </div> */}
+                    {/* <p className='font-bold mt-6'>3. Your Motivation</p>
                     <div className='form-input'>
                         <label className='text-left'>Why do you wish to join this program*</label>
                         <textarea minLength={20} required name='Why do you wish to join this program' onChange={handleInput} value={formInputs["Why do you wish to join this program"] || ''} placeholder='Your text here' rows={4}></textarea>
@@ -294,14 +276,14 @@ const ApplcationPage = () => {
                         <label className='text-left'>How will this program impact you?*</label>
                         <textarea minLength={20} required name='How will this program impact you' onChange={handleInput} value={formInputs["How will this program impact you"] || ''} placeholder='Your text here' rows={4}></textarea>
                         {errors.howWillThisProgramHelpYou && <span className='error-message'>{errors.howWillThisProgramHelpYou}</span>}
-                    </div>
+                    </div> */}
 
 
 
                     <div className='flex w-full gap-3 flex-col sm:flex-row'>
                         <div className='form-input'>
                             {processing ? 
-                                <input type='submit' value={'Processing...'} className='bg-gray-400 mt-4 py-2 px-3 text-white rounded hover:bg-black cursor-pointer'/> 
+                                <input type='button' onClick={() => {}} disabled value={'Processing...'} className='bg-gray-400 mt-4 py-2 px-3 text-white rounded hover:bg-black cursor-pointer'/> 
                                 : 
                                 <input type='submit' value={'Submit Application'} className='bg-cyan-400 mt-4 py-2 px-3 text-white rounded hover:bg-black cursor-pointer'/>
                             }
