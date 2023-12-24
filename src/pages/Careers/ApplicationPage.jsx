@@ -104,29 +104,26 @@ const ApplcationPage = () => {
 
     const formSubmission = (e) => {
         e.preventDefault();
-
-        const formEle = document.querySelector("form");
-        const formDatab = new FormData(formEle);
-
-        const URL = 'https://script.google.com/macros/s/AKfycbySF-WSrZcfguy2ZGtHTwsWVDwpHTLwArYqR2i39bzBaMiVrh_Tev9gBJKGhtgzYuuM/exec';
+        
+        const URL = 'https://she-can-code-job-application-default-rtdb.firebaseio.com/';
 
         setProcessing("Processing...");
 
-        if (cv) {
-            uploadCv();
-        }
+        uploadCv();
 
-        // fetch(URL, { method: 'POST', body: formDatab})
-        axios.post(URL, formDatab)
+        formInputs["Tech stack"] = techStack.join(',');        
+
+        axios.post(URL, formInputs)
         .then(
             response => {
-                console.log(response.data);
-                setProcessing("");
-                setResponseMessage("Successfully submitted");
-                resetFormInputs();
-                setTimeout(() => {
-                    window.location.reload();
-                }, 3000)
+                if (response.status === 201 || response.status === 200) {
+                    setProcessing("");
+                    setResponseMessage("Successfully submitted");
+                    resetFormInputs();
+                    setTimeout(() => {
+                        window.location.reload();
+                    }, 3000)
+                }
             }
         )
         .catch(error => {
@@ -246,39 +243,6 @@ const ApplcationPage = () => {
                             <input type='file' min={4} onChange={handleFile} />
                         </div>
                     </div>
-                    {/* <div className='flex w-full gap-3 flex-col sm:flex-row'>
-                        <div className='form-input'>
-                            <label className='text-left'>Do you have a computer?*</label>
-                            <select name='Do you have a computer' onChange={handleInput}>
-                                <option value={""}>Choose option</option>
-                                <option value={"Yes"}>Yes</option>
-                                <option value={"No"}>No</option>
-                            </select>
-                            {errors.doYouHaveAComputer && <span className='error-message'>{errors.doYouHaveAComputer}</span>}
-                        </div>
-                        <div className='form-input'>
-                            <label className='text-left'>Interview location*</label>
-                            <select name='Interview location' onChange={handleInput}>
-                                <option value={""}>Choose option</option>
-                                <option value={"On site"}>On site</option>
-                                <option value={"On line"}>On line</option>
-                            </select>
-                            {errors.interviewLocation && <span className='error-message'>{errors.interviewLocation}</span>}
-                        </div>
-                    </div> */}
-                    {/* <p className='font-bold mt-6'>3. Your Motivation</p>
-                    <div className='form-input'>
-                        <label className='text-left'>Why do you wish to join this program*</label>
-                        <textarea minLength={20} required name='Why do you wish to join this program' onChange={handleInput} value={formInputs["Why do you wish to join this program"] || ''} placeholder='Your text here' rows={4}></textarea>
-                        {errors.whyDoYouWishToJoinThisProgram && <span className='error-message'>{errors.whyDoYouWishToJoinThisProgram}</span>}
-                    </div>
-                    <div className='form-input'>
-                        <label className='text-left'>How will this program impact you?*</label>
-                        <textarea minLength={20} required name='How will this program impact you' onChange={handleInput} value={formInputs["How will this program impact you"] || ''} placeholder='Your text here' rows={4}></textarea>
-                        {errors.howWillThisProgramHelpYou && <span className='error-message'>{errors.howWillThisProgramHelpYou}</span>}
-                    </div> */}
-
-
 
                     <div className='flex w-full gap-3 flex-col sm:flex-row'>
                         <div className='form-input'>
@@ -287,7 +251,6 @@ const ApplcationPage = () => {
                                 : 
                                 <input type='submit' value={'Submit Application'} className='bg-cyan-400 mt-4 py-2 px-3 text-white rounded hover:bg-black cursor-pointer'/>
                             }
-                            {errors.submit && <span className='error-message'>{errors.submit}</span>}
                         </div>
                     </div>
                     {responseMessage &&
