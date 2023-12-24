@@ -8,6 +8,7 @@ import { useParams } from 'react-router-dom';
 import { storage } from "../../configs/firebase";
 import { ref, uploadBytes } from "firebase/storage";
 import { v4 } from "uuid";
+import axios from 'axios';
 
 const ApplcationPage = () => {
 
@@ -67,7 +68,6 @@ const ApplcationPage = () => {
 
     const uploadCv =async () => {
         if (cv === null) return;
-
         const fileRef = ref(storage, `cvs/${v4()+" - "+cv.name}`);
 
         await uploadBytes(fileRef, cv)
@@ -108,9 +108,6 @@ const ApplcationPage = () => {
         const formEle = document.querySelector("form");
         const formDatab = new FormData(formEle);
 
-        formInputs.techStack = techStack.join(', ');
-        console.log(formInputs);
-
         const URL = 'https://script.google.com/macros/s/AKfycbySF-WSrZcfguy2ZGtHTwsWVDwpHTLwArYqR2i39bzBaMiVrh_Tev9gBJKGhtgzYuuM/exec';
 
         setProcessing("Processing...");
@@ -119,10 +116,11 @@ const ApplcationPage = () => {
             uploadCv();
         }
 
-        fetch(URL, { method: 'POST', body: formDatab})
+        // fetch(URL, { method: 'POST', body: formDatab})
+        axios.post(URL, formDatab)
         .then(
             response => {
-                console.log(response);
+                console.log(response.data);
                 setProcessing("");
                 setResponseMessage("Successfully submitted");
                 resetFormInputs();
@@ -192,11 +190,11 @@ const ApplcationPage = () => {
                             <label className='text-left'>Tech stack*</label>
                             <small>Choose all that apply</small>
                             <div>
-                                <input type='checkbox' name='Tech stack' onChange={handleTechStack} value={"HTML"} />
+                                <input type='checkbox' name='Tech stack' onChange={handleTechStack} value={"HTML and CSS"} />
                                 &nbsp;HTML and CSS
                             </div>
                             <div>
-                                <input type='checkbox' name='Tech stack' onChange={handleTechStack} value={"CSS"} />
+                                <input type='checkbox' name='Tech stack' onChange={handleTechStack} value={"PHP"} />
                                 &nbsp;PHP
                             </div>
                             <div>
@@ -212,7 +210,7 @@ const ApplcationPage = () => {
                                 &nbsp;Java
                             </div>
                             <div>
-                                <input type='checkbox' name='Tech stack' onChange={handleTechStack} value={"PHP"} />
+                                <input type='checkbox' name='Tech stack' onChange={handleTechStack} value={"Laravel"} />
                                 &nbsp;Laravel
                             </div>
                             <div>
@@ -220,7 +218,7 @@ const ApplcationPage = () => {
                                 &nbsp;React Native
                             </div>
                             <div>
-                                <input type='checkbox' name='Tech stack' onChange={handleTechStack} value={"No prior experience"} />
+                                <input type='checkbox' name='Tech stack' onChange={handleTechStack} value={"None of the above"} />
                                 &nbsp;None of the above
                             </div>
                             {errors.techstack && <span className='error-message'>{errors.techstack}</span>}
@@ -285,7 +283,7 @@ const ApplcationPage = () => {
                     <div className='flex w-full gap-3 flex-col sm:flex-row'>
                         <div className='form-input'>
                             {processing ? 
-                                <input type='submit' value={'Processing...'} className='bg-gray-400 mt-4 py-2 px-3 text-white rounded hover:bg-black cursor-pointer'/> 
+                                <input type='button' onClick={() => {}} disabled value={'Processing...'} className='bg-gray-400 mt-4 py-2 px-3 text-white rounded hover:bg-black cursor-pointer'/> 
                                 : 
                                 <input type='submit' value={'Submit Application'} className='bg-cyan-400 mt-4 py-2 px-3 text-white rounded hover:bg-black cursor-pointer'/>
                             }
