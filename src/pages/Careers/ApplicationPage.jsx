@@ -8,23 +8,6 @@ import { useParams } from 'react-router-dom';
 import { storage } from "../../configs/firebase";
 import { ref, uploadBytes } from "firebase/storage";
 import { v4 } from "uuid";
-import axios from 'axios';
-
-const SECONDARY_COMBINATIONS = [
-    "Computer Science (MEC)",
-    "Software Development (SOD)",
-    "Mathematics Physics and Computer Science (MPC)",
-    "Others"
-];
-
-const UNIVERSITY_COMBINATIONS = [
-    "Computer Science",
-    "Software Engineering",
-    "Information Management",
-    "Networking",
-    "Networks and Communication Systems",
-    "Big Data Analysis"
-];
 
 const ApplcationPage = () => {
 
@@ -38,14 +21,9 @@ const ApplcationPage = () => {
         "Phone": '',
         "Age": 0,
         "Residence": '',
-        "Current level of education": '',
-        "What did you study": '',
         "Tech stack": '',
         "GitHub account": '',
-        "Do you have a computer": '',
-        "Interview location": '',
-        "Why do you wish to join this program": '',
-        "How will this program impact you": '',
+        "Years of experience": ''
     });
 
     const [errors, setErrors] = useState({
@@ -75,14 +53,9 @@ const ApplcationPage = () => {
             "Phone": '',
             "Age": 0,
             "Residence": '',
-            "Current level of education": '',
-            "What did you study": '',
             "Tech stack": '',
             "GitHub account": '',
-            "Do you have a computer":'',
-            "Interview location": '',
-            "Why do you wish to join this program": '',
-            "How will this program impact you": '',
+            "Years of experience": '',
         });
     }
 
@@ -95,7 +68,7 @@ const ApplcationPage = () => {
     const uploadCv =async () => {
         if (cv === null) return;
 
-        const fileRef = ref(storage, `cvs/${v4()+cv.name}`);
+        const fileRef = ref(storage, `cvs/${v4()+" - "+cv.name}`);
 
         await uploadBytes(fileRef, cv)
         .then(() => {
@@ -138,7 +111,7 @@ const ApplcationPage = () => {
         formInputs.techStack = techStack.join(', ');
         console.log(formInputs);
 
-        const URL = 'https://script.google.com/macros/s/AKfycbyRYJ3eab-cthia01m-arjx7Fd-NJMzA95e4wPScmH4lg8Ka-JBb9mAXn7rdabyOK6W1A/exec';
+        const URL = 'https://script.google.com/macros/s/AKfycbySF-WSrZcfguy2ZGtHTwsWVDwpHTLwArYqR2i39bzBaMiVrh_Tev9gBJKGhtgzYuuM/exec';
 
         setProcessing("Processing...");
 
@@ -210,7 +183,7 @@ const ApplcationPage = () => {
                     <div className='form-input'>
                         <label className='text-left'>Current Residence*</label>
                         <small>Provide district and sector. Example: Gasabo, Kacyiru</small>
-                        <input type='text' min={5} name='Residence' onChange={handleInput} value={formInputs["Residence"] || ''} placeholder='Your current residence' />
+                        <input type='text' min={5} name='Residence' onChange={handleInput} value={formInputs["Residence"] || ''} placeholder='Your current residence    ' />
                         {errors.residence && <span className='error-message'>{errors.residence}</span>}
                     </div>
                     <p className='font-bold mt-6'>2. Work Experience</p>
