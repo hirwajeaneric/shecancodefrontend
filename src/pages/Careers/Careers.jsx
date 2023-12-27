@@ -10,7 +10,6 @@ const Careers = () => {
     
     useEffect(() => {
         setJobs(generateJobs());
-        console.log(generateJobs());
     }, []);
 
     return (
