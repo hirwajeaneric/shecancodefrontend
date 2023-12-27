@@ -7,9 +7,10 @@ import { generateJobs } from '../../utils/JobsList';
 
 const CareersDetails = () => {
   const [job, setJob] = useState({});
-  const [rolesAndResponsibilities, setRolesAndResponsibilities] = useState({});
-  const [otherResponsibilities, setOtherResponsibilities] = useState({});
-  const [experiences, setExperiences] = useState({});
+  const [rolesAndResponsibilities, setRolesAndResponsibilities] = useState({ introduction: '', list: [] });
+  const [otherResponsibilities, setOtherResponsibilities] = useState({ introduction: '', list: [] });
+  const [experiences, setExperiences] = useState({ introduction: '', list: [] });
+  const [preferredSkills, setPreferredSkills] = useState({ introduction: '', list: [] });
   const [otherQualities, setOtherQualities] = useState([]);
   const params = useParams();
 
@@ -21,6 +22,7 @@ const CareersDetails = () => {
     setRolesAndResponsibilities(foundJob.rolesAndResponsibilities);
     setOtherResponsibilities(foundJob.otherResponsibilities);
     setExperiences(foundJob.experience);
+    setPreferredSkills(foundJob.preferredSkills);
     setOtherQualities(foundJob.otherQualities);
   },[params.code])
 
@@ -33,12 +35,17 @@ const CareersDetails = () => {
           <Link to='/careers' className='text-blue-600'>Back to All Jobs</Link>
           <p className='text-gray-400 my-4'>Posted on {new Date(job.postTime).toDateString()}</p>
           <h1 className='text-4xl text-left p-0 font-bold my-3'>{job.title}</h1>
-          <h2 className='mb-4'>{job.location}</h2>
+          <p className='mb-4 text-blue-950'>{job.summaryOfResponsibilities}</p>
+          <h2 className='mb-4 font-bold'>{job.location}</h2>
           <hr />
           <p className='my-7'>{job.organizationSummary}</p>
           
-          <h2 className='text-xl font-bold mb-3'>About the Job</h2>
-          <p className='mb-7'>{job.aboutTheJob}</p>
+          {job.aboutTheJob && 
+            <>
+              <h2 className='text-xl font-bold mb-3'>About the Job</h2>
+              <p className='mb-7'>{job.aboutTheJob}</p>
+            </>
+          }
           
 
 
@@ -54,13 +61,12 @@ const CareersDetails = () => {
           }
           
 
-
           {/* Other Responsibilities  */}
-          {otherResponsibilities && 
+          {otherResponsibilities.list.length !== 0 && 
             <h2 className='text-xl font-bold mb-3'>Other Responsibilities</h2>
           }
           {otherResponsibilities.introduction && <p className='mt-3'>{otherResponsibilities.introduction}</p>}
-          {otherResponsibilities.list && 
+          {otherResponsibilities.list.length !== 0 && 
             <ul className='list-disc mb-4 mt-3 pl-9 pb-6 pt-2'>
               {otherResponsibilities.list.map((responsibility, index) => (
                 <li key={index}>{responsibility}</li>
@@ -69,9 +75,9 @@ const CareersDetails = () => {
           }
           
           {/* Experience  */}
-          <h2 className='text-xl font-bold'>Experience</h2>
+          {experiences.list.length !== 0 && <h2 className='text-xl font-bold'>Experience</h2>}
           {experiences.introduction && <p className='mt-3'>{experiences.introduction}</p>}
-          {experiences.list && 
+          {experiences.list !== 0 && 
             <ul className='list-disc mb-4 mt-3 pl-9 pb-6 pt-2'>
               {experiences.list.map((experience, index) => (
                 <li key={index}>{experience}</li>
@@ -80,15 +86,25 @@ const CareersDetails = () => {
           }
 
 
+          {/* Preferred Skills  */}
+          {preferredSkills.list.length !== 0 && <h2 className='text-xl font-bold'>Preferred Skills</h2>}
+          {preferredSkills.introduction && <p className='mt-3'>{preferredSkills.introduction}</p>}
+          {preferredSkills.list.length !== 0 && 
+            <ul className='list-disc mb-4 mt-3 pl-9 pb-6 pt-2'>
+              {preferredSkills.list.map((skill, index) => (
+                <li key={index}>{skill}</li>
+              ))}
+            </ul>
+          }
 
           
           {/* Other qualities  */}
-          {otherQualities && <h2 className='text-xl font-bold'>Other Qualities</h2>}
-          {otherQualities && 
+          {otherQualities.length !== 0 && <h2 className='text-xl font-bold'>Other Qualities</h2>}
+          {otherQualities.length !== 0 && 
             <ul className='list-disc mb-4 mt-3 pl-9 pb-6 pt-2'>
               {otherQualities.map((quality, index) => (
                 <li key={index}>{quality}</li>
-              ))}
+              ))}+
             </ul>
           }
 
