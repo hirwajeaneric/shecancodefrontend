@@ -85,6 +85,9 @@ const ApplcationPage = () => {
       var jobs = generateJobs();
       var foundJob = jobs.find(job => job.code === params.code);
       setJob(foundJob);
+
+      console.log(params.code !== 'program-manager-and-m&e' || params.code !== 'grant-officer-and-communication-officer');
+
     },[params.code])
 
     const handleInput = ({ currentTarget: target }) => {
@@ -105,6 +108,14 @@ const ApplcationPage = () => {
     const formSubmission = (e) => {
         e.preventDefault();
         
+        if (params.code === 'technical-facilitator') {
+            formInputs.role = 'Technical Facilitator';
+        } else if (params.code === 'program-manager-and-m&e') {
+            formInputs.role = 'Program Manager and M&E';
+        } else if (params.code === 'grant-officer-and-communication-officer') {
+            formInputs.role = 'Grant officer and communications officer';
+        }
+
         const URL = 'https://she-can-code-job-application-default-rtdb.firebaseio.com/applicants.json';
 
         setProcessing("Processing...");
@@ -181,65 +192,72 @@ const ApplcationPage = () => {
                         <input type='text' min={5} name='Residence' onChange={handleInput} value={formInputs["Residence"] || ''} placeholder='Your current residence    ' />
                         {errors.residence && <span className='error-message'>{errors.residence}</span>}
                     </div>
-                    <p className='font-bold mt-6'>2. Work Experience</p>
+                    {/* <p className='font-bold mt-6'>2. Work Experience</p> */}
+                    
                     <div className='flex w-full gap-3 flex-col sm:flex-row'>
-                        <div className='form-input'>
-                            <label className='text-left'>Tech stack*</label>
-                            <small>Choose all that apply</small>
-                            <div>
-                                <input type='checkbox' name='Tech stack' onChange={handleTechStack} value={"HTML and CSS"} />
-                                &nbsp;HTML and CSS
-                            </div>
-                            <div>
-                                <input type='checkbox' name='Tech stack' onChange={handleTechStack} value={"PHP"} />
-                                &nbsp;PHP
-                            </div>
-                            <div>
-                                <input type='checkbox' name='Tech stack' onChange={handleTechStack} value={"JavaScript"} />
-                                &nbsp;JavaScript
-                            </div>
-                            <div>
-                                <input type='checkbox' name='Tech stack' onChange={handleTechStack} value={"ReactJS"} />
-                                &nbsp;ReactJS
-                            </div>
-                            <div>
-                                <input type='checkbox' name='Tech stack' onChange={handleTechStack} value={"Java"} />
-                                &nbsp;Java
-                            </div>
-                            <div>
-                                <input type='checkbox' name='Tech stack' onChange={handleTechStack} value={"Laravel"} />
-                                &nbsp;Laravel
-                            </div>
-                            <div>
-                                <input type='checkbox' name='Tech stack' onChange={handleTechStack} value={"React Native"} />
-                                &nbsp;React Native
-                            </div>
-                            <div>
-                                <input type='checkbox' name='Tech stack' onChange={handleTechStack} value={"None of the above"} />
-                                &nbsp;None of the above
-                            </div>
-                            {errors.techstack && <span className='error-message'>{errors.techstack}</span>}
-                        </div>
-                        <div className='form-input'>
-                            <label className='text-left'>How many years of experience do you have?*</label>
-                            <select required name='Years of experience' onChange={handleInput}>
-                                <option value={""}>Choose experience period</option>
-                                <option value={"0 to 1 year"}>0 to 1 year</option>
-                                <option value={"1 to 2 years"}>1 to 2 years</option>
-                                <option value={"2 to 3 years"}>2 to 3 years</option>
-                                <option value={"Above 3 years"}>Above 3 years</option>
-                            </select>
-                            {errors.yearsOfExperience && <span className='error-message'>{errors.yearsOfExperience}</span>}
-                        </div>
+                        {(params.code !== 'program-manager-and-m&e' || params.code !== 'grant-officer-and-communication-officer') ? <></> :
+                            <>
+                                <div className='form-input'>
+                                    <label className='text-left'>Tech stack*</label>
+                                    <small>Choose all that apply</small>
+                                    <div>
+                                        <input type='checkbox' name='Tech stack' onChange={handleTechStack} value={"HTML and CSS"} />
+                                        &nbsp;HTML and CSS
+                                    </div>
+                                    <div>
+                                        <input type='checkbox' name='Tech stack' onChange={handleTechStack} value={"PHP"} />
+                                        &nbsp;PHP
+                                    </div>
+                                    <div>
+                                        <input type='checkbox' name='Tech stack' onChange={handleTechStack} value={"JavaScript"} />
+                                        &nbsp;JavaScript
+                                    </div>
+                                    <div>
+                                        <input type='checkbox' name='Tech stack' onChange={handleTechStack} value={"ReactJS"} />
+                                        &nbsp;ReactJS
+                                    </div>
+                                    <div>
+                                        <input type='checkbox' name='Tech stack' onChange={handleTechStack} value={"Java"} />
+                                        &nbsp;Java
+                                    </div>
+                                    <div>
+                                        <input type='checkbox' name='Tech stack' onChange={handleTechStack} value={"Laravel"} />
+                                        &nbsp;Laravel
+                                    </div>
+                                    <div>
+                                        <input type='checkbox' name='Tech stack' onChange={handleTechStack} value={"React Native"} />
+                                        &nbsp;React Native
+                                    </div>
+                                    <div>
+                                        <input type='checkbox' name='Tech stack' onChange={handleTechStack} value={"None of the above"} />
+                                        &nbsp;None of the above
+                                    </div>
+                                    {errors.techstack && <span className='error-message'>{errors.techstack}</span>}
+                                </div>
+                                <div className='form-input'>
+                                    <label className='text-left'>How many years of experience do you have?*</label>
+                                    <select required name='Years of experience' onChange={handleInput}>
+                                        <option value={""}>Choose experience period</option>
+                                        <option value={"0 to 1 year"}>0 to 1 year</option>
+                                        <option value={"1 to 2 years"}>1 to 2 years</option>
+                                        <option value={"2 to 3 years"}>2 to 3 years</option>
+                                        <option value={"Above 3 years"}>Above 3 years</option>
+                                    </select>
+                                    {errors.yearsOfExperience && <span className='error-message'>{errors.yearsOfExperience}</span>}
+                                </div>
+                            </>
+                        }
                     </div>
                     <div className='flex w-full gap-3 flex-col sm:flex-row'>
+                        {(params.code !== 'program-manager-and-m&e' || params.code !== 'grant-officer-and-communication-officer') ? <></> :
+                            <div className='form-input'>
+                                <label className='text-left'>GitHub Account</label>
+                                <input type='text' min={4} name='GitHub account' onChange={handleInput} value={formInputs["GitHub account"] || ''} placeholder='GitHub Account' />
+                                {errors.gitHubAccount && <span className='error-message'>{errors.gitHubAccount}</span>}
+                            </div>
+                        }
                         <div className='form-input'>
-                            <label className='text-left'>GitHub Account</label>
-                            <input type='text' min={4} name='GitHub account' onChange={handleInput} value={formInputs["GitHub account"] || ''} placeholder='GitHub Account' />
-                            {errors.gitHubAccount && <span className='error-message'>{errors.gitHubAccount}</span>}
-                        </div>
-                        <div className='form-input'>
-                            <label className='text-left'>Resume</label>
+                            <label className='text-left'>Cover letter & Resume</label>
                             <input type='file' min={4} onChange={handleFile} />
                         </div>
                     </div>

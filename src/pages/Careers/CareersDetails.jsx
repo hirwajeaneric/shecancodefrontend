@@ -39,7 +39,7 @@ const CareersDetails = () => {
           <h2 className='mb-4 font-bold'>{job.location}</h2>
           <hr />
           <p className='my-7'>{job.organizationSummary}</p>
-          
+
 
           {job.aboutTheJob && 
             <>
