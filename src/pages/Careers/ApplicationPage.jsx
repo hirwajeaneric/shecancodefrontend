@@ -180,11 +180,15 @@ const ApplcationPage = () => {
                             <input type='phone' required minLength={10} maxLength={10} max={10} name='Phone' onChange={handleInput} value={formInputs.Phone || ''} placeholder='Phone number' />
                             {errors.phone && <span className='error-message'>{errors.phone}</span>}
                         </div>
-                        <div className='form-input'>
-                            <label className=''>Age*</label>
-                            <input type='number' required min={16} name='Age' onChange={handleInput} value={formInputs.Age || ''} placeholder='Age' />
-                            {errors.age && <span className='error-message'>{errors.age}</span>}
-                        </div>
+                        {(params.code === 'technical-facilitator') ?
+                            <div className='form-input'>
+                                <label className=''>Age*</label>
+                                <input type='number' required min={16} name='Age' onChange={handleInput} value={formInputs.Age || ''} placeholder='Age' />
+                                {errors.age && <span className='error-message'>{errors.age}</span>}
+                            </div>
+                            :
+                            <></>
+                        }
                     </div>
                     <div className='form-input'>
                         <label className='text-left'>Current Residence*</label>
@@ -195,7 +199,7 @@ const ApplcationPage = () => {
                     {/* <p className='font-bold mt-6'>2. Work Experience</p> */}
                     
                     <div className='flex w-full gap-3 flex-col sm:flex-row'>
-                        {(params.code !== 'program-manager-and-m&e' || params.code !== 'grant-officer-and-communication-officer') ? <></> :
+                        {(params.code === 'technical-facilitator') ?
                             <>
                                 <div className='form-input'>
                                     <label className='text-left'>Tech stack*</label>
@@ -246,15 +250,19 @@ const ApplcationPage = () => {
                                     {errors.yearsOfExperience && <span className='error-message'>{errors.yearsOfExperience}</span>}
                                 </div>
                             </>
+                            :
+                            <></> 
                         }
                     </div>
                     <div className='flex w-full gap-3 flex-col sm:flex-row'>
-                        {(params.code !== 'program-manager-and-m&e' || params.code !== 'grant-officer-and-communication-officer') ? <></> :
+                        {(params.code === 'technical-facilitator') ?
                             <div className='form-input'>
                                 <label className='text-left'>GitHub Account</label>
                                 <input type='text' min={4} name='GitHub account' onChange={handleInput} value={formInputs["GitHub account"] || ''} placeholder='GitHub Account' />
                                 {errors.gitHubAccount && <span className='error-message'>{errors.gitHubAccount}</span>}
                             </div>
+                            :
+                            <></>
                         }
                         <div className='form-input'>
                             <label className='text-left'>Cover letter & Resume</label>
