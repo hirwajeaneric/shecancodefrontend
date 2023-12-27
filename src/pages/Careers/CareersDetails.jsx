@@ -40,6 +40,7 @@ const CareersDetails = () => {
           <hr />
           <p className='my-7'>{job.organizationSummary}</p>
           
+
           {job.aboutTheJob && 
             <>
               <h2 className='text-xl font-bold mb-3'>About the Job</h2>
@@ -47,7 +48,6 @@ const CareersDetails = () => {
             </>
           }
           
-
 
           {/* Roles and Responsibilities  */}
           <h2 className='text-xl font-bold mb-3'>Roles and Responsibility</h2>
@@ -74,10 +74,11 @@ const CareersDetails = () => {
             </ul>
           }
           
+
           {/* Experience  */}
-          {experiences.list.length !== 0 && <h2 className='text-xl font-bold'>Experience</h2>}
+          {experiences.list && <h2 className='text-xl font-bold'>Experience</h2>}
           {experiences.introduction && <p className='mt-3'>{experiences.introduction}</p>}
-          {experiences.list !== 0 && 
+          {experiences.list && 
             <ul className='list-disc mb-4 mt-3 pl-9 pb-6 pt-2'>
               {experiences.list.map((experience, index) => (
                 <li key={index}>{experience}</li>
@@ -87,9 +88,9 @@ const CareersDetails = () => {
 
 
           {/* Preferred Skills  */}
-          {preferredSkills.list.length !== 0 && <h2 className='text-xl font-bold'>Preferred Skills</h2>}
+          {preferredSkills.list && <h2 className='text-xl font-bold'>Preferred Skills</h2>}
           {preferredSkills.introduction && <p className='mt-3'>{preferredSkills.introduction}</p>}
-          {preferredSkills.list.length !== 0 && 
+          {preferredSkills.list && 
             <ul className='list-disc mb-4 mt-3 pl-9 pb-6 pt-2'>
               {preferredSkills.list.map((skill, index) => (
                 <li key={index}>{skill}</li>
@@ -99,12 +100,12 @@ const CareersDetails = () => {
 
           
           {/* Other qualities  */}
-          {otherQualities.length !== 0 && <h2 className='text-xl font-bold'>Other Qualities</h2>}
-          {otherQualities.length !== 0 && 
+          {otherQualities.list && <h2 className='text-xl font-bold'>Other Qualities</h2>}
+          {otherQualities.list && 
             <ul className='list-disc mb-4 mt-3 pl-9 pb-6 pt-2'>
               {otherQualities.map((quality, index) => (
                 <li key={index}>{quality}</li>
-              ))}+
+              ))}
             </ul>
           }
 
