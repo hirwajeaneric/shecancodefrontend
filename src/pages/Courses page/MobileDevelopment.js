@@ -45,7 +45,8 @@ const MobileDevelopment = () => {
           <div className='mobileApp-part1 flex flex-col w-11/12 md:w-10/12 m-auto justify-around'>
             <h1 className='para1'>Mobile Application Development Program</h1>
             <p className='w-full sm:w-2/3 md:w-1/2'>Embark on a transformative journey with our 16-week program,designed to equip you with essential skills in mobile application development.</p>
-            <button onClick={() => navigate('/mobilejanuaryapplication')} className='mob-btn mb-12 w-full md:w-1/5'>Apply now</button>
+            {/* <button onClick={() => navigate('/mobilejanuaryapplication')} className='mob-btn mb-12 w-full md:w-1/5'>Apply now</button> */}
+            <button onClick={() => navigate('#')} className='mob-btn mb-12 w-full md:w-1/5'>Coming soon</button>
           </div>
         </div>
 
@@ -66,7 +67,8 @@ const MobileDevelopment = () => {
           <p className='text-base w-full md:w-3/5'>Ready to delve into the world of mobile applications? Join our comprehensive training program where you'll master the art of creating stunning mobile apps using React Native!
           In this course, you'll not only learn React Native but also gain a solid foundation in programming essentials with HTML, CSS, and JavaScript. No prior experience needed, just enthusiasm and a desire to build amazing apps!.
           <br /><br />
-          <button onClick={() => navigate('/mobilejanuaryapplication')} className='mob-btn mb-12 w-full md:w-2/5'>Apply Now</button>
+          {/* <button onClick={() => navigate('/mobilejanuaryapplication')} className='mob-btn mb-12 w-full md:w-2/5'>Apply Now</button> */}
+          <button disabled onClick={() => navigate('#')} className='mob-btn mb-12 w-full md:w-2/5'>Coming soon</button>
           </p>
         </div>
       </div>
