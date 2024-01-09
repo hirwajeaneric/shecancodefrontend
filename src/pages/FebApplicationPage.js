@@ -166,11 +166,25 @@ const FebApplicationPage = () => {
                             {errors.age && <span className='error-message'>{errors.age}</span>}
                         </div>
                     </div>
-                    <div className='form-input'>
-                        <label className='text-left'>Current Residence*</label>
-                        <small>Provide district and sector. Example: Gasabo, Kacyiru</small>
-                        <input type='text' min={5} name='Residence' onChange={handleInput} value={formInputs["Residence"] || ''} placeholder='Where do you live now?' />
-                        {errors.residence && <span className='error-message'>{errors.residence}</span>}
+                    <div className='flex w-full gap-3 flex-col sm:flex-row items-end'>
+                        <div className='form-input'>
+                            <label className='text-left'>Current Residence*</label>
+                            <small>Provide district and sector. Example: Gasabo, Kacyiru</small>
+                            <input type='text' min={5} name='Residence' onChange={handleInput} value={formInputs["Residence"] || ''} placeholder='Where do you live now?' />
+                            {errors.residence && <span className='error-message'>{errors.residence}</span>}
+                        </div>
+                        <div className='form-input'>
+                            <label className='text-left'>Current occupation*</label>
+                            <select name='Current occupation' onChange={handleInput}>
+                                <option value={""}>Choose option</option>
+                                <option value={"Student"}>Student</option>
+                                <option value={"Part-time employee"}>Part-time employee</option>
+                                <option value={"Full-time employee"}>Full-time employee</option>
+                                <option value={"Fully available"}>Fully available</option>
+                                <option value={"Freelancer/Self-employed"}>Freelancer/Self-employed</option>
+                            </select>
+                            {errors.interviewLocation && <span className='error-message'>{errors.interviewLocation}</span>}
+                        </div>
                     </div>
                     <p className='font-bold mt-6'>2. Enter Your Coding Experience</p>
                     <div className='flex w-full gap-3 flex-col sm:flex-row'>
@@ -261,15 +275,6 @@ const FebApplicationPage = () => {
                             </select>
                             {errors.specialization && <span className='error-message'>{errors.specialization}</span>}
                         </div>
-                        <div className='form-input'>
-                            <label className='text-left'>Interview location*</label>
-                            <select name='Interview location' onChange={handleInput}>
-                                <option value={""}>Choose option</option>
-                                <option value={"On site"}>On site</option>
-                                <option value={"On line"}>On line</option>
-                            </select>
-                            {errors.interviewLocation && <span className='error-message'>{errors.interviewLocation}</span>}
-                        </div>
                     </div>
                     <p className='font-bold mt-6'>3. Your Motivation</p>
                     <div className='form-input'>
@@ -283,8 +288,23 @@ const FebApplicationPage = () => {
                         {errors.howWillThisProgramHelpYou && <span className='error-message'>{errors.howWillThisProgramHelpYou}</span>}
                     </div>
 
-
-
+                    <b className='mt-4 mb-2'>Terms and Conditions</b>
+                    <p>SheCanCODE Bootcamp is an <b>intensive</b>, 16 weeks program which emphasizes more on the practical aspect of learning programming.<br/><br/>The participant is expected to be fully available during the entire program duration in work hours, from Monday to Friday.<br/><br/>Will you be able to attend the program in the designated period?</p>
+                    <div className='form-input flex flex-row'>
+                        <div className='mr-3'>
+                            <input type='radio' name='Yes' onChange={handleTechStack} value={"Yes"} />
+                            &nbsp;Yes
+                        </div>
+                        <div className='mr-3'>
+                            <input type='radio' name='no' onChange={handleTechStack} value={"No"} />
+                            &nbsp;No
+                        </div>
+                        <div className='mr-3'>
+                            <input type='checkbox' name='Mot sure?' onChange={handleTechStack} value={"Not sure"} />
+                            &nbsp;Not sure
+                        </div>
+                    </div>
+                
                     <div className='flex w-full gap-3 flex-col sm:flex-row'>
                         <div className='form-input'>
                             {processing ? 
