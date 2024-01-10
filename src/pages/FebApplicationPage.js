@@ -180,7 +180,7 @@ const FebApplicationPage = () => {
                         </div>
                         <div className='form-input'>
                             <label className='text-left'>Current occupation*</label>
-                            <select name='Current occupation' onChange={handleInput}>
+                            <select name='Current occupation'required onChange={handleInput}>
                                 <option value={""}>Choose option</option>
                                 <option value={"Student"}>Student</option>
                                 <option value={"Part-time employee"}>Part-time employee</option>
