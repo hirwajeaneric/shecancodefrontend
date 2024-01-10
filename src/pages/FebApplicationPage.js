@@ -33,13 +33,14 @@ const FebApplicationPage = () => {
         "Age": 0,
         "Residence": '',
         "Current level of education": '',
+        "Current occupation":"",
         "What did you study": '',
         "Tech stack": '',
         "specialization":"",
         "GitHub account": '',
-        "Interview location": '',
         "Why do you wish to join this program": '',
         "How will this program impact you": '',
+        "Are you fully available for the program?": ""
     });
 
     const [errors, setErrors] = useState({
@@ -56,7 +57,7 @@ const FebApplicationPage = () => {
         gitHubAccount: '',
         whyDoYouWishToJoinThisProgram: '',
         howWillThisProgramHelpYou: '',
-        interviewLocation: '',
+        "Are you fully available for the program?":"",
         submit: ''
     });
     const [responseMessage, setResponseMessage] = useState("");
@@ -74,9 +75,9 @@ const FebApplicationPage = () => {
             "Tech stack": '',
             "specialization":"",
             "GitHub account": '',
-            "Interview location": '',
             "Why do you wish to join this program": '',
             "How will this program impact you": '',
+            "Are you fully available for the program?": ""
         });
     }
 
@@ -100,28 +101,32 @@ const FebApplicationPage = () => {
         
         const URL = 'https://software-engineering-february-default-rtdb.firebaseio.com/applicants.json';
 
-        setProcessing("Processing...");
+        if (!formInputs["Are you fully available for the program?"]) {
+            setErrors({ ...errors, "Are you fully available for the program?": "Required"})
+        } else {
+            setProcessing("Processing...");
 
-        formInputs["Tech stack"] = techStack.join(',');        
+            formInputs["Tech stack"] = techStack.join(',');        
 
-        axios.post(URL, formInputs)
-        .then(
-            response => {
-                if (response.status === 201 || response.status === 200) {
-                    setProcessing("");
-                    setResponseMessage("Successfully submitted");
-                    resetFormInputs();
-                    setTimeout(() => {
-                        window.location.reload();
-                    }, 3000)
+            axios.post(URL, formInputs)
+            .then(
+                response => {
+                    if (response.status === 201 || response.status === 200) {
+                        setProcessing("");
+                        setResponseMessage("Successfully submitted");
+                        resetFormInputs();
+                        setTimeout(() => {
+                            window.location.reload();
+                        }, 3000)
+                    }
                 }
-            }
-        )
-        .catch(error => {
-            setErrors({ submit: 'Failed to submit!'});
-            setProcessing("");
-            console.error('Error!', error.message);
-        })
+            )
+            .catch(error => {
+                setErrors({ submit: 'Failed to submit!'});
+                setProcessing("");
+                console.error('Error!', error.message);
+            })
+        }
     }
     
     return (
@@ -195,6 +200,7 @@ const FebApplicationPage = () => {
                                 <option value={"University graduate"}>University graduate</option>
                                 <option value={"Attending university"}>Attending university</option>
                                 <option value={"A' Level graduate"}>A' Level graduate</option>
+                                <option value={"None of the above"}>None of the above</option>
                             </select>
                             {errors.currentLevelOfEducation && <span className='error-message'>{errors.currentLevelOfEducation}</span>}
                         </div>
@@ -292,18 +298,19 @@ const FebApplicationPage = () => {
                     <p>SheCanCODE Bootcamp is an <b>intensive</b>, 16 weeks program which emphasizes more on the practical aspect of learning programming.<br/><br/>The participant is expected to be fully available during the entire program duration in work hours, from Monday to Friday.<br/><br/>Will you be able to attend the program in the designated period?</p>
                     <div className='form-input flex flex-row'>
                         <div className='mr-3'>
-                            <input type='radio' name='Yes' onChange={handleTechStack} value={"Yes"} />
+                            <input type='radio' name='Are you fully available for the program?' onChange={handleInput} value={"Yes"} />
                             &nbsp;Yes
                         </div>
                         <div className='mr-3'>
-                            <input type='radio' name='no' onChange={handleTechStack} value={"No"} />
+                            <input type='radio' name='Are you fully available for the program?' onChange={handleInput} value={"No"} />
                             &nbsp;No
                         </div>
                         <div className='mr-3'>
-                            <input type='radio' name='Mot sure?' onChange={handleTechStack} value={"Not sure"} />
+                            <input type='radio' name='Are you fully available for the program?' onChange={handleInput} value={"Not sure"} />
                             &nbsp;Not sure
                         </div>
                     </div>
+                    {errors["Are you fully available for the program?"] && <span className='error-message text-red-700 font-bold'>This field is required!</span>}
                 
                     <div className='flex w-full gap-3 flex-col sm:flex-row'>
                         <div className='form-input'>
