@@ -300,7 +300,7 @@ const FebApplicationPage = () => {
                             &nbsp;No
                         </div>
                         <div className='mr-3'>
-                            <input type='checkbox' name='Mot sure?' onChange={handleTechStack} value={"Not sure"} />
+                            <input type='radio' name='Mot sure?' onChange={handleTechStack} value={"Not sure"} />
                             &nbsp;Not sure
                         </div>
                     </div>
