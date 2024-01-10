@@ -39,7 +39,7 @@ let Bar = () => {
             <div className="text">
               <p>
                 Email Now! <br />
-                igirerwanda@gmail.com
+                student@igirerwanda.org
               </p>
             </div>
           </div>
