@@ -107,6 +107,7 @@ const FebApplicationPage = () => {
             setProcessing("Processing...");
 
             formInputs["Tech stack"] = techStack.join(',');        
+            formInputs.date = new Date().toUTCString();
 
             axios.post(URL, formInputs)
             .then(
