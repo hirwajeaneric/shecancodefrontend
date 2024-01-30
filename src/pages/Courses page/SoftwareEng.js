@@ -61,13 +61,14 @@ const SoftwareEng = () => {
             <div className='bg-blue-950 text-white justify-between flex flex-col w-full md:w-5/12 p-8'>
               <h1 className='text-3xl pt-0 mb-4 text-left'>Front-end</h1>
               <p>Welcome to our Frontend Development hub! Here, we craft seamless user experiences by bringing web interfaces to life. Using the powerful combination of JavaScript, HTML, and CSS, we train you to transform ideas into interactive and visually appealing websites by the help of <strong>React JS</strong> Library.</p>
-              <a href='/februaryintake' className='py-2 px-3 mt-4 text-left rounded border-cyan-50 border-2 w-full md:w-1/2 hover:w-full'>Apply now</a>
+              {/* <a href='/februaryintake' className='py-2 px-3 mt-4 text-left rounded border-cyan-50 border-2 w-full md:w-1/2 hover:w-full'>Apply now</a> */}
+              <button type='button' className='mob-btn mb-12 w-full md:w-1/5'>Coming soon</button>
             </div>
             <div className='bg-blue-950 text-white justify-between flex flex-col w-full md:w-5/12 p-8'>
               <h1 className='text-3xl pt-0 mb-4 text-left'>Back-end</h1>
               <p>Backend development is the behind-the-scenes magic that powers websites, making them functional and dynamic. In this process, we leverage a powerful trio of technologies: JavaScript for scripting, Express JS for building robust web applications, and Node JS for executing server-side code efficiently. MongoDB, a flexible and scalable database, helps store and manage data seamlessly.</p>
-              // <a href='/februaryintake' className='py-2 px-3 mt-4 text-left rounded border-cyan-50 border-2 w-full md:w-1/2 hover:w-full'>Apply now</a>
-              <button disabled onClick={() => navigate('#')} className='mob-btn mb-12 w-full md:w-2/5'>Coming soon</button>
+              {/* <a href='/februaryintake' className='py-2 px-3 mt-4 text-left rounded border-cyan-50 border-2 w-full md:w-1/2 hover:w-full'>Apply now</a> */}
+              <button type='button' className='mob-btn mb-12 w-full md:w-1/5'>Coming soon</button>
             </div>
           </div>
         </div>
