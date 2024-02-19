@@ -20,12 +20,12 @@ const Careers = () => {
                 <h1 className='text-2xl text-left w-11/12 md:w-10/12 mt-6 md:mt-12 border-b-gray border-b-2 pl-0'>Available Jobs</h1>
                 <div className='w-11/12 md:w-10/12 mt-2 md:mt-2 mb-6 md:mb-12'>
                     <div className='w-full justify-start'>
-                        {/* {jobs.map((job, index) => {
+                        {jobs.map((job, index) => {
                             return (
                                 <JobCard key={index} job={job} />
                             )
-                        })} */}
-                        <p className='text-gray-500 mb-20'>No available jobs</p>
+                        })}
+                        {/* <p className='text-gray-500 mb-20'>No available jobs</p> */}
                     </div>
                 </div>
             </div>

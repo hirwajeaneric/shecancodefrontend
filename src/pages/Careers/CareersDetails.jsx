@@ -10,6 +10,7 @@ const CareersDetails = () => {
   const [rolesAndResponsibilities, setRolesAndResponsibilities] = useState({ introduction: '', list: [] });
   const [otherResponsibilities, setOtherResponsibilities] = useState({ introduction: '', list: [] });
   const [experiences, setExperiences] = useState({ introduction: '', list: [] });
+  const [benefits, setBenefits] = useState({ introduction: '', list: [] });
   const [preferredSkills, setPreferredSkills] = useState({ introduction: '', list: [] });
   const [otherQualities, setOtherQualities] = useState([]);
   const params = useParams();
@@ -22,6 +23,7 @@ const CareersDetails = () => {
     setRolesAndResponsibilities(foundJob.rolesAndResponsibilities);
     setOtherResponsibilities(foundJob.otherResponsibilities);
     setExperiences(foundJob.experience);
+    setBenefits(foundJob.benefits);
     setPreferredSkills(foundJob.preferredSkills);
     setOtherQualities(foundJob.otherQualities);
   },[params.code])
@@ -88,7 +90,7 @@ const CareersDetails = () => {
 
 
           {/* Preferred Skills  */}
-          {preferredSkills.list && <h2 className='text-xl font-bold'>Preferred Skills</h2>}
+          {preferredSkills.list && <h2 className='text-xl font-bold'>Preferred Skills and Qualities</h2>}
           {preferredSkills.introduction && <p className='mt-3'>{preferredSkills.introduction}</p>}
           {preferredSkills.list && 
             <ul className='list-disc mb-4 mt-3 pl-9 pb-6 pt-2'>
@@ -109,13 +111,25 @@ const CareersDetails = () => {
             </ul>
           }
 
+          {/* Benefits  */}
+          {benefits.list && <h2 className='text-xl font-bold'>Benefits</h2>}
+          {benefits.list && 
+            <ul className='list-disc mb-4 mt-3 pl-9 pb-6 pt-2'>
+              {benefits.list.map((benefit, index) => (
+                <li key={index}>{benefit}</li>
+              ))}
+            </ul>
+          }
+
+          <p style={{ marginBottom: '40px'}}>If you're ready to take the next step in your marketing career and make a difference with Igire Rwanda Organization, apply now by sending your resume and cover letter to <strong>education@igirerwanda.org</strong> Join us in our mission to create positive change through innovative marketing strategies!</p>
+
           <hr />
           <p className='text-gray-400 my-4'>Posted since {job.postedSince}</p>
           <p className='text-gray-400 my-4 '>Application ends on {job.deadline}</p>
 
-          <div className='flex w-full justify-center items-center'>
+          {/* <div className='flex w-full justify-center items-center'>
             <a href={`/job/${params.code}/apply`} className='mob-btn'>Apply now</a>
-          </div>
+          </div> */}
         </div>
       </div>
       <Footer />
