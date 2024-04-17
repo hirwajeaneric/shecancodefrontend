@@ -61,11 +61,11 @@ const Application = () => {
         <p>Application is closed. We will notify you once it reopens.</p>
       </CloseApplication>
       <div className="application-container">
-        <div>
+        {/* <div>
           <h1 className="application-title">
             <Typed strings={sentences} typeSpeed={50} backSpeed={40} loop />
           </h1>
-        </div>
+        </div> */}
         <div className="application-upper">
           <div className="application-upper-content">
             <h1 className="text-2xl text-white">Apply for January intake in <span className="text-blue-950">Mobile Application Development</span></h1>

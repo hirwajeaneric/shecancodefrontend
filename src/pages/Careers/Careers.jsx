@@ -25,7 +25,7 @@ const Careers = () => {
                                 <JobCard key={index} job={job} />
                             )
                         })}
-                        {/* <p className='text-gray-500 mb-20'>No available jobs</p> */}
+                        <p className='text-gray-500 mb-20'>No available jobs</p>
                     </div>
                 </div>
             </div>

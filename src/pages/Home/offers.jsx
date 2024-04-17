@@ -18,7 +18,7 @@ const Offers = () => {
   return (
     <div>
       <div className='application-section'>
-     <marquee> <p className='application-section-paragraph'>Enroll now for our January cohort in Mobile Application Development Program!&nbsp;&nbsp;&nbsp;&nbsp;<span><a href='/mobiledevelopment'>Apply Here!</a></span> &nbsp;&nbsp;&nbsp;&nbsp;or for our February cohort in Software Engineering program!&nbsp;&nbsp;&nbsp;&nbsp;<span><a href="/softwareengineering">Apply Here!</a></span></p></marquee>
+     {/* <marquee> <p className='application-section-paragraph'>Enroll now for our January cohort in Mobile Application Development Program!&nbsp;&nbsp;&nbsp;&nbsp;<span><a href='/mobiledevelopment'>Apply Here!</a></span> &nbsp;&nbsp;&nbsp;&nbsp;or for our February cohort in Software Engineering program!&nbsp;&nbsp;&nbsp;&nbsp;<span><a href="/softwareengineering">Apply Here!</a></span></p></marquee> */}
 
       </div>
       <div data-aos="fade-up" className='offer-container' id='about'>
