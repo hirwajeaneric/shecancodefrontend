@@ -51,9 +51,11 @@ const Application = () => {
     const isSmallScreen = window.innerWidth <= 768;
     setButtonText(isSmallScreen ? "Apply" : "Apply Now");
   };
+  
   const updateInfo = () => {
     alert("Application is not yet open, it will be opening soon");
   };
+
   return (
     <>
       <Index />
@@ -66,20 +68,20 @@ const Application = () => {
             <Typed strings={sentences} typeSpeed={50} backSpeed={40} loop />
           </h1>
         </div> */}
-        <div className="application-upper">
+        {/* <div className="application-upper">
           <div className="application-upper-content">
-            <h1 className="text-2xl text-white">Apply for January intake in <span className="text-blue-950">Mobile Application Development</span></h1>
+            <h1 className="text-2xl text-white">Apply for January intake in <span className="text-blue-950">Mobile Application Development</span></h1> */}
             {/* <Link target="_blank" to="http://surl.li/jlauq"><Button btnTitle={`${buttonText}`} /></Link>   */}
             {/* <Link target="_blank" to={applyLink}> */}
             {/* <button className="btn" onClick={openPopup}>
               Apply
             </button> */}
-            <button className="btn" onClick={() => window.location.replace('/mobilejanuaryapplication')}>
+            {/* <button className="btn" onClick={() => window.location.replace('/mobilejanuaryapplication')}>
               Apply
-            </button>
+            </button> */}
             {/* </Link> */}
-          </div>
-        </div>
+          {/* </div> */}
+        {/* </div> */}
 
         <div className="appliction-middle">
           {applicationMiddleContents.map((content, index) => (
